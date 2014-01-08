@@ -27,7 +27,7 @@ header {
   color: white;
   overflow: hidden;
   min-height: 198px;
-	background-image: url('https://s3.amazonaws.com/fftf-cms/static/campaign/img/flag.jpg');
+	background-image: url('/img/header-banner.jpg');
 	background-repeat: no-repeat;
 	background-position: top;
 }
