@@ -1,0 +1,1723 @@
+/* Image replacement */
+.ir {
+    text-indent: -999em;
+    overflow: hidden;
+}
+
+/* Clearfix */
+.group:before,
+.group:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.group:after {
+    clear: both;
+}
+
+/* Completely hidden from all users (including screen readers) */
+.gone {
+    display: none;
+    position: absolute;
+    visibility: hidden;
+}
+
+/* Hidden from display */
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* Form validation images */
+.icon-red {
+    background-image: url("{{ STATIC_URL }}campaign/img/glyphicons-halflings-red.png");
+}
+
+.icon-green {
+    background-image: url("{{ STATIC_URL }}campaign/img/glyphicons-halflings-green.png");
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-weight: bold;
+}
+
+a.btn {
+    font-weight: 500;
+}
+
+.field .btn {
+    font-size: 25px;
+}
+
+body {
+    font-weight: 300;
+    padding-top: 25px;
+    padding-bottom: 53px;
+}
+
+.navbar .container {
+    min-height: 53px;
+}
+
+.navbar-fixed-top .navbar-inner {
+    background: #f4f4f4;
+    border: 0;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.navbar a.brand {
+    display: inline-block;
+    width: 130px;
+    height: 17px;
+    background: url({{ STATIC_URL }}campaign/img/logo.png) no-repeat 23px 18px;
+    padding: 18px 23px;
+}
+
+.navbar a.cfr {
+    display: inline-block;
+    width: 130px;
+    height: 17px;
+    background: url({{ STATIC_URL }}campaign/img/crlogo2.png) no-repeat 23px 18px;
+    padding: 18px 23px;
+}
+
+.navbar .btn-navbar {
+    color: #131313;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.share {
+    padding: 8px 7px 0 0;
+}
+
+.navbar-inner .share li {
+    margin-right: 7px;
+    float: left;
+}
+
+.share li:last-child {
+    margin-right: 0;
+}
+
+.navbar-inner .share .has-text a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 5px 18px 0 36px !important;
+}
+
+.share .has-text a strong {
+    display: block;
+    font-size: 16px;
+    text-transform: none;
+    color: #FFF;
+}
+
+@media (max-width: 979px) {
+    body {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar-fixed-bottom {
+        margin-top: 0;
+        margin-bottom: 22px;
+    }
+
+    .navbar-inner {
+        border-width: 0 0 1px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .share {
+        padding-top: 14px;
+    }
+
+    .share .has-text a {
+        font-size: 9px;
+        padding: 3px 14px 0 28px !important;
+        line-height: 1.12;
+    }
+
+    .share .has-text a strong {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    /*
+    .share a {
+        min-height: 28px;
+        min-width: 28px;
+    }
+
+    .share a:before {
+        width: 16px;
+        height: 16px;
+        top: 6px;
+        left: 6px;
+        background-size: 136px 16px;
+    }
+    */
+
+    /*
+
+                    KEEPING THIS HERE FOR REFERENCE
+
+                    Not sure why these styles suddenly started causing problems
+                    Will investigate later
+
+
+                     .share .tumblr a:before{
+                        background-position: 0 0;
+                        left: 6px;
+                    }
+                    .share .email a:before{
+                        background-position: -20px 0;
+                    }
+                    .share .rss a:before{
+                        background-position: -40px 0;
+                    }
+                    .share .google-plus a:before{
+                        background-position: -60px 0;
+                    }
+                    .share .twitter a:before{
+                        background-position: -80px 0;
+                    }
+                    .share .reddit a:before{
+                        background-position: -100px 0;
+                        left: 5px;
+                    }
+                    .share .facebook a:before{
+                        background-position: -120px 0;
+                    }*/
+
+}
+
+@media (max-width: 479px) {
+    .navbar .container {
+        min-height: 46px;
+    }
+
+    .navbar a.brand {
+        padding: 14px 23px;
+        background-position: 23px 14px;
+    }
+
+    .share {
+        padding-top: 13px;
+    }
+
+    .share .has-text a {
+        font-size: 8px;
+        line-height: 1.13;
+        padding: 2px 13px 0 26px !important;
+    }
+
+    .share .has-text a strong {
+        font-size: 11px;
+    }
+
+    .share .has-text a:before {
+        top: 6px;
+        left: 8px;
+    }
+
+    .block.has-image figure{
+        width: 35%;
+        float: left;
+        margin: 0;
+    }
+        .block.has-image figure img{
+            max-width: 100%;
+        }
+            .block.has-image figure.bordered img{
+                -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+                box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+            }
+        .block.has-image figure.bordered{
+            border: 5px solid #FFF;
+            -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            margin-top: 17px;
+        }
+    .block.has-image .text{
+        float: right;
+        width: 60%;
+
+    }
+
+   /* .share a:before {
+        width: 13px;
+        height: 13px;
+        top: 4px;
+        left: 4px;
+        background-size: 102px 12px;
+    }*/
+
+    /*
+    KEEPING THIS HERE FOR REFERENCE
+
+.legislators{}
+    .legislators ul,
+    .legislators li{
+        margin: 0;
+        padding: 0;
+        list-style: none inside none;
+        padding-left: 7%;
+    }
+    .legislators li{
+        padding: 5px 20px 5px 86px;
+        position: relative;
+        min-height: 83px;
+        margin: 15px 5% 15px 0;
+        float: left;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 45%;
+    }
+        .legislators li:nth-child(odd){
+            clear: left;
+        }
+    .legislators img{
+        width: 66px;
+        height: 83px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        border: 5px solid #fff;
+        -moz-box-shadow: 1px 3px 6px #a8a8a8;
+        -webkit-box-shadow: 1px 3px 6px #a8a8a8;
+        box-shadow: 1px 3px 6px #a8a8a8;
+    }
+    .legislators h2{
+        margin: 0 0 8px 0 !important;
+    }
+    
+
+
+                      .share .tumblr a:before{
+                        background-position: 0 0;
+                        left: 3px;
+                    }
+                    .share .email a:before{
+                        background-position: -15px 0;
+                    }
+                    .share .rss a:before{
+                        background-position: -30px 0;
+                    }
+                    .share .google-plus a:before{
+                        background-position: -45px 0;
+                    }
+                    .share .twitter a:before{
+                        background-position: -60px 0;
+                    }
+                    .share .reddit a:before{
+                        background-position: -75px 0;
+                        left: 3px;
+                    }
+                    .share .facebook a:before{
+                        background-position: -90px 0;
+                    }
+    */
+}
+
+.block {
+    padding: 45px 0;
+    border-bottom: 2px dotted #CCC;
+    -moz-box-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
+}
+
+.block.intro,
+.block:last-child {
+    border-bottom: 0;
+    padding-bottom: 30px;
+}
+
+.block h1 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.12;
+}
+
+.block h2 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.19;
+}
+
+.block h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.23;
+}
+
+.block.has-image figure {
+    width: 35%;
+    float: left;
+    margin: 0;
+}
+
+.block.has-image figure img {
+    max-width: 100%;
+}
+
+.block.has-image figure.bordered img {
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.block.has-image figure.bordered {
+    border: 5px solid #FFF;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.block.has-image .text {
+    float: right;
+    width: 60%;
+}
+
+footer.block {
+    padding: 30px 0;
+}
+
+footer.block p {
+    font-size: 13px;
+    line-height: 1.47;
+    color: #888;
+    margin: 0;
+}
+
+footer.block a {
+    color: #555;
+}
+
+.legislators {
+}
+
+.legislators ul,
+.legislators li {
+    margin: 0;
+    padding: 0;
+    list-style: none inside none;
+}
+
+.legislators li {
+    padding: 5px 20px 5px 86px;
+    position: relative;
+    min-height: 83px;
+    margin: 15px 5% 15px 0;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 45%;
+}
+
+.legislators li:nth-child(odd) {
+    clear: left;
+}
+
+.legislators img {
+    width: 66px;
+    height: 83px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.legislators h2 {
+    margin: 0 0 8px 0 !important;
+}
+
+@media all and (max-width: 639px) {
+    .legislators li {
+        float: none;
+        width: 100%;
+        padding-top: 10px;
+    }
+}
+
+.modal {
+    padding: 0 !important;
+}
+
+.modal .share {
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+.modal-header {
+    padding: 10px 30px;
+    border-bottom: 0;
+}
+
+.modal-body {
+    padding: 25px 30px;
+}
+
+.modal .text {
+    margin-bottom: 24px;
+}
+
+.don {
+    display: none;
+}
+
+.actions {
+    border-top: 0;
+    background: #333 url(campaign/img/low_contrast_linen.png);
+    padding: 40px 0;
+    position: relative;
+}
+
+.actions:before,
+.actions:after {
+    content: '';
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    left: 0;
+}
+
+.actions:before {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.45)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 100%);
+    top: 0;
+}
+
+.actions:after {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.45)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 100%);
+    bottom: 0;
+}
+
+.actions .container {
+    border-top: 8px solid #e68614;
+    border-bottom: 15px solid #d9d9d9;
+    background: #fff;
+    background: -moz-linear-gradient(top, #fff 0%, #eaeaea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #eaeaea));
+    background: -webkit-linear-gradient(top, #fff 0%, #eaeaea 100%);
+    background: -o-linear-gradient(top, #fff 0%, #eaeaea 100%);
+    background: -ms-linear-gradient(top, #fff 0%, #eaeaea 100%);
+    background: linear-gradient(to bottom, #fff 0%, #eaeaea 100%);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.7);
+    width: 50%;
+    padding: 30px;
+}
+
+@media (max-width: 979px) {
+    .actions .container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 767px) {
+    .actions {
+        margin: 0 -20px;
+    }
+
+    .actions .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .actions {
+        padding: 25px 20px;
+    }
+
+    .actions .container {
+        width: auto;
+    }
+
+    .donate {
+        display: none;
+    }
+
+    .verdevider {
+        display: none;
+    }
+
+    .don {
+        display: inline;
+    }
+}
+
+.action {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 30px;
+}
+
+.action:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.action h1 {
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 900;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.action p {
+    text-align: center;
+    font-weight: 300;
+}
+
+.action .subtext {
+    font-weight: 400;
+}
+
+.action h2 {
+    font-size: 18px;
+    line-height: 1.23;
+    font-weight: 500;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.action form {
+    margin: 22px auto;
+}
+
+.action#congress-call {
+}
+
+.action#congress-call h2 {
+    margin: 22px 0 11px;
+}
+
+.action#congress-call i {
+    position: relative;
+    top: 2px;
+    left: -1px;
+}
+
+.action#congress-call blockquote {
+    border-left-color: rgba(0, 0, 0, 0.1);
+}
+
+.action#congress-call blockquote p {
+    font-size: 15px;
+    line-height: 1.47;
+}
+
+.action#congress-call form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.action#congress-call #field_zip {
+}
+
+.action#congress-call #field_zip input {
+    width: 48%;
+    float: left;
+}
+    .action#congress-call h2{
+        margin: 22px 0 11px;
+    }
+    .action#congress-call i{
+        position: relative;
+        top: 2px;
+        left: -1px;
+    }
+    .action#congress-call blockquote{
+        border-left-color: rgba(0, 0, 0, 0.1);
+    }
+        .action#congress-call blockquote p{
+            font-size: 15px;
+            line-height: 1.47;
+        }
+    .action#congress-call form{
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .action#congress-call #field_zip{}
+        .action#congress-call #field_zip input{
+            width: 48%;
+            float: left;
+        }
+        .action#congress-call #field_zip button{
+            width: 48%;
+            float: right;
+        }
+    .action#congress-call #field_detect{
+        margin-top: 8px;
+    }
+        .action#congress-call #field_detect button{
+            width: 100%;
+        }
+
+.action#congress-call #field_zip button {
+    width: 48%;
+    float: right;
+}
+
+.action#congress-call #field_detect {
+    margin-top: 8px;
+}
+
+.action#congress-call #field_detect button {
+    width: 100%;
+}
+
+/* The form defined by the SalsaEmailForm class */
+.action#salsa-email form {
+    max-width: 700px;
+    padding-left: 5%;
+}
+
+.action#salsa-email #field_email {
+    width: 70%;
+    float: left;
+}
+
+.action#salsa-email .buttons {
+    float: right;
+    width: 25%;
+}
+
+@media (max-width: 639px) {
+    .action#salsa-email #field_email {
+        width: 90%;
+        float: left;
+        height: 50px;
+    }
+
+    .action#salsa-email .buttons {
+        float: right;
+        width: 90%;
+        height: 50px;
+    }
+
+    .action#salsa-email input {
+        height: 50px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        margin-right: 5px;
+        width: 100%;
+    }
+
+    .action#salsa-email .btn {
+        width: 90%;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        font-size: 16px;
+        padding-left: 30px;
+        padding-right: 30px;
+        line-height: 12px;
+    }
+
+    .action#salsa-email .field {
+        margin-right: 40px;
+        float: left;
+    }
+
+    .action#salsa-email .buttons {
+        float: right;
+    }
+}
+
+@media (max-width: 523px) {
+    .action#salsa-email .btn {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .action#salsa-email .btn {
+        width: 100%;
+    }
+
+}
+
+/* The form defined by the SalsaEmailForm class */
+.action#salsa-congress .field {
+    margin-right: 1%;
+    float: left;
+}
+
+.action#salsa-congress #field_name {
+    width: 30%;
+    margin-bottom: 12px;
+}
+
+.action#salsa-congress #field_email {
+    width: 30%;
+    margin-bottom: 12px;
+}
+
+.action#salsa-congress #field_address {
+    width: 25%;
+}
+
+.action#salsa-congress #field_zip {
+    width: 11%;
+}
+
+.action#salsa-congress .buttons {
+    float: left;
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 25%;
+    font-size: 20px;
+}
+
+.action#salsa-congress .buttons button {
+    width: 100%;
+}
+
+.action#salsa-congress .letter {
+    background-color: #FFF;
+    background-image: url({{ STATIC_URL }}campaign/img/noteleft.jpg), url({{ STATIC_URL }}campaign/img/noteright.jpg);
+    background-repeat: repeat-y, repeat-x;
+    background-position: top left, top left;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 13px 15px;
+    -moz-box-shadow: 0px 3px 5px #9d9d9d;
+    -webkit-box-shadow: 0px 3px 5px #9d9d9d;
+    box-shadow: 0px 3px 5px #9d9d9d;
+    border: 1px solid #c0c0c0;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.action#salsa-congress .letter textarea {
+    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 13px;
+    margin-left: 15px;
+    line-height: 21px;
+    text-align: left;
+    background: none;
+    height: 80px;
+    border: none;
+    margin-top: 0;
+    padding: 0;
+    box-shadow: none;
+    resize: none
+}
+
+@media (max-width: 767px) {
+    .action#salsa-congress form {
+        max-width: auto;
+    }
+
+    .action#salsa-congress .field {
+        width: 100% !important;
+        float: none !important;
+        margin: 0 0 12px;
+    }
+
+    .action#salsa-congress .field input {
+        max-width: 767px;
+    }
+
+    .action#salsa-congress .buttons {
+        float: none;
+    }
+
+}
+
+.intro {
+    padding: 0;
+    border-top: 0;
+    border-bottom: 5px solid red;
+}
+
+.intro h1 {
+    font-size: 43px;
+    line-height: 1.12;
+    font-weight: 700;
+    color: #404040;
+    text-align: center;
+    letter-spacing: -1px;
+    padding: 0 20px;
+}
+
+.intro h1.small {
+    font-size: 32px;
+    line-height: 1.15;
+}
+
+.intro h2 {
+    font-size: 27px;
+    line-height: 1.19;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #555;
+}
+
+.intro h2.small {
+    font-size: 20px;
+    line-height: 1.15;
+}
+
+.intro .block {
+    border-top: 0;
+    padding: 20px 0 45px;
+}
+
+.intro .block h1 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.12;
+    text-align: left;
+    padding: 0;
+}
+
+#salsa.intro .block h1 {
+  text-align: center;
+}
+
+p.disclaimer {
+    font-size: 12px;
+    line-height: 1.25;
+}
+
+p.disclaimer a {
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+p.disclaimer a:hover {
+    color: #222;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+    background: -moz-linear-gradient(top, #f0f0f0 0%, #ffffff);
+    background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#ffffff));
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #949494;
+    -moz-box-shadow: 0px 2px 3px rgba(255, 255, 255, 0), inset 0px 1px 5px rgba(173, 173, 173, 1);
+    -webkit-box-shadow: 0px 2px 3px rgba(255, 255, 255, 0), inset 0px 1px 5px rgba(173, 173, 173, 1);
+    box-shadow: 0px 2px 3px rgba(255, 255, 255, 0), inset 0px 1px 5px rgba(173, 173, 173, 1);
+    font-size: 17px;
+    padding: 5px 20px;
+    margin-bottom: 0;
+    display: block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.1), 0px 1px 0px rgba(255, 255, 255, 1);
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(0, 0, 0, .25);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(0, 0, 0, .25);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(0, 0, 0, .25);
+}
+
+@media (max-width: 979px) {
+    .block h1 {
+        font-size: 20px;
+    }
+
+    .intro h1 {
+        font-size: 32px;
+    }
+
+    .action h1 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .action h2 {
+        font-size: 17px;
+        line-height: 1.30;
+        font-weight: 600;
+    }
+
+    .intro .block h1 {
+        font-size: 20px;
+    }
+
+    .intro h2 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 639px) {
+    .block {
+        padding: 20px 0;
+    }
+
+    .block h1 {
+        font-size: 18px;
+        padding: 0;
+        padding-top: 40px;
+    }
+
+    .intro h1 {
+        font-size: 24px;
+    }
+
+    .action h1 {
+        font-size: 18px;
+    }
+
+    .action h2 {
+        font-size: 16px;
+        line-height: 1.19;
+        font-weight: 400;
+    }
+
+    .intro {
+        padding-top: 0;
+    }
+
+    .intro .block {
+        padding: 20px 0;
+    }
+
+    .intro .block h1 {
+        font-size: 18px;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+    }
+
+    .block.has-image figure {
+        max-width: 200px;
+        float: none;
+        margin: 0 auto;
+        max-height: 270px;
+        width: 100%;
+    }
+
+    .block.has-image figure.video {
+        max-width: 640px;
+    }
+
+    .block.has-image .text {
+        float: none;
+        width: auto;
+        margin-top: 40px;
+    }
+
+    .block.has-image .text > :last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .action .field {
+        display: block;
+        margin-bottom: 12px !important;
+    }
+
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    .uneditable-input {
+        max-width: 350px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 550px) {
+    .block h1 {
+        padding-top:5px;
+    }
+    
+    }
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .navbar a.brand {
+        background-size: 129px 75px;
+        background-position: 23px -40px;
+    }
+
+    .actions {
+        background-size: 28px 28px;
+        background-image: url({{ STATIC_URL }}campaign/img/hash@2x.png);
+    }
+}
+
+figure.image {
+    margin: 20px auto;
+}
+
+figure.image .thumb {
+    display: none;
+}
+
+/*	@stickwithjosh from Trello*/
+
+.disclaimer {
+    font-size: 12px;
+    text-align: center;
+}
+
+button {
+    white-space: nowrap;
+    height: 45px;
+    font-size: 20px;
+}
+
+a {
+    color: #378f3a;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #72bc75;
+}
+
+.text h2 {
+    text-align: left;
+}
+
+a.btn {
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+}
+
+.action .modal h1 {
+    font-weight: bold;
+    color: #222;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #d8d7d7;
+    padding: 15px 0 15px 0;
+}
+
+.action .modal p {
+    text-align: center;
+    color: #222;
+}
+
+
+.action .modal .socials {
+    display: block;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.action .modal .socials li {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.action .modal .socials li a {
+    margin: 0;
+}
+
+
+/** Begin Social Buttons **/
+
+[class^="social-"],
+[class*=" social-"],
+.navbar .nav > li > [class^="social-"],
+.navbar .nav > li > [class*=" social-"] {
+    padding: 9px 15px 9px;
+    text-indent: -99999px;
+    min-width: 36px;
+    min-height: 36px;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    font-weight: normal;
+    display: inline-block;
+    position: relative;
+    font-weight: normal;
+    background: #000;
+    text-shadow: 0;
+    -webkit-transition: opacity .25s ease-out;
+    -moz-transition: opacity .25s ease-out;
+    -ms-transition: opacity .25s ease-out;
+    -o-transition: opacity .25s ease-out;
+    transition: opacity .25s ease-out;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+[class^="social-"]:hover,
+[class*=" social-"]:hover,
+.navbar .nav > li > [class^="social-"]:hover,
+.navbar .nav > li > [class*=" social-"]:hover {
+    opacity: 0.66;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+[class^="social-"]::before,
+[class*=" social-"]::before {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url({{ STATIC_URL }}campaign/img/share.png) no-repeat 0 0;
+    background-size: 170px 20px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    content: '';
+}
+
+.social-facebook {
+    background-color: #314880 !important;
+}
+
+.social-facebook::before {
+    background-position: -150px 0;
+}
+
+.social-tumblr{
+    background-color: #324760 !important;
+}
+
+.social-tumblr::before {
+    background-position: 0 0;
+    left: 7px;
+}
+
+.social-email {
+    background-color: #555 !important;
+}
+
+.social-email::before {
+    background-position: -25px 0;
+}
+
+.social-rss {
+    background-color: #dd8f13 !important;
+}
+
+.social-rss::before {
+    background-position: -50px 0;
+}
+
+.social-google-plus {
+    background-color: #bc4d38 !important;
+}
+
+.social-google-plus::before {
+    background-position: -75px 0;
+}
+
+.social-twitter {
+    background-color: #3f9ce1 !important;
+}
+
+.social-twitter::before {
+    background-position: -100px 0;
+}
+
+.social-reddit {
+    background-color: #305388 !important;
+}
+
+.social-reddit::before {
+    background-position: -125px 0;
+    left: 7px;
+}
+
+.social-donate,
+.navbar .nav > li > .social-donate {
+    width: auto;
+    text-indent: 0;
+    padding: 9px 15px;
+    background-color: #fad74d;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 2px;
+    background: -moz-linear-gradient(top, #fad74d 0%, #d1b243);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fad74d), to(#d1b243));
+    border: 1px solid #c4a63a;
+    -moz-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0), inset 0px 1px 1px rgba(255, 234, 158, 1);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0), inset 0px 1px 1px rgba(255, 234, 158, 1);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0), inset 0px 1px 1px rgba(255, 234, 158, 1);
+    transition: background 2s;
+    -moz-transition: background 2s; /* Firefox 4 */
+    -webkit-transition: background 2s; /* Safari and Chrome */
+    -o-transition: background 2s; /* Opera */
+    font-size: 14px;
+    color: #4d3a09;
+    text-shadow: 0px 1px 0px rgba(255, 234, 158, 1), 0px 0px 0px rgba(255, 255, 255, 0);
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.social-donate:hover,
+.navbar .nav > li > .social-donate:hover {
+    opacity: 1;
+    background: -moz-linear-gradient(top, #d1b243 0%, #fad74d);
+    background: -webkit-gradient(linear, left top, left bottom, from(#d1b243), to(#fad74d));
+}
+
+.social-donate::before {
+    display: block;
+    background-image: none;
+    position: absolute;
+}
+
+@media (min-width: 1000px) {
+
+    [class^="social-"].social-large,
+    [class*=" social-"].social-large,
+    .navbar .nav > li > [class^="social-"].social-large,
+    .navbar .nav > li > [class*=" social-"].social-large {
+        background-image: none;
+        margin-right: 10px;
+        height: 36px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        margin-left: 2px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: bold;
+        line-height: 21px;
+        padding-left: 40px;
+        padding-right: 20px;
+        padding-top: 6px;
+        text-indent: 9px;
+    }
+
+    [class^="social-"].social-large:hover,
+    [class*=" social-"].social-large:hover,
+    .navbar .nav > li > [class^="social-"].social-large:hover,
+    .navbar .nav > li > [class*=" social-"].social-large:hover {
+        color: #fff;
+        text-shadow: none;
+    }
+
+    .social-facebook.social-large,
+    .navbar .nav > li > .social-facebook.social-large {
+        width: 210px;
+        background-color: #30497d;
+        background: -moz-linear-gradient(top, #4166b0 0%, #30497d);
+        background: -webkit-gradient(linear, left top, left bottom, from(#4166b0), to(#30497d));
+        border: 1px solid #3b5898;
+        -moz-box-shadow: 0px 0px 0px rgba(000, 000, 000, 0), inset 0px 1px 1px rgba(125, 156, 216, 1);
+        -webkit-box-shadow: 0px 0px 0px rgba(000, 000, 000, 0), inset 0px 1px 1px rgba(125, 156, 216, 1);
+        box-shadow: 0px 0px 0px rgba(000, 000, 000, 0), inset 0px 1px 1px rgba(125, 156, 216, 1);
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0), 0px -2px 0px rgba(5, 5, 5, 0.4);
+    }
+
+    .social-twitter.social-large,
+    .navbar .nav > li > .social-twitter.social-large {
+        width: 195px;
+        background-color: #00cefc;
+        background: -moz-linear-gradient(top, #00cefc 0%, #0898cc);
+        background: -webkit-gradient(linear, left top, left bottom, from(#00cefc), to(#0898cc));
+        border: 1px solid #0898cc;
+        -moz-box-shadow: 0px 0px 0px rgba(000, 000, 000, 0), inset 0px 1px 1px rgba(166, 233, 255, 1);
+        -webkit-box-shadow: 0px 0px 0px rgba(000, 000, 000, 0), inset 0px 1px 1px rgba(166, 233, 255, 1);
+        box-shadow: 0px 0px 0px rgba(000, 000, 000, 0), inset 0px 1px 1px rgba(166, 233, 255, 1);
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0), 0px -1px 0px rgba(5, 5, 5, 0.4);
+    }
+
+}
+
+/** End Social Buttons **/
+
+.verdevider {
+    width: 1px;
+    height: 30px;
+    float: left;
+    background: #dbdbdb;
+    margin-right: 10px;
+    margin-left: 3px;
+    border-right: 1px solid #fff;
+    margin-top: 5px;
+}
+
+.field .btn {
+    font-size: 20px;
+    height: 50px;
+}
+
+#salsa-email .btn {
+    -webkit-border-radius: 0px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-radius: 0px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 4px;
+    border-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: 0;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#salsa-email input {
+    width: 100%;
+    -webkit-border-radius: 4px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-radius: 4px;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 0px;
+    border-radius: 4px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-right: 0;
+}
+
+#salsa-email .field {
+    margin-right: 0;
+    float: left;
+}
+
+.action#salsa-email .buttons {
+    float: left;
+}
+
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input{
+	font-size: 15px;
+}
+
+      
+      
+      
+     @media (max-width: 1150px){       
+      
+      textarea,
+      input[type="text"],
+      input[type="password"],
+      input[type="datetime"],
+      input[type="datetime-local"],
+      input[type="date"],
+      input[type="month"],
+      input[type="time"],
+      input[type="week"],
+      input[type="number"],
+      input[type="email"],
+      input[type="url"],
+      input[type="search"],
+      input[type="tel"],
+      input[type="color"],
+      .uneditable-input{
+      	font-size: 13px;
+      }
+      
+            }
+            
+            
+#salsa-email input:focus{
+	border-color: #5ebd5e;
+	-webkit-box-shadow: 0px 0px 13px rgba(94, 199, 41, 0.75);
+	-moz-box-shadow:    0px 0px 13px rgba(94, 199, 41, 0.75);
+	box-shadow:         0px 0px 13px rgba(94, 199, 41, 0.75);
+}
+
+#salsa-email input{
+	color: #000;
+}
+
+.legislators p{
+	color: #ff6b1b;
+	text-align: left;
+	font-weight: bold;
+	padding-left: 25px;
+	background-image: url({{ STATIC_URL }}campaign/img/phone.png);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+@media (max-width: 1300px) {
+    .action#salsa-congress #field_name {
+        width: 25%;
+    }
+
+    .action#salsa-congress #field_email {
+        width: 25%;
+    }
+
+    .action#salsa-congress #field_address {
+        width: 25%;
+    }
+
+    .action#salsa-congress #field_zip {
+        width: 21%;
+    }
+
+}
+
+@media (max-width: 1300px) {
+
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    .uneditable-input {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 1150px) {
+
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    .uneditable-input {
+        font-size: 13px;
+    }
+
+}
+
+#salsa-email input:focus {
+    border-color: #5ebd5e;
+    -webkit-box-shadow: 0px 0px 13px rgba(94, 199, 41, 0.75);
+    -moz-box-shadow: 0px 0px 13px rgba(94, 199, 41, 0.75);
+    box-shadow: 0px 0px 13px rgba(94, 199, 41, 0.75);
+}
+
+#salsa-email input {
+    color: #000;
+}
+
+.legislators{}
+    .legislators ul,
+    .legislators li{
+        margin: 0;
+        padding: 0;
+        list-style: none inside none;
+        padding-left: 7%;
+    }
+    .legislators li{
+        padding: 5px 20px 5px 86px;
+        position: relative;
+        min-height: 83px;
+        margin: 15px 5% 15px 0;
+        float: left;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 45%;
+    }
+        .legislators li:nth-child(odd){
+            clear: left;
+        }
+    .legislators img{
+        width: 66px;
+        height: 83px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        border: 5px solid #fff;
+        -moz-box-shadow: 1px 3px 6px #a8a8a8;
+        -webkit-box-shadow: 1px 3px 6px #a8a8a8;
+        box-shadow: 1px 3px 6px #a8a8a8;
+    }
+    
+    section#top_links {
+      background: #333;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    section#top_links h2 {
+      font-size: 11px;
+      margin: 0;
+      font-weight: normal;
+    }
+    
+    section#top_links h2 p {
+      margin: 0;
+      padding: 0;
+    }
+    
+    section#top_links h2 a {
+      color: #ccc;
+      font-weight: normal;
+    }
+    
+    #salsa form .field.buttons + p {
+      clear: both;
+    }
+    
+    #salsa #salsa-email h3 {
+      text-align: center;
+    }
+
+/*
+ * SimpleModal Basic Modal Dialog
+ * http://simplemodal.com
+ *
+ * Copyright (c) 2013 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ */
+
+#basic-modal-content {display:none;}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#000;}
+
+/* Container */
+#simplemodal-container {height:360px; width:600px; color:#bbb; background-color:#333; border:4px solid #444; padding:12px;}
+#simplemodal-container .simplemodal-data {padding:8px;}
+#simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container a {color:#ddd;}
+#simplemodal-container a.modalCloseImg {width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:0px; right:3px; cursor:pointer;}
+#simplemodal-container h3 {color:#84b8d9;}
