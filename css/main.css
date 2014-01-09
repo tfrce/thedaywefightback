@@ -150,6 +150,19 @@ footer p {
     width:54px;
     margin:4px;
     height:54px;
+}
+.floating-share {
+	position: fixed;
+	width: 50px;
+	height: 300px;
+	left: 15px;
+	top: 15px;
+}
+.floating-share a {
+	margin-bottom: 50px;
+}
+#socfooter.sharecenter a {
+
     margin-right: 107px;
 }
 #socfooter div.sicon {
