@@ -12,3 +12,46 @@ $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googlep
 });
 
 $(".email-updates").sticky({topSpacing:0, className: 'sticky-signup'});
+
+//callback handler for form submit
+$("#email-update-form").submit(function(e)
+{
+    var postData = $(this).serializeArray();
+    var formURL = $(this).attr("action");
+    $.ajax(
+    {
+        url : formURL,
+        type: "POST",
+        data : postData,
+        success:function(data, textStatus, jqXHR) 
+        {
+            $('.email-box').html('THANK YOU!');
+        },
+        error: function(jqXHR, textStatus, errorThrown) 
+        {
+            //if fails      
+        }
+    });
+    e.preventDefault(); //STOP default action
+});
+ //callback handler for form submit
+$("#email-banner-form").submit(function(e)
+{
+    var postData = $(this).serializeArray();
+    var formURL = $(this).attr("action");
+    $.ajax(
+    {
+        url : formURL,
+        type: "POST",
+        data : postData,
+        success:function(data, textStatus, jqXHR) 
+        {
+            $('.email-banner-box').html('THANK YOU!');
+        },
+        error: function(jqXHR, textStatus, errorThrown) 
+        {
+            //if fails      
+        }
+    });
+    e.preventDefault(); //STOP default action
+});
