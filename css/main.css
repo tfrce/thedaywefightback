@@ -185,7 +185,7 @@ footer p {
     background: #efefef;
     border: 1px solid #ccc;
     border-radius: 1px;
-    top: -36px;
+    top: -39px;
     color: #444;
     content: attr(count);
     display: block;
@@ -206,7 +206,7 @@ footer p {
     border-color: #111 transparent;
     border-color: #ccc transparent;
     border-width: .4em .4em 0 .4em;
-    top: -5px;
+    top: -6px;
     content: "";
     display: block;
     left: 22px;
@@ -220,6 +220,7 @@ footer p {
     width:54px;
     margin:4px;
     height:54px;
+    z-index: 0;
 }
 .floating-share {
 	position: fixed;
