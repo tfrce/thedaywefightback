@@ -1,4 +1,4 @@
-$.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://rally.stopwatching.us/', {
+$.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://thedaywefightback.org/', {
   success: function (res, err) {
     $.each(res, function(network, value){
       var count = value;
