@@ -29,10 +29,14 @@
 /* ==========================================================================
    Custom styles
    ========================================================================== */
-
+.centered {
+        float: none;
+        margin: 0 auto;
+}
 body {
 	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing:antialiased;
+	font-size:16px;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Open Sans', sans-serif;
@@ -75,6 +79,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .email-updates {
 	background: #0ba5c2;
 	height: 82px;
+}
+.container#letter {
+	width:100%;
+	padding:0;
+	background: url('/img/sopa-bg.jpg') center top no-repeat ;
+	background-size: 100%;
 }
 section.step h4 {
 	display: block;
