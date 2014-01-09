@@ -72,7 +72,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .jumbotron #headergraphic img {
 	z-index:1;
 }
-
+.email-updates {
+	background: #0ba5c2;
+	height: 82px;
+}
 section.step h4 {
 	display: block;
 	text-align: center;
