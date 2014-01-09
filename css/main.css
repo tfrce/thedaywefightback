@@ -83,6 +83,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin: 0 auto; 
 	float: none;
 	background: #0ba5c2;
+
 	height: 82px;
 	padding:0;
 	width:100%;
@@ -160,7 +161,11 @@ footer p {
 	text-align: right;
 }
 
-
+@media (max-width: 1000px) {
+  .floating-share {
+    display: none;
+  }
+}
 
 .sharecenter {
 	height: 112px;
@@ -227,6 +232,12 @@ footer p {
 
     margin-right: 107px;
 }
+@media (max-width: 600px) {
+  #socfooter.sharecenter a {
+    margin-right: 15px;
+  }
+}
+
 #socfooter div.sicon {
     float: left;
     width:54px;

@@ -32,10 +32,10 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
           <div id="socfooter" class="down floating-share">
-              <a style="margin-top: 40px; margin-bottom: 40px;" href="https://twitter.com/home?status=On Sunday (8/4), thousands are rallying against unconstitutional surveillance for %231984Day. I'll be one of them: http://1984day.com" count="0" target="_blank" id="tweet-box" class="twitter-button social-count" onclick="openTwitter(); return false;">
+              <a style="margin-top: 40px; margin-bottom: 40px;" data-network="twitter" href="https://twitter.com/home?status=On Sunday (8/4), thousands are rallying against unconstitutional surveillance for %231984Day. I'll be one of them: http://1984day.com" count="0" target="_blank" id="tweet-box" class="twitter-button social-count" onclick="openTwitter(); return false;">
                 <div class="sicon" id="stwit"></div>
               </a> 
-            <a href="https://www.facebook.com/share.php?u=http://1984day.com" id="facebook" count="0" target="_blank" class="social-count facebook-button" onclick="openFacebook(); return false;">
+            <a href="https://www.facebook.com/share.php?u=http://1984day.com" data-network="facebook" id="facebook" count="0" target="_blank" class="social-count facebook-button" onclick="openFacebook(); return false;">
               <div class="sicon" id="sfb"></div>
             </a>
        
@@ -60,9 +60,10 @@
       <div class="container" id="signup">
         <!-- Example row of columns -->
         <div class="row">
-          SIGN UP FOR EMAILS UPDATES: 
-          <input type="text" class="form-control banner-signup" placeholder="Enter your email" />
-          <button class="btn btn-default">Submit</button>
+          <div class="col-lg-8" style="line-height: 82px; color: #fff;font-size: 24px; margin: 0 auto; float: none;">
+          SIGN UP FOR EMAILS UPDATES: <input style="margin-left: 20px; margin-bottom: 5px;" type="text" class="form-control banner-signup" placeholder="Enter your email" /><button style="margin-bottom: 5px;" class="btn btn-default">Submit</button>
+          </div>
+
         </div>
       </div>
 
@@ -105,13 +106,13 @@
           <h4>2: TELL THE WORLD YOU'RE IN</h4>
 
           <div id="socfooter" class="down sharecenter">
-              <a href="https://twitter.com/home?status=On Sunday (8/4), thousands are rallying against unconstitutional surveillance for %231984Day. I'll be one of them: http://1984day.com" count="0" target="_blank" id="tweet-box" class="twitter-button social-count" onclick="openTwitter(); return false;">
+              <a href="https://twitter.com/home?status=On Sunday (8/4), thousands are rallying against unconstitutional surveillance for %231984Day. I'll be one of them: http://1984day.com" count="0" data-network="twitter" target="_blank" id="tweet-box" class="twitter-button social-count" onclick="openTwitter(); return false;">
                 <div class="sicon" id="stwit"></div>
               </a> 
-            <a href="https://www.facebook.com/share.php?u=http://1984day.com" id="facebook" count="0" target="_blank" class="social-count facebook-button" onclick="openFacebook(); return false;">
+            <a href="https://www.facebook.com/share.php?u=http://1984day.com" data-network="facebook" id="facebook" count="0" target="_blank" class="social-count facebook-button" onclick="openFacebook(); return false;">
               <div class="sicon" id="sfb"></div>
             </a>
-            <a count="0" href="https://plus.google.com/share?url=http://1984day.com" id="gplus" target="_blank" class="social-count google-button" onclick="openGplus(); return false;">
+            <a count="0" href="https://plus.google.com/share?url=http://1984day.com" data-network="googleplus" id="gplus" target="_blank" class="social-count google-button" onclick="openGplus(); return false;">
               <div class="sicon" id="sgplus"></div>
             </a>
             <a style="margin-right: 0;" href="https://www.thunderclap.it/projects/3417-8-4-is-1984day-stopthensa" target="_blank">
@@ -127,7 +128,7 @@
         <section class="step">
           <h4>4: BE CREATIVE: DO WHAT YOU CAN</h4>
           <p>This moment is what you, the community, make of it. Make and share a meme, create a website, organize an event.</p>
-          <p>Then <a href="mailto:hi@dummy.com">tell us about it</a> so we can spread the word</p>
+          <p>Then <a href="mailto:contact@thedaywefightback.org">tell us about it</a> so we can spread the word</p>
         </section>
 
         </div>
@@ -146,7 +147,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"><\/script>')</script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
