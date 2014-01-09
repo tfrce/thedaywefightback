@@ -177,7 +177,10 @@ footer p {
     position: relative;
 }
 
-
+.sticky-signup .email-updates {
+    width: 100%;
+    z-index: 10;
+}
 .social-count:after {
     background: #efefef;
     border: 1px solid #ccc;
@@ -223,7 +226,7 @@ footer p {
 	width: 50px;
 	height: 300px;
 	left: 15px;
-	top: 15px;
+	top: 100px;
 }
 .floating-share a {
 	margin-bottom: 50px;
