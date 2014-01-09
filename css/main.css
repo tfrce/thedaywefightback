@@ -86,6 +86,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	background: url('/img/sopa-bg.jpg') center top no-repeat ;
 	background-size: 100%;
 }
+.take-part {
+	background: url('/img/takepart.png');
+}
 section.step h4 {
 	display: block;
 	text-align: center;
