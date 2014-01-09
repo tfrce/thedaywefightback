@@ -65,12 +65,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	position:relative;
 }
 .jumbotron #headergraphic {
-	height:300px;
-	position:relative;
-	top:-70px;
-}
-.jumbotron #headergraphic img {
-	z-index:1;
+	background-image: url('/img/header.jpg') center bottom no-repeat ;
+	height:400px;
 }
 
 section.step h4 {
