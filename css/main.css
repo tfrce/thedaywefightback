@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-size: 18px; 
 	margin: 0 auto; 
 	float: none;
-	background: #0ba5c2;
+	background: #01C278;
 
 	height: 82px;
 	padding:0;
@@ -90,6 +90,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	text-align:center;
 	font-weight:400;
 	letter-spacing:2px;
+}
+#signupform {
+	line-height: 82px;
+	color: #fff;
+	font-size: 24px; 
+	margin: 0 auto; 
+	float: none;
 }
 #letter {
 	width:100%;
