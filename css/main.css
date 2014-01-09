@@ -40,12 +40,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .jumbotron {
 	background-color: #000;
-	padding-top:10px;
+	padding-top:40px;
 }
 .jumbotron h1 {
-	font-size: 31px;
+	font-size: 53px;
 	text-align:center;
 	font-weight:bold;
+	color: #43c0e1;
+	margin-top: 8px;
+	margin-bottom:12px;
 }
 .jumbotron h2 {
 	text-align:center;
@@ -53,7 +56,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-weight: 600;
 	color: #fff;
 	letter-spacing: 2px;
-	font-size:33px;
+	font-size:28px;
+	margin-top: 0px;
+	margin-bottom:0px;
+	z-index:100;
+}
+.jumbotron #headergraphic {
+	height:300px;
+	position:relative;
+	top:-20px;
+	z-index:1;
+
 }
 
 section.step h4 {
@@ -80,6 +93,7 @@ section.step h4 {
 footer p {
 	text-align: right;
 }
+
 
 
 
