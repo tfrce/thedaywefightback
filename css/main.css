@@ -1,0 +1,64 @@
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing:antialiased;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron {
+	background-color: #000;
+	padding-top:10px;
+}
+.jumbotron h1 {
+	font-size: 31px;
+	text-align:center;
+	font-weight:bold;
+}
+.jumbotron h2 {
+	text-align:center;
+	text-transform:uppercase;
+	font-weight: 600;
+	color: #fff;
+	letter-spacing: 2px;
+	font-size:33px;
+}
+
+
+
+
+
+
+
