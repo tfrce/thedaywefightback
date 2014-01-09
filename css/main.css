@@ -68,7 +68,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	background-image: url('/img/header.jpg') center bottom no-repeat ;
 	height:400px;
 }
-
+.email-updates {
+	background: #0ba5c2;
+	height: 82px;
+}
 section.step h4 {
 	display: block;
 	text-align: center;
