@@ -58,9 +58,30 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-size:33px;
 }
 
+section.step h4 {
+	display: block;
+	text-align: center;
+	width: 70%;
+	margin: auto;
+	border-bottom: 4px solid #0ba5c2;
+	font-weight: bold;
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
 
-
-
+.banner-signup {
+	width: 200px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.banner-signup-form {
+	width: 284px;
+	margin: auto;	
+}
+footer p {
+	text-align: right;
+}
 
 
 
