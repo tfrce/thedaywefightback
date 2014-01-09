@@ -10,48 +10,35 @@ $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googlep
   },
   dataType: 'jsonp'
 });
-
+      $.fn.serializeObject = function() {
+          var o = {};
+          var a = this.serializeArray();
+          $.each(a, function() {
+              if (o[this.name] !== undefined) {
+                  if (!o[this.name].push) {
+                      o[this.name] = [o[this.name]];
+                  }
+                  o[this.name].push(this.value || '');
+              } else {
+                  o[this.name] = this.value || '';
+              }
+          });
+          return o;
+      };
 $(".email-updates").sticky({topSpacing:0, className: 'sticky-signup'});
 
-//callback handler for form submit
-$("#email-update-form").submit(function(e)
-{
-    var postData = $(this).serializeArray();
-    var formURL = $(this).attr("action");
-    $.ajax(
-    {
-        url : formURL,
-        type: "POST",
-        data : postData,
-        success:function(data, textStatus, jqXHR) 
-        {
-            $('.email-box').html('THANK YOU!');
-        },
-        error: function(jqXHR, textStatus, errorThrown) 
-        {
-            //if fails      
+           // 
+
+$('#email-update-form').on('submit', function(ev){
+  var form = $(ev.currentTarget);
+  var data = form.serializeObject();
+      $.ajax({
+        url: 'https://skipchimp2.herokuapp.com/subscribe',
+        data: data,
+        type: 'POST',
+        success: function () {
+          $('.email-box').html('THANK YOU!');
         }
-    });
-    e.preventDefault(); //STOP default action
-});
- //callback handler for form submit
-$("#email-banner-form").submit(function(e)
-{
-    var postData = $(this).serializeArray();
-    var formURL = $(this).attr("action");
-    $.ajax(
-    {
-        url : formURL,
-        type: "POST",
-        data : postData,
-        success:function(data, textStatus, jqXHR) 
-        {
-            $('.email-banner-box').html('THANK YOU!');
-        },
-        error: function(jqXHR, textStatus, errorThrown) 
-        {
-            //if fails      
-        }
-    });
-    e.preventDefault(); //STOP default action
-});
+      });
+      return false;
+  });
