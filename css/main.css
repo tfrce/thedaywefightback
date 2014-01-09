@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	background-color: #000;
 	padding-top:40px;
 	text-align:center;
+	padding-bottom:30px;
 }
 .jumbotron h1 {
 	font-size: 53px;
@@ -65,8 +66,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	position:relative;
 }
 .jumbotron #headergraphic {
-	background-image: url('/img/header.jpg') center bottom no-repeat ;
-	height:400px;
+	background: url('/img/header.jpg') center bottom no-repeat ;
+	height:320px;
+}
+.jumbotron #logos {
+	margin-top:10px;
 }
 .email-updates {
 	background: #0ba5c2;
