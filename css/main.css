@@ -29,10 +29,14 @@
 /* ==========================================================================
    Custom styles
    ========================================================================== */
-
+.centered {
+        float: none;
+        margin: 0 auto;
+}
 body {
 	font-family: 'Open Sans', sans-serif;
-	-webkit-font-smoothing:antialiased;
+	font-size:16px;
+  -webkit-font-smoothing:antialiased;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Open Sans', sans-serif;
@@ -72,12 +76,66 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .jumbotron #logos {
 	margin-top:10px;
 }
-.email-updates {
+#signup {
+	line-height: 82px; 
+	color: #fff;
+	font-size: 18px; 
+	margin: 0 auto; 
+	float: none;
 	background: #0ba5c2;
+
+	height: 82px;
+	padding:0;
+	width:100%;
+	text-align:center;
+	font-weight:400;
+	letter-spacing:2px;
 }
-.take-part {
-	background: url('/img/takepart.png');
+#letter {
+	width:100%;
+	padding:32px 0 44px 0;
+	background: url('/img/sopa-bg.jpg') center top no-repeat ;
+	background-size: cover;
+	font-size:19px;
 }
+#letter h2 {
+	font-weight:bold;
+	color: #0682a3;
+	font-size:28px;
+	margin-bottom:20px;
+}
+#letter p {
+	font-weight: 600;
+}
+#aaron {
+	float: right; 
+	margin: 0 0 40px 40px;
+}
+#take-part {
+	background: url('/img/takepart.png') no-repeat;
+	height:150px;
+	background-size: 100%;
+}
+#take-part h2 {
+	font-size:30px;
+	font-weight:600;
+	text-align:center;
+	color: #fff;
+	text-transform: uppercase;
+	padding-top:30px;
+	margin-top:0;
+}
+#take-part h2 span {
+	font-style: italic;
+}
+
+#actions #intro {
+	font-size: 19px;
+	font-weight: 600;
+	margin-top: 15px;
+	margin-bottom:40px;
+}
+
 section.step h4 {
 	display: block;
 	text-align: center;
