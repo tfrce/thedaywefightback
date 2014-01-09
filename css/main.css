@@ -263,20 +263,3 @@ footer p {
     #spin:hover{
         background-position:0% 100% ;
     }
-.triangle-down{
-    width: 100%;
-    height: 0;
-    padding-left: 20%;
-    padding-top: 25%;
-    overflow: hidden;
-}
-.triangle-down div {
-    width: 0; 
-    height: 0;
-    margin-left:-500px;
-    margin-top:-500px;
-    
-    border-left: 500px solid transparent;
-    border-right: 500px solid transparent;
-    border-top: 500px solid #4679BD;
-}
