@@ -42,3 +42,16 @@ $('#email-update-form').on('submit', function(ev){
       });
       return false;
   });
+$('#email-banner-form').on('submit', function(ev){
+  var form = $(ev.currentTarget);
+  var data = form.serializeObject();
+      $.ajax({
+        url: 'https://skipchimp2.herokuapp.com/subscribe',
+        data: data,
+        type: 'POST',
+        success: function () {
+          $('.email-banner-box').html('THANK YOU!');
+        }
+      });
+      return false;
+  });
