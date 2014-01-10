@@ -375,6 +375,9 @@ footer {
         text-shadow:0px 0px 2px rgba(0,0,0,.7);
         line-height:60px;
     }
+    #aaron {
+        width:155px;
+    }
     #branding {
         background: #000 url('/img/header.jpg') center -50px no-repeat;
         background-size:cover;
