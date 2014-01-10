@@ -104,6 +104,20 @@ if (!Object.keys) {
     }
 }
 
+
+function openFacebook() {
+    var e = "https://www.facebook.com/sharer/sharer.php?u=https://thedaywefightback.org";
+    window.open(e, "Share on Facebook", "width=500,height=500");
+    return false
+}
+function openTwitter(){
+        var t="https://twitter.com/home?status=Some of the biggest websites are planning a massive protest to #StopTheNSA on Feb 11th. I’m joining them — will you? https://thedaywefightback.org&related=thedaywefightback,sinak,neutralthoughts,stopwatchingus,eff";
+        window.open(t,"Twitter","width=550,height=420");
+          return false}
+
+function openGplus(){
+    var e="https://plus.google.com/share?url=https://thedaywefightback.org/";window.open(e,"Share on Google Plus","width=500,height=436");return false}*/
+
 (function() {
 
     var referalMap = {
