@@ -149,6 +149,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-size: 13px;
     font-family: Arial;
 }
+.org-container a, .org-container a:visited {
+	color: #fff;
+}
 .org-container input {
     margin-top: 2px;
     float: left;
