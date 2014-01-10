@@ -162,12 +162,15 @@ section.step h4 {
 }
 
 .banner-signup {
-	width: 200px;
+	width: 230px;
 	display: inline-block;
 	margin-right: 10px;
 }
+
+.domain-input {
+    width: 230px;
+}
 .banner-signup-form {
-	width: 284px;
 	margin: auto;	
 }
 footer p {
@@ -265,7 +268,6 @@ footer {
     margin-right: 15px;
   }
 }
-
 #socfooter div.sicon {
     float: left;
     width:54px;
@@ -364,3 +366,37 @@ footer {
     #spin:hover{
         background-position:0% 100% ;
     }
+
+@media (max-width: 767px) {
+    .row {
+        margin:auto;
+    }
+    #logos {
+        max-width:100%;
+    }
+    #signup {
+        height:auto;
+        line-height:50px;
+    }
+    #take-part {
+        background-image:none;
+    }
+    #take-part h2 {
+        background-color:#169dc3;
+        position:relative;
+        padding-bottom:20px;
+    }
+    #take-part h2:after {
+        background: url('/img/takepart.png') no-repeat;
+        background-size:auto 50px;
+        background-position: center;
+        display:block;
+        content:'';
+        width:100%;
+        height:50px;
+        position:absolute;
+        top:100%;
+        margin-top: -13px;
+        z-index:-1;
+    }
+}

@@ -97,9 +97,8 @@
     <div class="email-updates">
       <div class="container" id="signup">
         <div class="row">
-          <div class="col-lg-8" style="line-height: 82px; color: #fff;font-size: 24px; margin: 0 auto; float: none;">
-          <form id="email-update-form" action="">
-                
+          <div class="col-lg-8" style="color: #fff;font-size: 24px; margin: 0 auto; float: none;">
+          <form id="email-update-form" action="">   
           SIGN UP FOR EMAILS UPDATES: <div class="email-box" style="display: inline-block"><input style="margin-left: 20px; margin-bottom: 5px;" type="email" class="form-control banner-signup" placeholder="Enter your email" id="id_email" name="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required" /><input style="margin-bottom: 5px;" class="btn btn-default" type="submit" value="Submit" /></div>
 
           </form>
@@ -141,8 +140,22 @@
 
           <form id="email-banner-form" action="">
         <input type="hidden" name="banner" value="1">
-                
-         <div class="email-banner-box" style="display: inline-block"><input style="" type="email" class="form-control banner-signup" placeholder="Enter your email" id="id_email" name="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required" /><input style="" class="btn btn-default" type="submit" value="Submit" /></div>
+         <div class="email-banner-box" style="display: inline-block">
+            <div class="row">
+              <div class="col-md-5">
+               Email <br />
+                <input style="" type="email" class="form-control banner-signup" placeholder="Enter your email" id="id_email" name="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required" />
+                </div>
+              <div class="col-md-5">
+               Domain <br />
+                  <input style="" type="text" class="form-control domain-input" placeholder="Enter your Website" name="domain" required="required" />
+                  
+                </div>
+              <div class="col-md-2">
+              <br />
+                  <input style="margin-left: 10px;" class="btn btn-default" type="submit" value="Submit" />
+            </div>
+            </div>
           </form>
             </div>
         </section>
@@ -196,7 +209,6 @@
     <script src="/js/jquery.sticky.js"></script>
     <script>window.jQuery || document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"><\/script>')</script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
