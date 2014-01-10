@@ -142,6 +142,7 @@ if (!Object.keys) {
     }
     $('.org-name').text(referalOrg.name);
     $('.org-slug').val(slug);
+    $('.org-privacy').attr('href', referalOrg.policy);
     if(slug === 'eff') {
       $('#subscriber-checkbox').removeAttr('checked');
     }

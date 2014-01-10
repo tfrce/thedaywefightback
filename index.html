@@ -94,8 +94,8 @@
                 <h1>The Day We Fight Back</h1>
                 <h2>Against Mass Surveillance</h2>
             </div>
-            <img id="logos" src="/img/logos.png" class="hidden-xs" />
-            <img id="logos-mobile" src="/img/logos-mobile.png" class="visible-xs" />
+            <img id="logos" src="/img/logos.png" class="hidden-xs img-responsive" />
+            <img id="logos-mobile" src="/img/logos-mobile@2x.png" class="visible-xs" />
         </div>
     </div>
 
@@ -117,7 +117,7 @@
                                 <input type="hidden" class="org-slug" name="org" value="" />
                                 <label for="subscriber-checkbox">Also sign up for emails from
                                     <span class="org-name"></span> 
-                                    <span class="org-privacy">(privacy policy)</span>
+                                    (<a class="org-privacy" href="" target="_blank">privacy policy</a>)
                                 </label>
                             </div>
                         </div>
@@ -147,7 +147,7 @@
 
     <div class="container" id="actions">
         <div class="row">
-            <div class="col-lg-6 centered">
+            <div class="col-lg-6 col-md-6 centered">
                 <section>
                     <p id="intro">The SOPA and PIPA protests were successful because we all took part, as a community. As Aaron once put it, everybody "made themselves the hero of their own story". We can set a date, but we need all of you, the users of the Internet, to make it a movement.</p>
                 </section>
@@ -246,5 +246,20 @@
     </script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.taskforce.is/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "1"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
 </body>
 </html>
