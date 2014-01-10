@@ -19,7 +19,7 @@
         }
     }
 }());
-$.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://thedaywefightback.org&b=2', {
+$.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://thedaywefightback.org', {
     success: function(res, err) {
         $.each(res, function(network, value) {
             var count = value;
@@ -29,7 +29,9 @@ $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googlep
             $('[data-network="' + network + '"]').attr('count', count);
         })
     },
-    dataType: 'jsonp'
+    dataType: 'jsonp',
+    cache         : true,
+    jsonpCallback : 'myCallback'
 });
 $.fn.serializeObject = function() {
     var o = {};
