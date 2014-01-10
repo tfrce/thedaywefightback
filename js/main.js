@@ -56,6 +56,9 @@ $(".email-updates").sticky({
 $('#email-update-form').on('submit', function(ev) {
     var form = $(ev.currentTarget);
     var data = form.serializeObject();
+    if(data.subscribe !== 'on') {
+      delete data.org;
+    }
     console.log(data);
     $.ajax({
         url: 'https://skipchimp2.herokuapp.com/subscribe',
@@ -139,6 +142,9 @@ if (!Object.keys) {
     }
     $('.org-name').text(referalOrg.name);
     $('.org-slug').val(slug);
+    if(slug === 'eff') {
+      $('#subscriber-checkbox').removeAttr('checked');
+    }
     console.log(slug, referalOrg);
     /*
 
