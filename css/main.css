@@ -244,9 +244,9 @@ div.step p {
 .step h5 {
 	text-transform: uppercase;
 	font-weight:bold;
-	margin-top:20px;
 	font-size:16px;
 	text-align:center;
+	margin-top:0;
 }
 
 .banner-signup-form {
@@ -373,10 +373,17 @@ footer p {
 }
 
 .banner-signup-form input.btn:hover {
-	background: #CC0E0E;
+	background: #A00E0E;
 }
 .banner-signup-form input.form-control {
 	width:240px;
+}
+.step #greybox {
+	background-color: #DDF8FF;
+	padding: 15px;
+	margin-top: 17px;
+	border-top: 2px solid #2FC8F1;
+	border-bottom: 2px solid #2FC8F1;
 }
 div.step h4.reddit-title {
     border-bottom:none;
@@ -392,6 +399,28 @@ footer {
 	background: #eee;
 	padding:50px;
 	margin-top:100px;
+}
+input.btn-lg, .input-lg {border-radius:0;}
+
+@media (min-width: 630px) {
+	.banner-signup-form input.form-control {
+		display: inline-block;
+		width:200px;
+	}
+
+	.form-inline .form-group {
+	display: inline-block;
+	margin-bottom: 0;
+	vertical-align: middle;
+	}
+}
+@media (max-width: 629px) {
+	.banner-signup-form input.form-control {
+		margin:0 auto;
+	}
+	.form-inline .form-group {
+		margin-bottom:10px;
+	}
 }
 
 @media (max-width: 600px) {
