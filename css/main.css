@@ -376,4 +376,10 @@ footer {
         height:auto;
         line-height:50px;
     }
+    #take-part {
+        background-image:none;
+    }
+    #take-part h2 {
+        background-color:#169dc3;
+    }
 }
