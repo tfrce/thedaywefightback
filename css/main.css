@@ -445,6 +445,9 @@ footer {
         line-height:50px;
         font-size:18px;
     }
+    #signup-text, .email-box {
+        width:auto;
+    }
     #signup .banner-signup {
         margin-left:0!important;
         width:197px;
