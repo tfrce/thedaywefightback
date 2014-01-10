@@ -163,18 +163,35 @@
                     <p>We’re creating embeddable widgets that you’ll be able to add to your site to encourage  visitors to participate in the day of action. The photo above is just a draft - the final design is yet to come</p><p>Sign up here if you have a site that can participate and we’ll let you know how to implement a widget when they’re ready.</p>
 
                     <h5>Sign up and get notified when the banner is ready:</h5>
+
+                    <div class="form-inline banner-signup-form">
+                      <form id="email-banner-form" action="">
+                        <input type="hidden" name="banner" value="1">
+                        <div class="form-group">
+                          <label class="sr-only" for="id_email" >Email address</label>
+                          <input type="email" class="form-control banner-signup" name="email"  id="id_email" placeholder="Enter email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required" />
+                        </div>
+                        <div class="form-group">
+                          <label class="sr-only" for="banner-domain">Password</label>
+                          <input type="text" class="form-control domain-input" id="banner-domain" placeholder="domain.com" name="domain" required="required" />
+                        </div>
+                        <input class="btn btn-default" type="submit" value="Submit" />
+                      </form>
+                    </div>
+
+<!-- 
                     <div class="banner-signup-form">
                         <form id="email-banner-form" action="">
                             <input type="hidden" name="banner" value="1">
                             <div class="email-banner-box" style="display: inline-block">
                                 <div class="row">
                                     <div class="col-sm-5 col-xs-12">
-                                        Email
+                                        <label for="email">Email</label>
                                         <br />
                                         <input style="" type="email" class="form-control banner-signup" placeholder="Enter your email" id="id_email" name="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required" />
                                     </div>
                                     <div class="col-sm-5 col-xs-12">
-                                        Domain
+                                        <label for="domain">Domain</label>
                                         <br />
                                         <input style="" type="text" class="form-control domain-input" placeholder="domain.com" name="domain" required="required" />
                                     </div>
@@ -184,7 +201,7 @@
                                     </div>
                                 </div>
                           </form>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>

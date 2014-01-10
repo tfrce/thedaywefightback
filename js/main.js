@@ -80,7 +80,7 @@ $('#email-banner-form').on('submit', function(ev) {
         data: data,
         type: 'GET',
         success: function() {
-            $('.email-banner-box').html('We\'ll be in touch!');
+            $('.banner-signup-form').html('We\'ll be in touch!');
         }
     });
     return false;
