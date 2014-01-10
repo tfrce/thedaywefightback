@@ -54,6 +54,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	text-align:center;
 	padding-bottom:30px;
 }
+.jumbotron .container {
+	margin: 0;
+}
 .jumbotron h1 {
 	font-size: 53px;
 	text-align:center;
@@ -133,10 +136,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	display: inline-block;
 	margin-right: 0px;
 	margin-left: 0px; 
-	margin-bottom: 18px;
+	margin-bottom: 17px;
 }
 .email-updates .btn {
-	margin-bottom:18px;
+	margin-bottom:17px;
 }
 .org-container {
     position: absolute;
