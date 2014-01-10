@@ -275,7 +275,7 @@ footer p {
 }
 
 .sharecenter {
-	height: 112px;
+	height: 88px;
 	margin-top: 80px;
 }
 
@@ -335,7 +335,7 @@ footer p {
     z-index: 0;
 }
 #socbar.sharecenter {
-    margin-top:40px;
+    margin-top:50px;
 }
 .floating-share {
 	position: fixed;
