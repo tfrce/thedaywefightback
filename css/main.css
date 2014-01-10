@@ -182,6 +182,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #letter p {
 	font-weight: 600;
 }
+#letter p span {
+	font-weight: bold;
+}
 #aaron {
 	float: right; 
 	margin: 0 0 40px 40px;
@@ -223,10 +226,11 @@ section.step h4 {
 	margin-top: 30px;
 }
 
-
-.domain-input {
-    width: 230px;
+.step img {
+    max-width:100%;
 }
+
+
 .banner-signup-form {
 	margin: auto;	
 }
