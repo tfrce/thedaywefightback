@@ -230,7 +230,7 @@ div.step h4 {
 	padding-bottom: 5px;
 	margin-bottom: 30px;
 	margin-top: 50px;
-    font-size:1.7em;
+    	font-size:1.7em;
 }
 
 div.step p {
@@ -241,9 +241,17 @@ div.step p {
     max-width:100%;
 }
 
+.step h5 {
+	text-transform: uppercase;
+	font-weight:bold;
+	margin-top:20px;
+	font-size:16px;
+	text-align:center;
+}
 
 .banner-signup-form {
-	margin: auto;	
+	margin: auto;
+	text-align:center;
 }
 footer p {
 	text-align: right;
@@ -419,12 +427,12 @@ footer {
     #sfb {
     border-bottom:0px solid #FFFFFF;
     transition:0.2s ease-out all;
-    opacity:0.8;
+    opacity:1;
 }
 
 #sfb:hover {
     background-position:70% 0%;
-    border-bottom:2px solid #343437;
+    border-bottom:2px solid #43C0E1;
     transition:0.15s ease-in all;
     opacity:1;
 }
@@ -442,12 +450,12 @@ footer {
     #stwit {
     border-bottom:0px solid #FFFFFF;
     transition:0.2s ease-out all;
-    opacity:0.8;
+    opacity:1;
 }
 
 #stwit:hover {
     background-position:50% 0%;
-    border-bottom:2px solid #343437;
+    border-bottom:2px solid #000;
     transition:0.15s ease-in all;
     opacity:1;
 }
@@ -469,7 +477,8 @@ footer {
         #sgplus{        background-position:20% 0 ;
     }
     #sgplus:hover{
-        background-position:20% 100% ;
+        background-position:20% 0% ;
+    border-bottom:2px solid #43C0E1;
     }
     
         #spin{

@@ -66,7 +66,7 @@ $('#email-update-form').on('submit', function(ev) {
         dataType: 'jsonp',
         type: 'GET',
         success: function() {
-            $('.email-box').html('THANK YOU!');
+            $('.email-box').html('We\'ll be in touch!');
         }
     });
     return false;
@@ -80,7 +80,7 @@ $('#email-banner-form').on('submit', function(ev) {
         data: data,
         type: 'GET',
         success: function() {
-            $('.email-banner-box').html('THANK YOU!');
+            $('.email-banner-box').html('We\'ll be in touch!');
         }
     });
     return false;
