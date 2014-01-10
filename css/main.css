@@ -41,10 +41,16 @@ body {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Open Sans', sans-serif;
 }
+.navbar {
+	margin-bottom:0;
+}
+.navbar-inverse {
+	background-color: #000;
+}
 
 .jumbotron {
 	background-color: #000;
-	padding-top:40px;
+	padding-top:0px;
 	text-align:center;
 	padding-bottom:30px;
 }
@@ -243,6 +249,11 @@ footer p {
 
     margin-right: 107px;
 }
+
+#privacy {
+	margin-top:50px;
+}
+
 @media (max-width: 600px) {
   #socfooter.sharecenter a {
     margin-right: 15px;
