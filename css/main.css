@@ -537,3 +537,8 @@ footer {
     	margin-bottom:6px;
     }
 }
+
+
+.lt-ie9 .centered {
+    float:none!important;
+}
