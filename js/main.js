@@ -1,7 +1,6 @@
-
 (function() {
     var method;
-    var noop = function () {};
+    var noop = function() {};
     var methods = [
         'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
         'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
@@ -21,59 +20,155 @@
     }
 }());
 $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://thedaywefightback.org&b=2', {
-  success: function (res, err) {
-    $.each(res, function(network, value){
-      var count = value;
-      if(count / 10000 > 1) {
-        count = Math.ceil(count/1000) + 'k'
-      }
-      $('[data-network="'+network+'"]').attr('count', count);
-    })
-  },
-  dataType: 'jsonp'
+    success: function(res, err) {
+        $.each(res, function(network, value) {
+            var count = value;
+            if (count / 10000 > 1) {
+                count = Math.ceil(count / 1000) + 'k'
+            }
+            $('[data-network="' + network + '"]').attr('count', count);
+        })
+    },
+    dataType: 'jsonp'
 });
-      $.fn.serializeObject = function() {
-          var o = {};
-          var a = this.serializeArray();
-          $.each(a, function() {
-              if (o[this.name] !== undefined) {
-                  if (!o[this.name].push) {
-                      o[this.name] = [o[this.name]];
-                  }
-                  o[this.name].push(this.value || '');
-              } else {
-                  o[this.name] = this.value || '';
-              }
-          });
-          return o;
-      };
-$(".email-updates").sticky({topSpacing:0, className: 'sticky-signup'});
+$.fn.serializeObject = function() {
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        if (o[this.name] !== undefined) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};
+$(".email-updates").sticky({
+    topSpacing: 0,
+    className: 'sticky-signup'
+});
 
-           // 
+// 
 
-$('#email-update-form').on('submit', function(ev){
-  var form = $(ev.currentTarget);
-  var data = form.serializeObject();
-      $.ajax({
+$('#email-update-form').on('submit', function(ev) {
+    var form = $(ev.currentTarget);
+    var data = form.serializeObject();
+    console.log(data);
+    $.ajax({
         url: 'https://skipchimp2.herokuapp.com/subscribe',
         data: data,
         type: 'POST',
-        success: function () {
-          $('.email-box').html('THANK YOU!');
+        success: function() {
+            $('.email-box').html('THANK YOU!');
         }
-      });
-      return false;
-  });
-$('#email-banner-form').on('submit', function(ev){
-  var form = $(ev.currentTarget);
-  var data = form.serializeObject();
-      $.ajax({
+    });
+    return false;
+});
+$('#email-banner-form').on('submit', function(ev) {
+    var form = $(ev.currentTarget);
+    var data = form.serializeObject();
+    $.ajax({
         url: 'https://skipchimp2.herokuapp.com/subscribe',
         data: data,
         type: 'POST',
-        success: function () {
-          $('.email-banner-box').html('THANK YOU!');
+        success: function() {
+            $('.email-banner-box').html('THANK YOU!');
         }
-      });
-      return false;
-  });
+    });
+    return false;
+});
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&\/#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+// ie shims
+if (!Object.keys) {
+    Object.keys = function(o) {
+        if (o !== Object(o))
+            throw new TypeError('Object.keys called on a non-object');
+        var k = [],
+            p;
+        for (p in o)
+            if (Object.prototype.hasOwnProperty.call(o, p)) k.push(p);
+        return k;
+    }
+}
+
+(function() {
+
+    var referalMap = {
+        'moz': {
+            name: 'Mozilla',
+            policy: 'https://www.mozilla.org/en-US/privacy-policy.html'
+        },
+        'fp': {
+            name: 'Free Press and the Free Press Action Fund',
+            policy: 'http://www.freepress.net/privacy-copyright'
+        },
+        'fftf': {
+            name: 'Fight for the Future',
+            policy: 'http://www.fightforthefuture.org/privacy/'
+        },
+        'eff': {
+            name: 'EFF',
+            policy: 'https://www.eff.org/policy'
+        },
+        'an': {
+            name: 'Access Now',
+            policy: 'https://www.accessnow.org/pages/privacy-policy'
+        },
+        'dp': {
+            name: 'Demand Progress',
+            policy: 'http://www.demandprogress.org/privacy/'
+        },
+        'om': {
+            name: 'OpenMedia',
+            policy: 'http://openmedia.ca/privacy'
+        },
+        'dk': {
+            name: 'DailyKos',
+            policy: 'http://www.dailykos.com/special/privacy'
+        },
+        'pk': {
+            name: 'Public Knowledge',
+            policy: 'http://publicknowledge.org/about/privacy'
+        },
+        'aclu': {
+            name: 'ACLU Action',
+            policy: 'http://www.aclu.org/american-civil-liberties-union-privacy-statement'
+        }
+    };
+    var referalKeys = Object.keys(referalMap);
+    var referalParam = getParameterByName('r');
+    var referalOrg;
+    var slug;
+    if (referalParam in referalMap) {
+      referalOrg = referalMap[referalParam];
+      slug = referalParam;
+    } else {
+      var randomOrgIndex = Math.floor(Math.random() * referalKeys.length);
+      referalOrg = referalMap[referalKeys[randomOrgIndex]];
+      slug = referalKeys[randomOrgIndex];
+    }
+    $('.org-name').text(referalOrg.name);
+    $('.org-slug').val(slug);
+    console.log(slug, referalOrg);
+    /*
+
+    var spans = label.getElementsByTagName('span');
+    var link = label.getElementsByTagName('a')[0];
+    spans[0].innerHTML = referalOrg.name;
+    spans[1].innerHTML = referalOrg.name;
+    link.href = referalOrg.policy;
+    checkbox.onchange = function(e) {
+        hiddenInput.value = checkbox.checked ? referalOrg.name : '';
+    };
+    */
+})();

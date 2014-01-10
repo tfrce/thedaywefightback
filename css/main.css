@@ -82,23 +82,45 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .jumbotron #logos {
 	margin-top:10px;
 }
+.email-box {
+  position: relative;
+}
+.org-container {
+    position: absolute;
+    top: 69px; 
+    left: 20px; 
+    font-size: 13px;
+    font-family: Arial;
+}
+.org-container input {
+    margin-top: 2px;
+    float: left;
+    margin-left: 0px;
+    margin-right: 7px;
+}
+.org-container label {
+    font-weight: normal;
+    line-height: normal;
+    float: left;
+}
 #signup {
-	line-height: 82px; 
+	line-height: 92px; 
 	color: #fff;
-	font-size: 18px; 
+	font-size: 24px; 
 	margin: 0 auto; 
 	float: none;
 	background: #01C278;
 
-	height: 82px;
+	height: 92px;
 	padding:0;
 	width:100%;
 	text-align:center;
 	font-weight:400;
 	letter-spacing:2px;
+    color: #fff; 
 }
 #signupform {
-	line-height: 82px;
+	line-height: 92px;
 	color: #fff;
 	font-size: 24px; 
 	margin: 0 auto; 
@@ -368,6 +390,17 @@ footer {
     }
 
 @media (max-width: 767px) {
+    .jumbotron #headergraphic {
+        background: none;
+    }
+    #headergraphic h1 {
+        text-shadow:0px 0px 2px rgba(0,0,0,.7);
+        line-height:60px;
+    }
+    #branding {
+        background: #000 url('/img/header.jpg') center -50px no-repeat;
+        background-size:cover;
+    }
     .row {
         margin:auto;
     }
@@ -377,6 +410,11 @@ footer {
     #signup {
         height:auto;
         line-height:50px;
+        font-size:18px;
+    }
+    #signup .banner-signup {
+        margin-left:0!important;
+        width:197px;
     }
     #take-part {
         background-image:none;
