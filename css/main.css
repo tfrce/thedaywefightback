@@ -220,13 +220,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 div.step h4 {
 	display: block;
 	text-align: center;
-	width: 70%;
+	width: 100%;
 	margin: auto;
 	border-bottom: 4px solid #0ba5c2;
 	font-weight: bold;
 	padding-bottom: 5px;
 	margin-bottom: 30px;
 	margin-top: 30px;
+    font-size:1.15em;
 }
 
 .step img {
@@ -346,6 +347,11 @@ footer p {
     top:100%;
     margin-top: -13px;
     z-index:-2;
+}
+
+div.step h4.reddit-title {
+    border-bottom:none;
+    text-align:left;
 }
 
 footer {
