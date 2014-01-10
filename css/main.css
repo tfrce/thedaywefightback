@@ -249,12 +249,18 @@ footer p {
 	margin-bottom: 50px;
 }
 #socfooter.sharecenter a {
-
     margin-right: 107px;
 }
 
 #privacy {
 	margin-top:50px;
+}
+
+footer {
+	font-size:14px;
+	background: #eee;
+	padding:50px;
+	margin-top:100px;
 }
 
 @media (max-width: 600px) {
@@ -360,3 +366,15 @@ footer p {
     #spin:hover{
         background-position:0% 100% ;
     }
+
+@media (max-width: 767px) {
+    .row {
+        margin:auto;
+    }
+    #logos {
+        max-width:100%;
+    }
+    #signup {
+        height:auto;
+    }
+}
