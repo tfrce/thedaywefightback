@@ -104,10 +104,6 @@ if (!Object.keys) {
 (function() {
 
     var referalMap = {
-        'moz': {
-            name: 'Mozilla',
-            policy: 'https://www.mozilla.org/en-US/privacy-policy.html'
-        },
         'fp': {
             name: 'Free Press and the Free Press Action Fund',
             policy: 'http://www.freepress.net/privacy-copyright'
@@ -127,22 +123,6 @@ if (!Object.keys) {
         'dp': {
             name: 'Demand Progress',
             policy: 'http://www.demandprogress.org/privacy/'
-        },
-        'om': {
-            name: 'OpenMedia',
-            policy: 'http://openmedia.ca/privacy'
-        },
-        'dk': {
-            name: 'DailyKos',
-            policy: 'http://www.dailykos.com/special/privacy'
-        },
-        'pk': {
-            name: 'Public Knowledge',
-            policy: 'http://publicknowledge.org/about/privacy'
-        },
-        'aclu': {
-            name: 'ACLU Action',
-            policy: 'http://www.aclu.org/american-civil-liberties-union-privacy-statement'
         }
     };
     var referalKeys = Object.keys(referalMap);
