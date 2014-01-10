@@ -240,7 +240,10 @@ div.step p {
 .step img {
     max-width:100%;
 }
-
+.step .morefb {
+	margin-top:35px; 
+	margin-bottom:10px
+}
 .step h5 {
 	text-transform: uppercase;
 	font-weight:bold;
@@ -250,6 +253,12 @@ div.step p {
 }
 #twibbon:hover {
 	opacity: 0.7;
+}
+#fb-share-graphics div {
+	margin-bottom:15px;
+}
+#fb-share-graphics img:hover {
+	opacity:0.8;
 }
 .banner-signup-form {
 	margin: auto;
