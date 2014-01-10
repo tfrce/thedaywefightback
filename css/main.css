@@ -226,6 +226,10 @@ section.step h4 {
 	margin-top: 30px;
 }
 
+.step img {
+    max-width:100%;
+}
+
 
 .banner-signup-form {
 	margin: auto;	
