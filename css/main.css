@@ -348,6 +348,11 @@ footer p {
     z-index:-2;
 }
 
+div.step h4.reddit-title {
+    border-bottom:none;
+    text-align:left;
+}
+
 footer {
 	font-size:14px;
 	background: #eee;
