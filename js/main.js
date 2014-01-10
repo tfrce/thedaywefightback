@@ -118,7 +118,7 @@ function openTwitter(){
           return false}
 
 function openGplus(){
-    var e="https://plus.google.com/share?url=https://thedaywefightback.org/";window.open(e,"Share on Google Plus","width=500,height=436");return false}*/
+    var e="https://plus.google.com/share?url=https://thedaywefightback.org/";window.open(e,"Share on Google Plus","width=500,height=436");return false}
 
 (function() {
 
