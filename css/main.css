@@ -31,7 +31,7 @@
    ========================================================================== */
 .centered {
         float: none;
-        margin: 0 auto;
+        margin: 0 auto 0 auto;
 }
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin-bottom:40px;
 }
 
-section.step h4 {
+div.step h4 {
 	display: block;
 	text-align: center;
 	width: 70%;

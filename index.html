@@ -20,7 +20,11 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/open-sans.css" rel="stylesheet">
 	<link href="/css/main.css" rel="stylesheet">
-
+    <script type="text/javascript"> 
+    window.html5 = {
+        'elements': 'mark section customelement' 
+    };
+    </script>
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -146,13 +150,13 @@
     </div>
 
     <div class="container" id="actions">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 centered">
-                <section>
+        <div class="row" style="text-align:center;">
+            <div class="col-lg-6 col-md-6 centered" style="text-align:center;">
+                <div>
                     <p id="intro">The SOPA and PIPA protests were successful because we all took part, as a community. <span>As Aaron once put it, everybody "made themselves the hero of their own story."</span> We can set a date, but we need all of you, the users of the Internet, to make it a movement.</p>
-                </section>
+                </div>
 
-                <section class="step">
+                <div class="step">
                     <h4>1: ADD A BANNER TO YOUR SITE</h4>
                     <img src="/img/banner_preview.jpg" style="margin-bottom:10px" />
                     <p>We're creating an embeddable widget that you can add to your site on February 22nd.</p>
@@ -181,8 +185,8 @@
                                 </div>
                         </form>
                         </div>
-                </section>
-                <section class="step">
+                </div>
+                <div class="step">
                     <h4>2: TELL THE WORLD YOU'RE GOING TO TAKE PART</h4>
 
                     <div id="socbar" class="down sharecenter row">
@@ -208,16 +212,16 @@
                       </div>
                     </div>
                     <div style="clear: both;"></div>
-                </section>
-                <section class="step">
+                </div>
+                <div class="step">
                     <h4>3: JOIN THE CONVERSATION ON REDDIT</h4>
                     <script src="https://d37nz0y4gkxvxe.cloudfront.net" type="text/javascript"></script>
-                </section>
-                <section class="step">
+                </div>
+                <div class="step">
                     <h4>4: BE CREATIVE: DO WHATEVER YOU CAN TO FORWARD THE CAUSE</h4>
                     <p>This moment is whatever we, the broad community of people who care about the Internet, make of it.  Post a comment with a link to every NSA-related story. Make and share a meme.  Build a website.  Organize an event.</p>
                     <p>Then <a href="mailto:contact@thedaywefightback.org">tell us about it</a> so we can spread the word.</p>
-                </section>
+                </div>
 
                 </div>
 
@@ -239,7 +243,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="/js/jquery.sticky.js"></script>
     <script src="/js/retina-1.1.0.min.js"></script>
     <script>
