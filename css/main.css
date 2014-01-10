@@ -364,3 +364,15 @@ footer {
     #spin:hover{
         background-position:0% 100% ;
     }
+
+@media (max-width: 767px) {
+    .row {
+        margin:auto;
+    }
+    #logos {
+        max-width:100%;
+    }
+    #signup {
+        height:auto;
+    }
+}
