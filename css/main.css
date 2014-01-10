@@ -206,6 +206,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #take-part h2 span {
 	font-style: italic;
 }
+.smalltext {
+	font-size:12px;
+}
 
 #actions #intro {
 	font-size: 19px;
