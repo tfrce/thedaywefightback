@@ -108,7 +108,7 @@ if (!Object.keys) {
 
     var referalMap = {
         'fp': {
-            name: 'Free Press and the Free Press Action Fund',
+            name: 'Free Press',
             policy: 'http://www.freepress.net/privacy-copyright'
         },
         'fftf': {

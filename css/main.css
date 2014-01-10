@@ -81,14 +81,66 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .jumbotron #logos {
 	margin-top:10px;
+	margin: 10px auto 0 auto;
+}
+
+/* ==========================================================================
+   Siignup banner
+   ==========================================================================*/
+
+#signup {
+	line-height: 99px; 
+	color: #fff;
+	font-size: 24px; 
+	margin: 0 auto; 
+	float: none;
+	background: #cc0000;
+	height: 99px;
+	padding:0;
+	width:100%;
+	text-align:center;
+	font-weight:400;
+	letter-spacing:1px;
+    color: #fff; 
+}
+#signup label {
+	letter-spacing:0;
+}
+
+.nosidemargin{
+	margin-left:0;
+	margin-right:0;
+}
+#signupform {
+	color: #fff;
+	font-size: 24px; 
+	margin: 0 auto; 
+	float: none;
+}
+#signup-text {
+	display:inline-block;
+	width:52%;
+	text-align:right;
 }
 .email-box {
   position: relative;
+  width: 47%;
+  display: inline-block;
+  text-align: left
+}
+.email-updates .email-input {
+	width: 230px;
+	display: inline-block;
+	margin-right: 0px;
+	margin-left: 0px; 
+	margin-bottom: 18px;
+}
+.email-updates .btn {
+	margin-bottom:18px;
 }
 .org-container {
     position: absolute;
     top: 69px; 
-    left: 20px; 
     font-size: 13px;
     font-family: Arial;
 }
@@ -102,29 +154,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: normal;
     line-height: normal;
     float: left;
-}
-#signup {
-	line-height: 92px; 
-	color: #fff;
-	font-size: 24px; 
-	margin: 0 auto; 
-	float: none;
-	background: #01C278;
-
-	height: 92px;
-	padding:0;
-	width:100%;
-	text-align:center;
-	font-weight:400;
-	letter-spacing:2px;
-    color: #fff; 
-}
-#signupform {
-	line-height: 92px;
-	color: #fff;
-	font-size: 24px; 
-	margin: 0 auto; 
-	float: none;
 }
 #letter {
 	width:100%;
@@ -183,11 +212,6 @@ section.step h4 {
 	margin-top: 30px;
 }
 
-.banner-signup {
-	width: 230px;
-	display: inline-block;
-	margin-right: 10px;
-}
 
 .domain-input {
     width: 230px;
@@ -218,6 +242,9 @@ footer p {
 .sticky-signup .email-updates {
     width: 100%;
     z-index: 10;
+}
+.email-updates .row {
+	margin:0;
 }
 .social-count:after {
     background: #efefef;
