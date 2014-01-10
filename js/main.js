@@ -162,7 +162,6 @@ function openGplus(){
     if(slug === 'eff') {
       $('#subscriber-checkbox').removeAttr('checked');
     }
-    console.log(slug, referalOrg);
     /*
 
     var spans = label.getElementsByTagName('span');
