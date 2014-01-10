@@ -401,14 +401,17 @@ footer {
         width:155px;
     }
     #branding {
-        background: #000 url('/img/header.jpg') center -50px no-repeat;
-        background-size:cover;
+        background: #000 url('/img/header.jpg') center 0 no-repeat;
+        background-size:contain;
+        background-position:center 30%;
     }
     .row {
         margin:auto;
     }
-    #logos {
+    #logos-mobile {
+        width:100%;
         max-width:100%;
+        margin-top:20px;
     }
     #signup {
         height:auto;
