@@ -55,7 +55,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	padding-bottom:30px;
 }
 .jumbotron .container {
-	margin: 0;
+	margin: 0 auto;
+	/*This width needs to be the width of logos.png + 30px*/
+	max-width: 804px;
 }
 .jumbotron h1 {
 	font-size: 53px;
@@ -147,6 +149,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-size: 13px;
     font-family: Arial;
 }
+.org-container a, .org-container a:visited {
+	color: #fff;
+}
 .org-container input {
     margin-top: 2px;
     float: left;
@@ -164,6 +169,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	background: url('/img/sopa-bg.jpg') center top no-repeat ;
 	background-size: cover;
 	font-size:19px;
+}
+#letter .row {
+	margin: 0;
 }
 #letter h2 {
 	font-weight:bold;
@@ -238,8 +246,13 @@ footer p {
 }
 
 .social-count {
-    display: inline;
+    display: inline-block;
     position: relative;
+}
+
+.social-link-container {
+    margin-top:20px;
+    text-align:center;
 }
 
 .sticky-signup .email-updates {
@@ -282,7 +295,6 @@ footer p {
     z-index: 99;
 }
 #socfooter a {
-
     float: left;
     margin:4px;
     width:54px;
@@ -320,7 +332,7 @@ footer {
     margin-right: 15px;
   }
 }
-#socfooter div.sicon {
+.sicon {
     float: left;
     width:54px;
     height:54px;
@@ -419,21 +431,38 @@ footer {
         background-position:0% 100% ;
     }
 
+@media (min-width: 767px) {
+	.jumbotron{ 
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media (min-width: 767px) and (max-width: 880px) {
+	#signup-text {font-size: 18px; width:45%;}
+	.email-box {width: 54%;}
+}
 @media (max-width: 767px) {
     .jumbotron #headergraphic {
         background: none;
     }
     #headergraphic h1 {
         text-shadow:0px 0px 2px rgba(0,0,0,.7);
-        line-height:60px;
+     	font-size: 34px;
+    }
+
+    #headergraphic h2 {
+    	font-size:15px;
     }
     #aaron {
         width:155px;
+        margin-left: 10px;
     }
     #branding {
         background: #000 url('/img/header.jpg') center 0 no-repeat;
-        background-size:contain;
+        background-size: auto;
         background-position:center 30%;
+        padding:0px;
+        padding-top:10px;
     }
     .row {
         margin:auto;
@@ -442,18 +471,45 @@ footer {
         width:100%;
         max-width:100%;
         margin-top:20px;
+        margin-bottom:20px;
     }
     #signup {
         height:auto;
-        line-height:50px;
-        font-size:18px;
+        line-height:30px;
+        font-size:14px;
+        font-weight:bold;
     }
+    #signup-text {
+    	text-align:center;
+    	width:100%;
+    }
+    .email-box { width: 100%;}
     #signup-text, .email-box {
         width:auto;
     }
     #signup .banner-signup {
         margin-left:0!important;
         width:197px;
+    }
+    .email-updates .email-input {
+    	width:194px;
+    	margin-bottom:5px;
+    }
+    #letter {
+    	padding-top: 16px;
+    }
+    .email-updates .btn {
+    	margin-bottom:5px;
+    }
+    .org-container {
+    	position: relative;
+    	top: 0px;
+
+    }
+    #signup label {
+    	display:inline-block;
+    	width: 90%;
+    	margin-bottom:6px;
     }
     #take-part {
         background-image:none;
