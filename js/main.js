@@ -63,6 +63,7 @@ $('#email-update-form').on('submit', function(ev) {
     $.ajax({
         url: 'http://skipchimp2.herokuapp.com/subscribe',
         data: data,
+        dataType: 'jsonp',
         type: 'GET',
         success: function() {
             $('.email-box').html('THANK YOU!');
@@ -75,6 +76,7 @@ $('#email-banner-form').on('submit', function(ev) {
     var data = form.serializeObject();
     $.ajax({
         url: 'http://skipchimp2.herokuapp.com/subscribe',
+        dataType: 'jsonp',
         data: data,
         type: 'GET',
         success: function() {
