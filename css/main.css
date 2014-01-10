@@ -363,6 +363,7 @@ div.step h4.reddit-title {
     border-bottom:none;
     text-align:left;
     font-size:1.2em;
+    word-wrap:break-word;
 }
 .rembeddit {
     line-height:16px;
