@@ -226,8 +226,12 @@ div.step h4 {
 	font-weight: bold;
 	padding-bottom: 5px;
 	margin-bottom: 30px;
-	margin-top: 30px;
+	margin-top: 50px;
     font-size:1.3em;
+}
+
+div.step p {
+    font-size:.95em;
 }
 
 .step img {
@@ -307,6 +311,9 @@ footer p {
     margin:4px;
     height:54px;
     z-index: 0;
+}
+#socbar.sharecenter {
+    margin-top:40px;
 }
 .floating-share {
 	position: fixed;
