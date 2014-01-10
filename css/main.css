@@ -162,12 +162,15 @@ section.step h4 {
 }
 
 .banner-signup {
-	width: 200px;
+	width: 230px;
 	display: inline-block;
 	margin-right: 10px;
 }
+
+.domain-input {
+    width: 230px;
+}
 .banner-signup-form {
-	width: 284px;
 	margin: auto;	
 }
 footer p {
@@ -265,7 +268,6 @@ footer {
     margin-right: 15px;
   }
 }
-
 #socfooter div.sicon {
     float: left;
     width:54px;
