@@ -230,7 +230,7 @@ div.step h4 {
 	padding-bottom: 5px;
 	margin-bottom: 30px;
 	margin-top: 30px;
-    font-size:1.15em;
+    font-size:1.3em;
 }
 
 .step img {
@@ -355,8 +355,11 @@ footer p {
 div.step h4.reddit-title {
     border-bottom:none;
     text-align:left;
+    font-size:1.2em;
 }
-
+.rembeddit {
+    line-height:16px;
+}
 footer {
 	font-size:14px;
 	background: #eee;
