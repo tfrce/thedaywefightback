@@ -185,6 +185,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #letter p span {
 	font-weight: bold;
 }
+p#intro span {
+	font-weight: bold;
+}
 #aaron {
 	float: right; 
 	margin: 0 0 40px 40px;
