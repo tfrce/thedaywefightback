@@ -56,6 +56,7 @@ $(".email-updates").sticky({
 $('#email-update-form').on('submit', function(ev) {
     var form = $(ev.currentTarget);
     var data = form.serializeObject();
+    console.log(data);
     $.ajax({
         url: 'https://skipchimp2.herokuapp.com/subscribe',
         data: data,
@@ -99,11 +100,8 @@ if (!Object.keys) {
         return k;
     }
 }
-/*
+
 (function() {
-    var hiddenInput = document.getElementById('custom-2069');
-    var checkbox = document.getElementById('stayinformed');
-    var label = document.getElementById('stayinformedlabel');
 
     var referalMap = {
         'moz': {
@@ -147,17 +145,22 @@ if (!Object.keys) {
             policy: 'http://www.aclu.org/american-civil-liberties-union-privacy-statement'
         }
     };
-
     var referalKeys = Object.keys(referalMap);
     var referalParam = getParameterByName('r');
     var referalOrg;
-
+    var slug;
     if (referalParam in referalMap) {
-        referalOrg = referalMap[referalParam];
+      referalOrg = referalMap[referalParam];
+      slug = referalParam;
     } else {
-        var randomOrgIndex = Math.floor(Math.random() * referalKeys.length);
-        referalOrg = referalMap[referalKeys[randomOrgIndex]];
+      var randomOrgIndex = Math.floor(Math.random() * referalKeys.length);
+      referalOrg = referalMap[referalKeys[randomOrgIndex]];
+      slug = referalKeys[randomOrgIndex];
     }
+    $('.org-name').text(referalOrg.name);
+    $('.org-slug').val(slug);
+    console.log(slug, referalOrg);
+    /*
 
     var spans = label.getElementsByTagName('span');
     var link = label.getElementsByTagName('a')[0];
@@ -167,5 +170,5 @@ if (!Object.keys) {
     checkbox.onchange = function(e) {
         hiddenInput.value = checkbox.checked ? referalOrg.name : '';
     };
+    */
 })();
-*/
