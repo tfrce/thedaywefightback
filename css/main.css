@@ -367,12 +367,17 @@ footer p {
     z-index:-2;
 }
 
-.banner-signup-form label {
-	font-size:14px;
-	text-align:left;
-	font-weight:bold;
+.banner-signup-form input.btn {
+	background: #CC0000;
+	color: #fff;
 }
 
+.banner-signup-form input.btn:hover {
+	background: #CC0E0E;
+}
+.banner-signup-form input.form-control {
+	width:240px;
+}
 div.step h4.reddit-title {
     border-bottom:none;
     text-align:left;
