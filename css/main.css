@@ -477,6 +477,9 @@ footer {
     	width:100%;
     }
     .email-box { width: 100%;}
+    #signup-text, .email-box {
+        width:auto;
+    }
     #signup .banner-signup {
         margin-left:0!important;
         width:197px;
