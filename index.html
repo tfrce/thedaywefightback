@@ -141,8 +141,15 @@
 
           <form id="email-banner-form" action="">
         <input type="hidden" name="banner" value="1">
-                
-         <div class="email-banner-box" style="display: inline-block"><input style="" type="email" class="form-control banner-signup" placeholder="Enter your email" id="id_email" name="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required" /><input style="" class="btn btn-default" type="submit" value="Submit" /></div>
+         <div class="email-banner-box" style="display: inline-block">
+                <table>
+                  <tr><td style="text-align: center;font-weight: bold;">Email</td><td style="text-align: center;font-weight: bold;">Domain</td><td></td></tr>
+                  <tr>
+                  <td><input style="" type="email" class="form-control banner-signup" placeholder="Enter your email" id="id_email" name="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required" /></td>
+                  <td><input style="" type="text" class="form-control domain-input" placeholder="Enter your Website" name="domain" required="required" /></td>
+                  <td><input style="margin-left: 10px;" class="btn btn-default" type="submit" value="Submit" /></div></td>
+                  </tr>
+                  </table>
           </form>
             </div>
         </section>
