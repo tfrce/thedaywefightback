@@ -238,8 +238,13 @@ footer p {
 }
 
 .social-count {
-    display: inline;
+    display: inline-block;
     position: relative;
+}
+
+.social-link-container {
+    margin-top:20px;
+    text-align:center;
 }
 
 .sticky-signup .email-updates {
@@ -282,7 +287,6 @@ footer p {
     z-index: 99;
 }
 #socfooter a {
-
     float: left;
     margin:4px;
     width:54px;
@@ -320,7 +324,7 @@ footer {
     margin-right: 15px;
   }
 }
-#socfooter div.sicon {
+.sicon {
     float: left;
     width:54px;
     height:54px;
