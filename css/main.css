@@ -374,5 +374,6 @@ footer {
     }
     #signup {
         height:auto;
+        line-height:50px;
     }
 }
