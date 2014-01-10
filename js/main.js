@@ -59,11 +59,11 @@ $('#email-update-form').on('submit', function(ev) {
     if(data.subscribe !== 'on') {
       delete data.org;
     }
-    console.log(data);
+    console.log(data, data.email);
     $.ajax({
-        url: 'https://skipchimp2.herokuapp.com/subscribe',
+        url: 'http://skipchimp2.herokuapp.com/subscribe',
         data: data,
-        type: 'POST',
+        type: 'GET',
         success: function() {
             $('.email-box').html('THANK YOU!');
         }
@@ -74,9 +74,9 @@ $('#email-banner-form').on('submit', function(ev) {
     var form = $(ev.currentTarget);
     var data = form.serializeObject();
     $.ajax({
-        url: 'https://skipchimp2.herokuapp.com/subscribe',
+        url: 'http://skipchimp2.herokuapp.com/subscribe',
         data: data,
-        type: 'POST',
+        type: 'GET',
         success: function() {
             $('.email-banner-box').html('THANK YOU!');
         }
