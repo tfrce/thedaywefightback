@@ -248,7 +248,9 @@ div.step p {
 	text-align:center;
 	margin-top:0;
 }
-
+#twibbon:hover {
+	opacity: 0.7;
+}
 .banner-signup-form {
 	margin: auto;
 	text-align:center;
