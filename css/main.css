@@ -384,15 +384,19 @@ footer {
     #take-part h2 {
         background-color:#169dc3;
         position:relative;
+        padding-bottom:20px;
     }
     #take-part h2:after {
         background: url('/img/takepart.png') no-repeat;
-        background-size:100%;
+        background-size:auto 50px;
+        background-position: center;
         display:block;
         content:'';
         width:100%;
         height:50px;
         position:absolute;
         top:100%;
+        margin-top: -13px;
+        z-index:-1;
     }
 }
