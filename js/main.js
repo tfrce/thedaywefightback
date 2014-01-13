@@ -114,14 +114,8 @@ function openFacebook() {
     window.open(e, "Share on Facebook", "width=500,height=500");
     return false
 }
-function shareFacebookImage(id) {
-    var e = "https://www.facebook.com/sharer/sharer.php?u=https://thedaywefightback.org/" + id + "/";
-    window.open(e, "Share on Facebook", "width=500,height=500");
-    return false
-}
-
 function openTwitter(){
-        var t="https://twitter.com/home?status=Some%20of%20the%20biggest%20websites%20are%20planning%20a%20massive%20protest%20to%20%23StopTheNSA%20on%20Feb%2011th.%20I%E2%80%99m%20joining%20them%20%E2%80%94%20will%20you%3F%20https%3A%2F%2Fthedaywefightback.org&related=thedaywefightback,sinak,neutralthoughts,stopwatchingus,eff";
+        var t="https://twitter.com/home?status=Some%20of%20the%20biggest%20websites%20are%20planning%20a%20massive%20protest%20to%20%23StopTheNSA%20on%20Feb%2011th.%20I%E2%80%99m%20joining%20them%20%E2%80%94%20will%20you%3F%20https%3A%2F%2Fthedaywefightback.org&related=thedaywefightback%2Csinak%2Cneutralthoughts%2Cstopwatchingus%2Ceff";
         window.open(t,"Twitter","width=550,height=420");
           return false}
 
