@@ -19,6 +19,7 @@
         }
     }
 }());
+// social counts
 $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://thedaywefightback.org', {
     success: function(res, err) {
         $.each(res, function(network, value) {
@@ -32,6 +33,17 @@ $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googlep
     dataType: 'jsonp',
     cache         : true,
     jsonpCallback : 'myCallback'
+});
+// subscriber counts
+
+$.ajax('http://skipchimp2.herokuapp.com/count', {
+    success: function(res, err) {
+        console.log(res);
+        $('.subscribers-count').text('We have had ' + res.siteCount + ' websites sign up and ' + res.totalCount + ' individuals');
+    },
+    dataType: 'jsonp',
+    cache         : true,
+    jsonpCallback : 'myCallbacka'
 });
 $.fn.serializeObject = function() {
     var o = {};
