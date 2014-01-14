@@ -36,15 +36,15 @@ $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googlep
 });
 // subscriber counts
 
-$.ajax('http://d1anv19wqyolnf.cloudfront.net/count', {
-    success: function(res, err) {
-        console.log(res);
-        $('.subscribers-count').text('We have had ' + res.siteCount + ' websites sign up and ' + res.totalCount + ' individuals');
-    },
-    dataType: 'jsonp',
-    cache         : true,
-    jsonpCallback : 'myCallbacka'
-});
+// $.ajax('http://d1anv19wqyolnf.cloudfront.net/count', {
+//     success: function(res, err) {
+//         console.log(res);
+//         $('.subscribers-count').text('We have had ' + res.siteCount + ' websites sign up and ' + res.totalCount + ' individuals');
+//     },
+//     dataType: 'jsonp',
+//     cache         : true,
+//     jsonpCallback : 'myCallbacka'
+// });
 $.fn.serializeObject = function() {
     var o = {};
     var a = this.serializeArray();
