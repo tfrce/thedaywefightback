@@ -172,6 +172,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #whatwewilldo {
     font-size:16px;
 }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+- See more at: http://avexdesigns.com/responsive-youtube-embed/#sthash.NejRq0X2.dpuf
 #letter {
     background: url('/img/sopa-bg.jpg') center top no-repeat ;
     border-bottom: 2px solid #169DC3;
