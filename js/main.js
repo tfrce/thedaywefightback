@@ -122,7 +122,7 @@ if (!Object.keys) {
 
 
 function openFacebook() {
-    var e = "https://www.facebook.com/sharer/sharer.php?u=https://thedaywefightback.org";
+    var e = "https://www.facebook.com/sharer.php?s=99&appid=2309869772&p%5B0%5D=650914438280933&p%5B1%5D=10100707845993119&share_source_type=unknown";
     window.open(e, "Share on Facebook", "width=500,height=500");
     return false
 }
