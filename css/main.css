@@ -484,7 +484,7 @@ input.btn-lg, .input-lg {border-radius:0;}
 #social-vid img {
     margin-right:10px;
 
-    transition:0.15s ease-in all;
+    transition:0.1s ease-in all;
 }
 #social-vid img:hover {
     opacity:0.8;
