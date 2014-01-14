@@ -36,7 +36,8 @@ $('#share_button').click(function(e){
   window.fbAsyncInit = function() {
     FB.init({appId: '709021229138321', status: true, cookie: true,
     xfbml: true});
-    FB.ui(
+    setTimeout(function () {
+   FB.ui(
   {
   method: 'feed',
   name: 'The Day We Fight Back - February 11th 2014',
@@ -47,6 +48,9 @@ $('#share_button').click(function(e){
   message: ''
   });
   };
+    }, 200);
+ 
+
   (function() {
   var e = document.createElement('script'); e.async = true;
   e.src = document.location.protocol +
@@ -56,7 +60,7 @@ $('#share_button').click(function(e){
 
 
 
-  
+
 e.preventDefault();
 
 });
