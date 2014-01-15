@@ -19,7 +19,11 @@
         }
     }
 }());
-// social counts
+
+/* ==========================================================================
+   Social counts
+   ==========================================================================*/
+
 $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://thedaywefightback.org', {
     success: function(res, err) {
         $.each(res, function(network, value) {
@@ -34,6 +38,11 @@ $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googlep
     cache         : true,
     jsonpCallback : 'myCallback'
 });
+
+/* ==========================================================================
+   Subscriber counts
+   ==========================================================================*/
+
 // subscriber counts
 
 // $.ajax('http://d1anv19wqyolnf.cloudfront.net/count', {
@@ -45,6 +54,12 @@ $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googlep
 //     cache         : true,
 //     jsonpCallback : 'myCallbacka'
 // });
+
+
+/* ==========================================================================
+   Form submits
+   ==========================================================================*/
+
 $.fn.serializeObject = function() {
     var o = {};
     var a = this.serializeArray();
@@ -100,6 +115,34 @@ $('#email-banner-form').on('submit', function(ev) {
     return false;
 });
 
+
+/* ==========================================================================
+   Sharing buttons
+   ==========================================================================*/
+
+$( "#fblinkthis" ).click(function() {
+    var url = $(this).attr("href");
+    window.open(url, "Share on Facebook", "width=500,height=500");
+    return false;
+})
+$( "#twlinkthis" ).click(function() {
+    var url = $(this).attr("href");
+    window.open(url,"Twitter","width=550,height=420");
+    return false;
+})
+$( "#gpluslinkthis" ).click(function() {
+    var url = $(this).attr("href");
+    window.open(url,"Share on Google Plus","width=500,height=436");
+    return false;
+})
+
+
+
+
+/* ==========================================================================
+   Signup forms
+   ==========================================================================*/
+
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
     var regex = new RegExp("[\\?&]" + name + "=([^&\/#]*)"),
@@ -119,20 +162,6 @@ if (!Object.keys) {
         return k;
     }
 }
-
-
-function openFacebook() {
-    var e = "https://www.facebook.com/sharer/sharer.php?u=https://thedaywefightback.org";
-    window.open(e, "Share on Facebook", "width=500,height=500");
-    return false
-}
-function openTwitter(){
-        var t="https://twitter.com/home?status=Some%20of%20the%20biggest%20websites%20are%20planning%20a%20massive%20protest%20to%20%23StopTheNSA%20on%20Feb%2011th.%20I%E2%80%99m%20joining%20them%20%E2%80%94%20will%20you%3F%20https%3A%2F%2Fthedaywefightback.org&related=thedaywefightback%2Csinak%2Cneutralthoughts%2Cstopwatchingus%2Ceff";
-        window.open(t,"Twitter","width=550,height=420");
-          return false}
-
-function openGplus(){
-    var e="https://plus.google.com/share?url=https://thedaywefightback.org/";window.open(e,"Share on Google Plus","width=500,height=436");return false}
 
 (function() {
 
@@ -188,3 +217,14 @@ function openGplus(){
     };
     */
 })();
+
+
+/* ==========================================================================
+   Video preload
+   ==========================================================================*/
+
+$('#video-preload').click( function(){
+    $('.video-container').html('<iframe width="853" height="480" src="//www.youtube-nocookie.com/embed/RJ194S7KjRg?rel=0&vq=hd1080&autoplay=1" frameborder="0" allowfullscreen></iframe>');
+})
+
+

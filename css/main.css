@@ -350,11 +350,12 @@ footer p {
     margin-top:50px;
 }
 .floating-share {
-	position: fixed;
-	width: 50px;
-	height: 300px;
-	left: 15px;
-	top: 100px;
+    position: fixed;
+    width: 50px;
+    height: 300px;
+    left: 15px;
+    top: 100px;
+    z-index: 100;
 }
 .floating-share a {
 	margin-bottom: 50px;
@@ -424,6 +425,70 @@ footer {
 	margin-top:100px;
 }
 input.btn-lg, .input-lg {border-radius:0;}
+
+/* ==========================================================================
+   Video page
+   ==========================================================================*/
+.jumbotron.video {
+    padding-bottom: 20px;
+}
+.jumbotron.video #headergraphic {
+    height: auto;
+    background-image: none;
+}
+.video#branding {
+    background-image:none;
+}
+
+@media (max-width: 600px) {
+    #video {
+        padding-top:20px;
+    }
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0; 
+    overflow: hidden;
+}
+#video-preload {
+    cursor:pointer;
+    cursor:hand;
+}
+#video-preload:hover {
+    opacity:0.8;
+}
+#video #logos {
+    margin:0 auto;
+    margin-top: 30px;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed, .video-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#video {
+    background-color: #000;
+    padding-bottom:30px;
+}
+#social-vid {
+    text-align:center;
+    margin-top:15px;
+}
+#social-vid img {
+    margin-right:10px;
+
+    transition:0.1s ease-in all;
+}
+#social-vid img:hover {
+    opacity:0.8;
+}
 
 @media (min-width: 630px) {
 	.banner-signup-form input.form-control {
