@@ -122,7 +122,7 @@ $('#email-banner-form').on('submit', function(ev) {
 
 $( "#fblinkthis" ).click(function() {
     var url = $(this).attr("href");
-    window.open(url, "Share on Facebook", "width=500,height=500");
+    window.open(url, "Share on Facebook", "width=650,height=500");
     return false;
 })
 $( "#twlinkthis" ).click(function() {
