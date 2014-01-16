@@ -1,8 +1,9 @@
 /* ==========================================================================
    Social counts
    ==========================================================================*/
+var shareUrl = tfrceConfig.shareCountURL || 'https://thedaywefightback.org';
 
-$.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://thedaywefightback.org', {
+$.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=' + shareUrl, {
     success: function(res, err) {
         $.each(res, function(network, value) {
             var count = value;
