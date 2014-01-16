@@ -2,7 +2,6 @@
    Social counts
    ==========================================================================*/
 var shareUrl = tfrceConfig.shareCountURL || 'https://thedaywefightback.org';
-
 $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=' + shareUrl, {
     success: function(res, err) {
         $.each(res, function(network, value) {
@@ -17,7 +16,22 @@ $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googlep
     cache         : true,
     jsonpCallback : 'myCallback'
 });
-
+if(tfrceConfig.loadTotals) {
+    $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://thedaywefightback.org', {
+        success: function(res, err) {
+            $.each(res, function(network, value) {
+                var count = value;
+                if (count / 10000 > 1) {
+                    count = Math.ceil(count / 1000) + 'k'
+                }
+                $('[data-network-totals="' + network + '"]').attr('count', count);
+            })
+        },
+        dataType: 'jsonp',
+        cache         : true,
+        jsonpCallback : 'myCallback'
+    });
+}
 /* ==========================================================================
    Subscriber counts
    ==========================================================================*/
@@ -77,9 +91,9 @@ $('#email-update-form').on('submit', function(ev) {
         type: 'GET',
         success: function() {
             $('.email-box').html('We\'ll be in touch!');
-            //$("#signup, #undefined-sticky-wrapper").delay(2000).animate({height: 0}, 100, function(){
-            //    $(this).remove();
-            //});
+            $("#signup, #undefined-sticky-wrapper").delay(2000).animate({height: 0}, 100, function(){
+                $(this).remove();
+            });
         }
     });
     return false;
