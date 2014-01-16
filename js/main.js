@@ -114,6 +114,11 @@ $( "#twlinkthis" ).click(function() {
     window.open(url,"Twitter","width=550,height=420");
     return false;
 })
+$( ".twlinkthis" ).click(function() {
+    var url = $(this).attr("href");
+    window.open(url,"Twitter","width=550,height=420");
+    return false;
+})
 $( "#gpluslinkthis" ).click(function() {
     var url = $(this).attr("href");
     window.open(url,"Share on Google Plus","width=500,height=436");
