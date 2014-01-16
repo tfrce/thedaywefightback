@@ -53,11 +53,13 @@ $.fn.serializeObject = function() {
     });
     return o;
 };
+if(typeof disableSticky === 'undefined') {
+    $(".email-updates").sticky({
+        topSpacing: 0,
+        className: 'sticky-signup'
+    });
+}
 
-$(".email-updates").sticky({
-    topSpacing: 0,
-    className: 'sticky-signup'
-});
 
 
 $('#email-update-form').on('submit', function(ev) {
@@ -74,9 +76,9 @@ $('#email-update-form').on('submit', function(ev) {
         type: 'GET',
         success: function() {
             $('.email-box').html('We\'ll be in touch!');
-            $("#signup, #undefined-sticky-wrapper").delay(2000).animate({height: 0}, 100, function(){
-                $(this).remove();
-            });
+            //$("#signup, #undefined-sticky-wrapper").delay(2000).animate({height: 0}, 100, function(){
+            //    $(this).remove();
+            //});
         }
     });
     return false;
