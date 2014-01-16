@@ -133,6 +133,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   display: inline-block;
   text-align: left
 }
+.email-updates.fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100000000;
+}
 .email-updates .email-input {
 	width: 230px;
 	display: inline-block;
