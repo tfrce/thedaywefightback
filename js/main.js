@@ -172,6 +172,12 @@ if (!Object.keys) {
     var referalParam = getParameterByName('r');
     var referalOrg;
     var slug;
+
+    // Allows a page to have a selected org always
+    if(typeof alwaysSelected !== 'undefined') {
+        referalParam = alwaysSelected;
+    }
+    
     if (referalParam in referalMap) {
       referalOrg = referalMap[referalParam];
       slug = referalParam;
