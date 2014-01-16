@@ -513,9 +513,11 @@ input.btn-lg, .input-lg {border-radius:0;}
 #scorecard-container h3 {
     font-weight:bold;
     line-height:1.4;
+    font-size:20px;
 }
 #scorecard-container ul {
     padding-left:0;
+    font-size:15px;
 }
 #scorecard-container ul li {
     list-style:none;
