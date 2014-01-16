@@ -1,25 +1,3 @@
-(function() {
-    var method;
-    var noop = function() {};
-    var methods = [
-        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-        'timeStamp', 'trace', 'warn'
-    ];
-    var length = methods.length;
-    var console = (window.console = window.console || {});
-
-    while (length--) {
-        method = methods[length];
-
-        // Only stub undefined methods.
-        if (!console[method]) {
-            console[method] = noop;
-        }
-    }
-}());
-
 /* ==========================================================================
    Social counts
    ==========================================================================*/
@@ -75,12 +53,12 @@ $.fn.serializeObject = function() {
     });
     return o;
 };
+
 $(".email-updates").sticky({
     topSpacing: 0,
     className: 'sticky-signup'
 });
 
-// 
 
 $('#email-update-form').on('submit', function(ev) {
     var form = $(ev.currentTarget);
@@ -96,6 +74,9 @@ $('#email-update-form').on('submit', function(ev) {
         type: 'GET',
         success: function() {
             $('.email-box').html('We\'ll be in touch!');
+            $("#signup, #undefined-sticky-wrapper").delay(2000).animate({height: 0}, 100, function(){
+                $(this).remove();
+            });
         }
     });
     return false;
