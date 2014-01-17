@@ -183,6 +183,10 @@ if (!Object.keys) {
         'dp': {
             name: 'Demand Progress',
             policy: 'http://www.demandprogress.org/privacy/'
+        },
+        'om': {
+            name: 'Open Media',
+            policy: 'https://openmedia.ca/privacy'
         }
     };
     var referalKeys = Object.keys(referalMap);
