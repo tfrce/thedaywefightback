@@ -292,7 +292,7 @@ footer p {
   }
 }
 
-.unstyled-link:hover {
+#headergraphic > a:hover {
     text-decoration: none;
     color: inherit;
 }
