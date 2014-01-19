@@ -8,7 +8,7 @@ title: Your New Jekyll Site
   <ul class="posts">
     {% for post in site.posts %}
     <article class="post">
-      <p><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}"><h2>{{ post.title }}</a></h2></p>
+      <p><span>{{ post.date | date_to_string }}</span> &raquo; <a href="/blog{{ post.url }}"><h2>{{ post.title }}</a></h2></p>
       <p class="content">{{ post.content }}</p>
 	</article>
     {% endfor %}
