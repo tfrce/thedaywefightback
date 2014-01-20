@@ -3,12 +3,14 @@ layout: default
 title: Blog - The Day We Fight Back
 ---
 <div class="container">
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="news">
+  <h2>Blog</h2>
+  {% for post in site.posts %}
+    <h3><a href="{{ post.url }}/">{{ post.title }}</a></h3>
+    <strong>{{ post.date | date_to_string }}</strong>
+    <p>{{ post.excerpt }}</p>
+    <p><a href="{{ post.url }}/">Read more ...</a></p>
+    <div style="clear: both;"></div>
+  {% endfor %}
 </div>
 </div>
