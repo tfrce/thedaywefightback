@@ -64,8 +64,11 @@ $.ajax({
     success: function(data, status, xhr) {
         var serverDateTime = (xhr.getResponseHeader('Date'));
         serverDate = new Date(serverDateTime);
-        liveDate = new Date(2014, 1, 11, 0, 0);
+        liveDate = new Date(Date.UTC(2014, 1, 12, 8, 0));
         var diff = liveDate - serverDate;
+         alert(serverDate);
+         alert(liveDate);
+        // alert(diff);
         //These next lines convert diff into days hours and minutes
         var msec = diff;
         var dd = Math.floor(msec / 1000 / 60 / 60 / 24);
