@@ -36,17 +36,33 @@ if(tfrceConfig.loadTotals) {
    Subscriber counts
    ==========================================================================*/
 
-// subscriber counts
+window.odometerOptions = {
+  auto: false, // Don't automatically initialize everything with class 'odometer'
+  format: '(,ddd).dd', // Change how digit groups are formatted, and how many digits are shown after the decimal point
+  duration: 3000, // Change how long the javascript expects the CSS animation to take
+  
+};
 
-// $.ajax('http://d1anv19wqyolnf.cloudfront.net/count', {
-//     success: function(res, err) {
-//         console.log(res);
-//         $('.subscribers-count').text('We have had ' + res.siteCount + ' websites sign up and ' + res.totalCount + ' individuals');
-//     },
-//     dataType: 'jsonp',
-//     cache         : true,
-//     jsonpCallback : 'myCallbacka'
-// });
+$.ajax('http://d1anv19wqyolnf.cloudfront.net/count', {
+    dataType: 'jsonp',
+    cache         : true,
+    jsonpCallback : 'myCallbacka'
+}).done(function(res){
+    $('.subscribers-count').html("+ <div class='subscribers-count-sites'></div> websites and <div class='subscribers-count-people'></div> people");
+    var siteCountOd = new Odometer({
+      el: $(".subscribers-count-sites")[0],
+      value: 0,
+      theme: 'car'
+    });
+    var peopleCountOd = new Odometer({
+      el: $(".subscribers-count-people")[0],
+      value: 0,
+      theme: 'car'
+    });
+    peopleCountOd.update(res.totalCount);
+    siteCountOd.update(res.siteCount);
+    // $('.subscribers-count').text(res.siteCount + ' websites and ' + res.totalCount + ' people');
+});
 
 
 /* ==========================================================================
