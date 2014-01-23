@@ -50,7 +50,7 @@ $.ajax('http://d1anv19wqyolnf.cloudfront.net/count', {
     jsonpCallback : 'myCallbacka'
 }).done(function(res){
     var siteCountOd = new Odometer({
-      el: $(".subscribers-count-sites")[0],
+      el: $("#subscribers-count-sites")[0],
       value: 0,
       theme: 'car'
     });
@@ -65,9 +65,9 @@ $.ajax({
         var serverDateTime = (xhr.getResponseHeader('Date'));
         serverDate = new Date(serverDateTime);
         liveDate = new Date(Date.UTC(2014, 1, 12, 8, 0));
-        var diff = liveDate - serverDate;
-         alert(serverDate);
-         alert(liveDate);
+         var diff = liveDate - serverDate;
+        //  alert(serverDate);
+        //  alert(liveDate);
         // alert(diff);
         //These next lines convert diff into days hours and minutes
         var msec = diff;
@@ -80,7 +80,27 @@ $.ajax({
         var ss = Math.floor(msec / 1000);
         msec -= ss * 1000;
         var left = dd + " days   " + hh + " hours  " + mm +" minutes";
-        alert(left);
+
+
+        var daysOd = new Odometer({
+          el: $("#days-left")[0],
+          value: 0,
+          theme: 'car'
+        });
+        var hoursOd = new Odometer({
+          el: $("#hours-left")[0],
+          value: 0,
+          theme: 'car'
+        });
+        var secondsOd = new Odometer({
+          el: $("#seconds-left")[0],
+          value: 0,
+          theme: 'car'
+        });
+
+        daysOd.update(dd);
+        hoursOd.update(hh);
+        secondsOd.update(ss);
     }
 });
 

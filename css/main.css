@@ -94,14 +94,29 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
  
 #subscribers-count {
      color: #43c0e1;
-     font-size: 1.3em;
+     font-size: 1.0em;
      font-weight: 600;
      margin: 34px 0 12px;
 }
   .odometer {
-     font-size: 1.6em;
+     font-size: 1.2em;
      margin: -8px 10px 0 10px;
  }
+
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-car.odometer-animating-up .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -ms-transition: -ms-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+}
+
+
+@media (max-width: 768px) {
+    #subscribers-count {
+        font-size:0.9em;
+    }
+}
  
 /* ==========================================================================
    Signup banner
