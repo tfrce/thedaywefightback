@@ -36,17 +36,50 @@ if(tfrceConfig.loadTotals) {
    Subscriber counts
    ==========================================================================*/
 
-// subscriber counts
 
-// $.ajax('http://d1anv19wqyolnf.cloudfront.net/count', {
-//     success: function(res, err) {
-//         console.log(res);
-//         $('.subscribers-count').text('We have had ' + res.siteCount + ' websites sign up and ' + res.totalCount + ' individuals');
-//     },
-//     dataType: 'jsonp',
-//     cache         : true,
-//     jsonpCallback : 'myCallbacka'
-// });
+// subscriber counts
+window.odometerOptions = {
+  auto: false, // Don't automatically initialize everything with class 'odometer'
+  format: '(,ddd).dd', // Change how digit groups are formatted, and how many digits are shown after the decimal point
+  duration: 3000, // Change how long the javascript expects the CSS animation to take
+};
+
+$.ajax('http://d1anv19wqyolnf.cloudfront.net/count', {
+    dataType: 'jsonp',
+    cache         : true,
+    jsonpCallback : 'myCallbacka'
+}).done(function(res){
+    var siteCountOd = new Odometer({
+      el: $(".subscribers-count-sites")[0],
+      value: 0,
+      theme: 'car'
+    });
+    siteCountOd.update(res.siteCount);
+    // $('.subscribers-count').text(res.siteCount + ' websites and ' + res.totalCount + ' people');
+});
+
+$.ajax({
+    type: "GET",
+    url: '/',
+    success: function(data, status, xhr) {
+        var serverDateTime = (xhr.getResponseHeader('Date'));
+        serverDate = new Date(serverDateTime);
+        liveDate = new Date(2014, 1, 11, 0, 0);
+        var diff = liveDate - serverDate;
+        //These next lines convert diff into days hours and minutes
+        var msec = diff;
+        var dd = Math.floor(msec / 1000 / 60 / 60 / 24);
+        msec -= dd * 1000 * 60 * 60 * 24;
+        var hh = Math.floor(msec / 1000 / 60 / 60);
+        msec -= hh * 1000 * 60 * 60;
+        var mm = Math.floor(msec / 1000 / 60);
+        msec -= mm * 1000 * 60;
+        var ss = Math.floor(msec / 1000);
+        msec -= ss * 1000;
+        var left = dd + " days   " + hh + " hours  " + mm +" minutes";
+        alert(left);
+    }
+});
 
 
 /* ==========================================================================
