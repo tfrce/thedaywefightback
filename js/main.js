@@ -268,6 +268,18 @@ if (!Object.keys) {
         'om': {
             name: 'Open Media',
             policy: 'https://openmedia.ca/privacy'
+        },
+        'ra': {
+            name: 'RootsAction',
+            policy: 'http://www.rootsaction.org/privacy-policy'
+        },
+        'o98': {
+            name: 'The Other 98%',
+            policy: 'http://other98.com/privacy/'
+        },
+        'dk': {
+            name: 'Daily Kos',
+            policy: 'http://www.dailykos.com/special/privacy'
         }
     };
     var referalKeys = Object.keys(referalMap);
