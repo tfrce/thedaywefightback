@@ -36,41 +36,8 @@ if(tfrceConfig.loadTotals) {
    Subscriber counts
    ==========================================================================*/
 
-
-// subscriber counts
-window.odometerOptions = {
-  auto: false, // Don't automatically initialize everything with class 'odometer'
-  format: '(,ddd).dd', // Change how digit groups are formatted, and how many digits are shown after the decimal point
-  duration: 3000, // Change how long the javascript expects the CSS animation to take
-};
-
-$.ajax('http://d1anv19wqyolnf.cloudfront.net/count', {
-    dataType: 'jsonp',
-    cache         : true,
-    jsonpCallback : 'myCallbacka'
-}).done(function(res){
-    var siteCountOd = new Odometer({
-      el: $("#subscribers-count-sites")[0],
-      value: 0,
-      theme: 'car'
-    });
-    siteCountOd.update(res.siteCount);
-    // $('.subscribers-count').text(res.siteCount + ' websites and ' + res.totalCount + ' people');
-});
-
-$.ajax({
-    type: "GET",
-    url: '/',
-    success: function(data, status, xhr) {
-        var serverDateTime = (xhr.getResponseHeader('Date'));
-        serverDate = new Date(serverDateTime);
-        liveDate = new Date(Date.UTC(2014, 1, 12, 8, 0));
-         var diff = liveDate - serverDate;
-        //  alert(serverDate);
-        //  alert(liveDate);
-        // alert(diff);
-        //These next lines convert diff into days hours and minutes
-        var msec = diff;
+//This function converts a difference in two times into days hours and minutes and seconds.
+function splitTime(msec){
         var dd = Math.floor(msec / 1000 / 60 / 60 / 24);
         msec -= dd * 1000 * 60 * 60 * 24;
         var hh = Math.floor(msec / 1000 / 60 / 60);
@@ -79,28 +46,86 @@ $.ajax({
         msec -= mm * 1000 * 60;
         var ss = Math.floor(msec / 1000);
         msec -= ss * 1000;
-        var left = dd + " days   " + hh + " hours  " + mm +" minutes";
+        var ret = new Object();
+              ret['d']=dd;
+              ret['h']=hh;
+              ret['m']=mm;
+              ret['s']=ss;
+        return ret;
+}
 
+// Update the day/hr/min/sec on page
+function updateTimeOnSite(timeDiffObj) {
+daysOd.update(timeDiffObj['d']);
+hoursOd.update(timeDiffObj['h']);
+minutesOd.update(timeDiffObj['m']);
+secondsOd.update(timeDiffObj['s']);
+}
 
-        var daysOd = new Odometer({
-          el: $("#days-left")[0],
-          value: 0,
-          theme: 'car'
-        });
-        var hoursOd = new Odometer({
-          el: $("#hours-left")[0],
-          value: 0,
-          theme: 'car'
-        });
-        var secondsOd = new Odometer({
-          el: $("#seconds-left")[0],
-          value: 0,
-          theme: 'car'
-        });
+// Set odometer options
+window.odometerOptions = {
+  auto: false, // Don't automatically initialize everything with class 'odometer'
+  format: '(,ddd).dd', // Change how digit groups are formatted, and how many digits are shown after the decimal point
+  duration: 3000, // Change how long the javascript expects the CSS animation to take
+};
 
-        daysOd.update(dd);
-        hoursOd.update(hh);
-        secondsOd.update(ss);
+//Create website counter
+var siteCountOd = new Odometer({
+  el: $("#subscribers-count-sites")[0],
+  value: 0,
+  theme: 'car'
+});
+
+//Update website counter
+$.ajax('https://d1anv19wqyolnf.cloudfront.net/count', {
+    dataType: 'jsonp',
+    cache         : true,
+    jsonpCallback : 'myCallbacka'
+}).done(function(res){
+    siteCountOd.update(res.siteCount);
+    // $('.subscribers-count').text(res.siteCount + ' websites and ' + res.totalCount + ' people');
+});
+
+//Create day/hr/min/sec odometers
+var daysOd = new Odometer({
+  el: $("#days-left")[0],
+  value: 0,
+  theme: 'car'
+});
+var hoursOd = new Odometer({
+  el: $("#hours-left")[0],
+  value: 0,
+  theme: 'car'
+});
+var minutesOd = new Odometer({
+  el: $("#minutes-left")[0],
+  value: 0,
+  theme: 'car'
+});
+var secondsOd = new Odometer({
+  el: $("#seconds-left")[0],
+  value: 0,
+  theme: 'car'
+});
+
+//Get time difference
+$.ajax({
+    type: "GET",
+    url: '/',
+    success: function(data, status, xhr) {
+        var serverDateTime = (xhr.getResponseHeader('Date'));
+        serverDate = new Date(serverDateTime);
+        liveDate = new Date(Date.UTC(2014, 1, 12, 8, 0));
+        var diff = liveDate - serverDate;
+
+        timeDiffObj = splitTime(diff);
+        updateTimeOnSite(timeDiffObj);
+
+        setInterval(function(){
+            diff -= 1000; 
+            timeDiffObj = splitTime(diff); 
+            updateTimeOnSite(timeDiffObj);
+        }, 1000);
     }
 });
 

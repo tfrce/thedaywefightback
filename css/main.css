@@ -94,16 +94,32 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
  
 #subscribers-count {
      color: #43c0e1;
-     font-size: 1.0em;
+     font-size: 0.9em;
      font-weight: 600;
      margin: 34px 0 12px;
 }
   .odometer {
-     font-size: 1.2em;
+     font-size: 1.1em;
      margin: -8px 10px 0 10px;
  }
 
 .odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-car.odometer-animating-up .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+}
+
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-car.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+  }
+
+#seconds-left.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, #seconds-left.odometer.odometer-theme-car.odometer-animating-up .odometer-ribbon-inner {
   -webkit-transition: -webkit-transform 1s;
   -moz-transition: -moz-transform 1s;
   -ms-transition: -ms-transform 1s;
@@ -111,6 +127,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   transition: transform 1s;
 }
 
+#seconds-left.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, #seconds-left.odometer.odometer-theme-car.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -ms-transition: -ms-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  }
+    
+.odometer {
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: -3px;
+}
 
 @media (max-width: 768px) {
     #subscribers-count {
