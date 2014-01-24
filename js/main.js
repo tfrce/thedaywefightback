@@ -36,33 +36,100 @@ if(tfrceConfig.loadTotals) {
    Subscriber counts
    ==========================================================================*/
 
-window.odometerOptions = {
-  auto: false, // Don't automatically initialize everything with class 'odometer'
-  format: '(,ddd).dd', // Change how digit groups are formatted, and how many digits are shown after the decimal point
-  duration: 3000, // Change how long the javascript expects the CSS animation to take
-  
-};
+//This function converts a difference in two times into days hours and minutes and seconds.
+function splitTime(msec){
+        var dd = Math.floor(msec / 1000 / 60 / 60 / 24);
+        msec -= dd * 1000 * 60 * 60 * 24;
+        var hh = Math.floor(msec / 1000 / 60 / 60);
+        msec -= hh * 1000 * 60 * 60;
+        var mm = Math.floor(msec / 1000 / 60);
+        msec -= mm * 1000 * 60;
+        var ss = Math.floor(msec / 1000);
+        msec -= ss * 1000;
+        var ret = new Object();
+              ret['d']=dd;
+              ret['h']=hh;
+              ret['m']=mm;
+              ret['s']=ss;
+        return ret;
+}
 
-$.ajax('http://d1anv19wqyolnf.cloudfront.net/count', {
-    dataType: 'jsonp',
-    cache         : true,
-    jsonpCallback : 'myCallbacka'
-}).done(function(res){
-    $('.subscribers-count').html("+ <div class='subscribers-count-sites'></div> websites and <div class='subscribers-count-people'></div> people");
+// Update the day/hr/min/sec on page
+function updateTimeOnSite(timeDiffObj) {
+daysOd.update(timeDiffObj['d']);
+hoursOd.update(timeDiffObj['h']);
+minutesOd.update(timeDiffObj['m']);
+secondsOd.update(timeDiffObj['s']);
+}
+
+// Set odometer options
+if( $('#subscribers-count-sites').length ){
+    window.odometerOptions = {
+      auto: false, // Don't automatically initialize everything with class 'odometer'
+      format: '(,ddd).dd', // Change how digit groups are formatted, and how many digits are shown after the decimal point
+      duration: 3000, // Change how long the javascript expects the CSS animation to take
+    };
+
+    //Create website counter
     var siteCountOd = new Odometer({
-      el: $(".subscribers-count-sites")[0],
+      el: $("#subscribers-count-sites")[0],
       value: 0,
       theme: 'car'
     });
-    var peopleCountOd = new Odometer({
-      el: $(".subscribers-count-people")[0],
+
+    //Update website counter
+    $.ajax('https://d1anv19wqyolnf.cloudfront.net/count', {
+        dataType: 'jsonp',
+        cache         : true,
+        jsonpCallback : 'myCallbacka'
+    }).done(function(res){
+        siteCountOd.update(res.siteCount);
+        // $('.subscribers-count').text(res.siteCount + ' websites and ' + res.totalCount + ' people');
+    });
+
+    //Create day/hr/min/sec odometers
+    var daysOd = new Odometer({
+      el: $("#days-left")[0],
       value: 0,
       theme: 'car'
     });
-    peopleCountOd.update(res.totalCount);
-    siteCountOd.update(res.siteCount);
-    // $('.subscribers-count').text(res.siteCount + ' websites and ' + res.totalCount + ' people');
-});
+    var hoursOd = new Odometer({
+      el: $("#hours-left")[0],
+      value: 0,
+      theme: 'car'
+    });
+    var minutesOd = new Odometer({
+      el: $("#minutes-left")[0],
+      value: 0,
+      theme: 'car'
+    });
+    var secondsOd = new Odometer({
+      el: $("#seconds-left")[0],
+      value: 0,
+      theme: 'car'
+    });
+
+    //Get time difference
+    $.ajax({
+        type: "GET",
+        url: '/',
+        success: function(data, status, xhr) {
+            var serverDateTime = (xhr.getResponseHeader('Date'));
+            serverDate = new Date(serverDateTime);
+            liveDate = new Date(Date.UTC(2014, 1, 12, 8, 0));
+            var diff = liveDate - serverDate;
+
+            timeDiffObj = splitTime(diff);
+            updateTimeOnSite(timeDiffObj);
+
+            setInterval(function(){
+                diff -= 1000; 
+                timeDiffObj = splitTime(diff); 
+                updateTimeOnSite(timeDiffObj);
+            }, 1000);
+        }
+    });
+}
 
 
 /* ==========================================================================
@@ -199,6 +266,22 @@ if (!Object.keys) {
         'dp': {
             name: 'Demand Progress',
             policy: 'http://www.demandprogress.org/privacy/'
+        },
+        'om': {
+            name: 'Open Media',
+            policy: 'https://openmedia.ca/privacy'
+        },
+        'ra': {
+            name: 'RootsAction',
+            policy: 'http://www.rootsaction.org/privacy-policy'
+        },
+        'o98': {
+            name: 'The Other 98%',
+            policy: 'http://other98.com/privacy/'
+        },
+        'dk': {
+            name: 'Daily Kos',
+            policy: 'http://www.dailykos.com/special/privacy'
         }
     };
     var referalKeys = Object.keys(referalMap);
