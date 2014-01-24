@@ -93,17 +93,21 @@
     <div class="jumbotron" id="branding" style="margin-bottom: 0;">
         <div class="container">
             <div id="headergraphic">
-              <a href="/">
                 <h2>February 11th 2014 is</h2>
                 <h1>The Day We Fight Back</h1>
                 <h2>Against Mass Surveillance</h2>
-              </a>
             </div>
             {% if page.url == "/index.html"%}
             <img id="logos" src="/img/logos.png" class="hidden-xs img-responsive" />
             <img id="logos-mobile" src="/img/logos-mobile@2x.png" class="visible-xs" />
+            <div id="subscribers-count">
+              <div id='subscribers-count-sites'></div>websites so far.
+              <div id='days-left'></div>days
+              <div id='hours-left'></div>hours
+              <div id='minutes-left'></div>minutes
+              <div id='seconds-left'></div>seconds left.
+            </div>
             {% endif %}
-            <div class="subscribers-count"></div>
         </div>
     </div>
 
