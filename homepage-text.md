@@ -2,12 +2,13 @@
 
 In January 2012 we defeated the SOPA and PIPA censorship legislation with the largest Internet protest in history. A year ago this month one of that movement's leaders, Aaron Swartz, tragically passed away.
 
-Today we face a different threat, one that undermines the Internet, and the notion that any of us live in a genuinely free society: mass surveillance.
+Today we face another critical threat, one that again undermines the Internet and the notion that any of us live in a genuinely free society: mass surveillance.
 
-If Aaron were alive, he'd be on the front lines, fighting against a world in which governments observe, collect, and analyze our every digital action.
+In honor of the anniversary of Aaron's passing, and in celebration of the win against SOPA and PIPA two years ago we are planning a day of protest against mass surveillance, to take place **this February 11th**.
 
-Now, on the anniversary of Aaron's passing, and in celebration of the win against SOPA and PIPA that he helped make possible, we are planning a day of protest against mass surveillance, to take place **this February 11th**.
+Together we will push back against powers that seek to observe, collect, and analyze our every digital action. Together, we will make it clear that such behavior is not compatible with democratic governance. And if we persist, eventually win this fight, together.
 
+We ask you to join the cause by emailing and calling your lawmakers on that day, by hosting a widget or banner on your website to mobilize your visitors, and to encourage others to join our cause.
 
 ## WHAT WE'LL DO ON FEBRUARY 11th:
 
