@@ -1,0 +1,10 @@
+    {% if page.social_sidebar != false %}
+    <div id="socfooter" class="down floating-share">
+        <a style="margin-top: 40px; margin-bottom: 40px;" data-network="twitter" href="{{ page.twitter_share_link }}" count="0" target="_blank" class="twlinkthis twitter-button social-count" >
+            <div class="sicon" id="stwit"></div>
+        </a>
+        <a href="{{ page.facebook_share_link }}" data-network="facebook" count="0" target="_blank" class="social-count facebook-button twlinkthis">
+            <div class="sicon" id="sfb"></div>
+        </a>
+    </div>
+      {% endif %}

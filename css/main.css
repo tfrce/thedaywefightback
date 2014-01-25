@@ -568,6 +568,36 @@ input.btn-lg, .input-lg {border-radius:0;}
 }
 
 /* ==========================================================================
+   Blog
+   ==========================================================================*/
+
+#blog-index {
+    padding-top:40px;
+}
+
+#blog-index img{
+    margin: 20px 0;
+}
+
+#blog-index .post {
+    margin-bottom:40px;
+}
+
+#blog-index h2 a:hover {
+    text-decoration: none;
+}
+
+#blog-index .date {
+    font-weight:bold;
+    text-transform:uppercase;
+    color: #888;
+}
+#blog-index h2 {
+    font-weight: bold;
+    margin-top:0;
+}
+
+/* ==========================================================================
    Scorecard
    ==========================================================================*/
 

@@ -8,14 +8,15 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>The Day We Fight Back - February 11th 2014</title>
-  <meta name="description" content="February 11th 2014 is the day the Internet rises up to fight back against mass surveillance. Join us. ">
+  <title>The Day We Fight Back: The Video</title>
+  <meta name="description" content="February 11th 2014 is the day the Internet rises up to fight back against mass surveillance. Watch the video. ">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="author" href="humans.txt" />
 
   <!--  CSS -->
   <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/odometer.css" rel="stylesheet">
   <link href="/css/open-sans.css" rel="stylesheet">
   <link href="/css/main.css" rel="stylesheet">
 
@@ -30,64 +31,33 @@
   <![endif]-->
 
   <!-- Facebook OpenGraph tags -->
-  <meta property="og:title" content="The Internet is rising up in protest on February 11th" />
-  <meta property="og:description" content="Thousands of websites are planning a massive online protest against surveillance on February 11th." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://thedaywefightback.org/" />
-  <meta property="og:image" content="https://thedaywefightback.org/img/social3-fb.jpg" />
-  <meta property="og:site_name" content="TheDayWeFightBack.org" />
-  <meta property="fb:admins" content="36801504" />
-  <meta property="fb:app_id" content="709021229138321" />
+<meta property="og:title" content="Remember the SOPA blackout? The Internet is rising up in protest once again on February 11th."/>
+<meta property="og:description" content="After you watch this, you might want to take part too."/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://thedaywefightback.org/video/"/>
+<meta property="og:image" content="https://thedaywefightback.org/img/social-fb-videopage.jpg"/>
+<meta property="og:image:secure_url" content="https://thedaywefightback.org/img/social-fb-videopage.jpg"/>
+<meta property="og:site_name" content="TheDayWeFightBack.org"/>
+<meta property="fb:app_id" content="709021229138321"/>
+<meta property="fb:admins" content="36801504"/>
+ 
 
   <!-- Twitter Card tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@daywefightback">
-  <meta name="twitter:creator" content="@daywefightback">
-  <meta name="twitter:title" content="On February 11th 2014, the Internet is planning to rise up in protest.">
-  <meta name="twitter:description" content="Websites are planning a day of online protest against government surveillance on February 11th 2014, and they want your help.">
-  <meta name="twitter:image" content="https://thedaywefightback.org/img/social2-twitter2.jpg">
-
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@daywefightback">
+<meta name="twitter:creator" content="@daywefightback">
+<meta name="twitter:title" content="Remember SOPA? The Internet is rising up in protest again.">
+<meta name="twitter:description" content="This time it's against mass surveillance. After you watch this, you might want to join too.">
+<meta name="twitter:image" content="https://thedaywefightback.org/img/social-fb-video.jpg">
 
 </head>
 
-<body>
+<body style="background-color: #000;">
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div id="socfooter" class="down floating-share">
-        <a style="margin-top: 40px; margin-bottom: 40px;" data-network="twitter" href="https://twitter.com/intent/tweet?status=Thousands%20of%20websites%20are%20planning%20a%20massive%20protest%20to%20end%20surveillance%20on%20Feb%2011th.%20I%E2%80%99m%20joining%20them%20%E2%80%94%20will%20you%3F%20https%3A%2F%2Fthedaywefightback.org&related=daywefightback,sinak,neutralthoughts,stopwatchingus,eff" count="0" target="_blank" class="twlinkthis twitter-button social-count" >
-            <div class="sicon" id="stwit"></div>
-        </a>
-        <a href="https://www.facebook.com/sharer.php?s=99&appid=2309869772&p%5B0%5D=650914438280933&p%5B1%5D=10100707845993119&share_source_type=unknown" data-network="facebook" count="0" target="_blank" class="social-count facebook-button twlinkthis">
-            <div class="sicon" id="sfb"></div>
-        </a>
 
-    </div>
-
-
-    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"></a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/video/">Video</a><li>
-                    <li><a href="/press/">Press Release</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="mailto:contact@thedaywefightback.org">Contact</a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </div>
+    {% include nav.html %}
 
     <div class="jumbotron video" id="branding" style="margin-bottom: 0;">
         <div class="container">
@@ -98,14 +68,13 @@
                 <h2>Against Mass Surveillance</h2>
               </a>
             </div>
-            {% if page.url == "/index.html"%}
+            {% if page.url == "/index.html" |%}
             <img id="logos" src="/img/logos.png" class="hidden-xs img-responsive" />
             <img id="logos-mobile" src="/img/logos-mobile@2x.png" class="visible-xs" />
             {% endif %}
             <!--<p class="subscribers-count"></p>-->
         </div>
     </div>
-
 
     {{content}}
 
