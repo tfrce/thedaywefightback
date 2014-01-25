@@ -1,0 +1,50 @@
+---
+layout: default
+title: Blog - The Day We Fight Back
+
+# Goes in <title> tag:
+title: Blog - The Day We Fight Back
+# Show sticky social buttons in sidebar? Defaults to "true"
+social_sidebar: false
+# Only used in page meta description (for Google). If blank, defaults to homepage:
+meta_description: The Day We Fight Back blog - read updates on the campaign here.
+
+#### Facebook og tags. These show in summary cards when shared on FB. These default to the homepage og: tags.
+og_title: "The Day We Fight Back - Blog"
+og_description: "Stay up to date on the latest campaign news"
+og_url: https://thedaywefightback.org/blog/ # Make sure this is the URL of the actual live page
+og_image:  # Size should be 1260 x 630px
+
+#### Twitter card tags. These show in summar cards when share on Twitter. Defaults to homepage card tags.
+twitter_card_title: 
+twitter_card_description: 
+twitter_card_image: 
+
+#### Share links and text. These are used wherever there's a share button on the page.
+twitter_share_link: 
+facebook_share_link: 
+google_share_link: 
+
+#### Show custom share counts for this page? (i.e. not total of homepage?)
+### If using this, make sure og_url is set correctly above.
+custom_url_share_count: false
+
+#### Any extra javascript variables go here:
+extra_javascript_in_footer: 
+---
+
+<div class="container">
+	<div class="col-md-9 centered" id="blog-index">
+	  <!--<h2>Blog</h2>-->
+	  {% for post in site.posts %}
+	  <div class="post">
+	    <p class="date">{{ post.date | date_to_string }}:</p>
+	    <h2><a href="{{ post.url }}/">{{ post.title }}</a></h2>
+	    {% if post.photo %}<a href="{{ post.url }}/"><img class="img-responsive" src="{{ post.photo }}" /></a>{% endif %}
+	    <p >{{ post.excerpt }}</p>
+	    <p><a href="{{ post.url }}/">Read more ...</a></p>
+	    <div style="clear: both;"></div>
+	  </div>
+	  {% endfor %}
+	</div>
+</div>

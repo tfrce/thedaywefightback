@@ -34,59 +34,60 @@
         margin: 0 auto 0 auto;
 }
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-size:16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
   -webkit-font-smoothing:antialiased;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .navbar {
-	margin-bottom:0;
+    text-transform: capitalize;
+    margin-bottom:0;
 }
 .navbar-inverse {
-	background-color: #000;
+    background-color: #000;
 }
 
 .jumbotron {
-	background-color: #000;
-	padding-top:0px;
-	text-align:center;
-	padding-bottom:30px;
+    background-color: #000;
+    padding-top:0px;
+    text-align:center;
+    padding-bottom:30px;
 }
 .jumbotron .container {
-	margin: 0 auto;
-	/*This width needs to be the width of logos.png + 30px*/
-	max-width: 804px;
+    margin: 0 auto;
+    /*This width needs to be the width of logos.png + 30px*/
+    max-width: 804px;
 }
 .jumbotron h1 {
-	font-size: 53px;
-	text-align:center;
-	font-weight:bold;
-	color: #43c0e1;
-	margin-top: 8px;
-	margin-bottom:12px;
-	z-index:100;
-	position:relative;
+    font-size: 53px;
+    text-align:center;
+    font-weight:bold;
+    color: #43c0e1;
+    margin-top: 8px;
+    margin-bottom:12px;
+    z-index:100;
+    position:relative;
 }
 .jumbotron h2 {
-	text-transform:uppercase;
-	font-weight: 600;
-	color: #fff;
-	letter-spacing: 2px;
-	font-size:28px;
-	margin-top: 0px;
-	margin-bottom:0px;
-	z-index:100;
-	position:relative;
+    text-transform:uppercase;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size:28px;
+    margin-top: 0px;
+    margin-bottom:0px;
+    z-index:100;
+    position:relative;
 }
 .jumbotron #headergraphic {
-	background: url('/img/header.jpg') center bottom no-repeat ;
-	height:320px;
+    background: url('/img/header.jpg') center bottom no-repeat ;
+    height:320px;
 }
 .jumbotron #logos {
-	margin-top:10px;
-	margin: 10px auto 0 auto;
+    margin-top:10px;
+    margin: 10px auto 0 auto;
 }
 /* ==========================================================================
    Counter
@@ -153,44 +154,43 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     }
 }
 
- 
 /* ==========================================================================
    Signup banner
    ==========================================================================*/
 
 #signup {
-	line-height: 99px; 
-	color: #fff;
-	font-size: 24px; 
-	margin: 0 auto; 
-	float: none;
-	background: #cc0000;
-	height: 99px;
-	padding:0;
-	width:100%;
-	text-align:center;
-	font-weight:400;
-	letter-spacing:1px;
+    line-height: 99px; 
+    color: #fff;
+    font-size: 24px; 
+    margin: 0 auto; 
+    float: none;
+    background: #cc0000;
+    height: 99px;
+    padding:0;
+    width:100%;
+    text-align:center;
+    font-weight:400;
+    letter-spacing:1px;
     color: #fff; 
 }
 #signup label {
-	letter-spacing:0;
+    letter-spacing:0;
 }
 
 .nosidemargin{
-	margin-left:0;
-	margin-right:0;
+    margin-left:0;
+    margin-right:0;
 }
 #signupform {
-	color: #fff;
-	font-size: 24px; 
-	margin: 0 auto; 
-	float: none;
+    color: #fff;
+    font-size: 24px; 
+    margin: 0 auto; 
+    float: none;
 }
 #signup-text {
-	display:inline-block;
-	width:52%;
-	text-align:right;
+    display:inline-block;
+    width:52%;
+    text-align:right;
 }
 .email-box {
   position: relative;
@@ -205,14 +205,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     z-index: 100000000;
 }
 .email-updates .email-input {
-	width: 230px;
-	display: inline-block;
-	margin-right: 0px;
-	margin-left: 0px; 
-	margin-bottom: 17px;
+    width: 230px;
+    display: inline-block;
+    margin-right: 0px;
+    margin-left: 0px; 
+    margin-bottom: 17px;
 }
 .email-updates .btn {
-	margin-bottom:17px;
+    margin-bottom:17px;
 }
 .org-container {
     position: absolute;
@@ -221,7 +221,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: Arial;
 }
 .org-container a, .org-container a:visited {
-	color: #fff;
+    color: #fff;
 }
 .org-container input {
     margin-top: 2px;
@@ -235,10 +235,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     float: left;
 }
 #letter, #whatwewilldo {
-	width:100%;
-	padding:32px 0 44px 0;
-	background-size: cover;
-	font-size:19px;
+    width:100%;
+    padding:32px 0 44px 0;
+    background-size: cover;
+    font-size:19px;
 }
 #whatwewilldo {
     font-size:16px;
@@ -248,107 +248,107 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     border-bottom: 2px solid #169DC3;
 }
 #letter .row, #whatwewilldo .row {
-	margin: 0;
+    margin: 0;
 }
 #letter h2, #whatwewilldo h2 {
-	font-weight:bold;
-	color: #0682a3;
-	font-size:28px;
-	margin-bottom:20px;
+    font-weight:bold;
+    color: #0682a3;
+    font-size:28px;
+    margin-bottom:20px;
 }
 #letter p, #whatwewilldo p {
-	font-weight: 600;
+    font-weight: 600;
 }
 #letter p span, #whatwewilldo p span {
-	font-weight: bold;
+    font-weight: bold;
 }
 p#intro span {
-	font-weight: bold;
+    font-weight: bold;
 }
 #aaron {
-	float: right; 
-	margin: 0 0 40px 40px;
+    float: right; 
+    margin: 0 0 40px 40px;
 }
 #take-part {
-	background: url('/img/takepart.png') no-repeat;
-	height:150px;
-	background-size: 100%;
+    background: url('/img/takepart.png') no-repeat;
+    height:150px;
+    background-size: 100%;
 }
 #take-part h2 {
-	font-size:30px;
-	font-weight:600;
-	text-align:center;
-	color: #fff;
-	text-transform: uppercase;
-	padding-top:30px;
-	margin-top:0;
+    font-size:30px;
+    font-weight:600;
+    text-align:center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top:30px;
+    margin-top:0;
 }
 #take-part h2 span {
-	font-style: italic;
+    font-style: italic;
 }
 .smalltext {
-	font-size:12px;
+    font-size:12px;
 }
 
 #actions #intro {
-	font-size: 19px;
-	font-weight: 600;
-	margin-top: 30px;
-	margin-bottom:30px;
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom:30px;
 }
 
 div.step h4 {
-	display: block;
-	text-align: center;
-	width: 100%;
-	margin: auto;
-	border-bottom: 4px solid #0ba5c2;
-	font-weight: bold;
-	padding-bottom: 5px;
-	margin-bottom: 30px;
-	margin-top: 50px;
-    	font-size:1.7em;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    border-bottom: 4px solid #0ba5c2;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+        font-size:1.7em;
 }
 
 div.step p {
     font-size:.95em;
 }
 .step.row {
-	margin-bottom:15px;
+    margin-bottom:15px;
 }
 .step img {
     max-width:100%;
 }
 .step .morefb {
-	margin-top:35px; 
-	margin-bottom:10px
+    margin-top:35px; 
+    margin-bottom:10px
 }
 .step h5 {
-	text-transform: uppercase;
-	font-weight:bold;
-	font-size:16px;
-	text-align:center;
-	margin-top:0;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size:16px;
+    text-align:center;
+    margin-top:0;
 }
 #twibbon:hover {
-	opacity: 0.7;
+    opacity: 0.7;
 }
 #fb-share-graphics div {
-	margin-bottom:15px;
+    margin-bottom:15px;
 }
 #fb-share-graphics img:hover {
-	opacity:0.8;
+    opacity:0.8;
 }
 #fb-share-graphics img {
-	margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .banner-signup-form {
-	margin: auto;
-	text-align:center;
+    margin: auto;
+    text-align:center;
 }
 footer p {
-	text-align: right;
+    text-align: right;
 }
 
 @media (max-width: 1000px) {
@@ -357,9 +357,14 @@ footer p {
   }
 }
 
+#headergraphic > a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
 .sharecenter {
-	height: 88px;
-	margin-top: 80px;
+    height: 88px;
+    margin-top: 80px;
 }
 
 .social-count {
@@ -377,7 +382,7 @@ footer p {
     z-index: 10;
 }
 .email-updates .row {
-	margin:0;
+    margin:0;
 }
 .social-count:after {
     background: #efefef;
@@ -429,14 +434,14 @@ footer p {
     z-index: 100;
 }
 .floating-share a {
-	margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 #socfooter.sharecenter a {
     margin-right: 107px;
 }
 
 #privacy {
-	margin-top:50px;
+    margin-top:50px;
 }
 
 #take-part {
@@ -463,22 +468,22 @@ footer p {
 }
 
 .banner-signup-form input.btn {
-	background: #CC0000;
-	color: #fff;
+    background: #CC0000;
+    color: #fff;
 }
 
 .banner-signup-form input.btn:hover {
-	background: #A00E0E;
+    background: #A00E0E;
 }
 .banner-signup-form input.form-control {
-	width:240px;
+    width:240px;
 }
 .step #greybox {
-	background-color: #DDF8FF;
-	padding: 15px;
-	margin-top: 17px;
-	border-top: 2px solid #2FC8F1;
-	border-bottom: 2px solid #2FC8F1;
+    background-color: #DDF8FF;
+    padding: 15px;
+    margin-top: 17px;
+    border-top: 2px solid #2FC8F1;
+    border-bottom: 2px solid #2FC8F1;
 }
 div.step h4.reddit-title {
     border-bottom:none;
@@ -490,10 +495,10 @@ div.step h4.reddit-title {
     line-height:16px;
 }
 footer {
-	font-size:14px;
-	background: #eee;
-	padding:50px;
-	margin-top:100px;
+    font-size:14px;
+    background: #eee;
+    padding:50px;
+    margin-top:100px;
 }
 input.btn-lg, .input-lg {border-radius:0;}
 
@@ -562,6 +567,36 @@ input.btn-lg, .input-lg {border-radius:0;}
 }
 
 /* ==========================================================================
+   Blog
+   ==========================================================================*/
+
+#blog-index {
+    padding-top:40px;
+}
+
+#blog-index img{
+    margin: 20px 0;
+}
+
+#blog-index .post {
+    margin-bottom:40px;
+}
+
+#blog-index h2 a:hover {
+    text-decoration: none;
+}
+
+#blog-index .date {
+    font-weight:bold;
+    text-transform:uppercase;
+    color: #888;
+}
+#blog-index h2 {
+    font-weight: bold;
+    margin-top:0;
+}
+
+/* ==========================================================================
    Scorecard
    ==========================================================================*/
 
@@ -598,24 +633,24 @@ input.btn-lg, .input-lg {border-radius:0;}
 }
 
 @media (min-width: 630px) {
-	.banner-signup-form input.form-control {
-		display: inline-block;
-		width:200px;
-	}
+    .banner-signup-form input.form-control {
+        display: inline-block;
+        width:200px;
+    }
 
-	.form-inline .form-group {
-	display: inline-block;
-	margin-bottom: 0;
-	vertical-align: middle;
-	}
+    .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    }
 }
 @media (max-width: 629px) {
-	.banner-signup-form input.form-control {
-		margin:0 auto;
-	}
-	.form-inline .form-group {
-		margin-bottom:10px;
-	}
+    .banner-signup-form input.form-control {
+        margin:0 auto;
+    }
+    .form-inline .form-group {
+        margin-bottom:10px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -707,11 +742,11 @@ input.btn-lg, .input-lg {border-radius:0;}
     }
     
     #sgplus{        
-    	background-position:20% 0 ;
+        background-position:20% 0 ;
     }
     #sgplus:hover{
       background-position:20% 0% ;
-    	border-bottom:2px solid #43C0E1;
+        border-bottom:2px solid #43C0E1;
     }
     
      #spin{
@@ -722,14 +757,14 @@ input.btn-lg, .input-lg {border-radius:0;}
     }
 
 @media (min-width: 767px) {
-	.jumbotron{ 
-		padding-left: 0;
-		padding-right: 0;
-	}
+    .jumbotron{ 
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 @media (min-width: 767px) and (max-width: 880px) {
-	#signup-text {font-size: 18px; width:45%;}
-	.email-box {width: 54%;}
+    #signup-text {font-size: 18px; width:45%;}
+    .email-box {width: 54%;}
 }
 @media (max-width: 767px) {
     .jumbotron #headergraphic {
@@ -737,11 +772,11 @@ input.btn-lg, .input-lg {border-radius:0;}
     }
     #headergraphic h1 {
         text-shadow:0px 0px 2px rgba(0,0,0,.7);
-     	font-size: 34px;
+        font-size: 34px;
     }
 
     #headergraphic h2 {
-    	font-size:15px;
+        font-size:15px;
     }
     #aaron {
         width:155px;
@@ -770,8 +805,8 @@ input.btn-lg, .input-lg {border-radius:0;}
         font-weight:bold;
     }
     #signup-text {
-    	text-align:center;
-    	width:100%;
+        text-align:center;
+        width:100%;
     }
     .email-box { width: 100%;}
     #signup-text, .email-box {
@@ -782,24 +817,24 @@ input.btn-lg, .input-lg {border-radius:0;}
         width:197px;
     }
     .email-updates .email-input {
-    	width:194px;
-    	margin-bottom:5px;
+        width:194px;
+        margin-bottom:5px;
     }
     #letter {
-    	padding-top: 16px;
+        padding-top: 16px;
     }
     .email-updates .btn {
-    	margin-bottom:5px;
+        margin-bottom:5px;
     }
     .org-container {
-    	position: relative;
-    	top: 0px;
+        position: relative;
+        top: 0px;
 
     }
     #signup label {
-    	display:inline-block;
-    	width: 90%;
-    	margin-bottom:6px;
+        display:inline-block;
+        width: 90%;
+        margin-bottom:6px;
     }
 }
 
