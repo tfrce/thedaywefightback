@@ -214,6 +214,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .email-updates .btn {
     margin-bottom:17px;
 }
+.email-close {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 36px;
+  color: #fff !important;
+  text-decoration: none !important;
+  line-height: 36px !important;
+  z-index: 1000;
+}
 .org-container {
     position: absolute;
     top: 69px; 

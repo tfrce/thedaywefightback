@@ -158,7 +158,10 @@ if(typeof disableSticky === 'undefined') {
     });
 }
 
-
+$('#email-signup-close').click(function (ev) {
+  $(".sticky-wrapper").remove();
+  return false;
+});
 
 $('#email-update-form').on('submit', function(ev) {
     var form = $(ev.currentTarget);
