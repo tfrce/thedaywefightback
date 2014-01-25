@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /* ==========================================================================
    Counter
    ==========================================================================*/
- 
+
 #subscribers-count {
      color: #43c0e1;
      font-size: 0.9em;
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   -o-transition: -o-transform 1s;
   transition: transform 1s;
   }
-    
+
 .odometer {
     margin-right: 3px;
     margin-left: 3px;
@@ -159,10 +159,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
    ==========================================================================*/
 
 #signup {
-    line-height: 99px; 
+    line-height: 99px;
     color: #fff;
-    font-size: 24px; 
-    margin: 0 auto; 
+    font-size: 24px;
+    margin: 0 auto;
     float: none;
     background: #cc0000;
     height: 99px;
@@ -171,7 +171,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     text-align:center;
     font-weight:400;
     letter-spacing:1px;
-    color: #fff; 
 }
 #signup label {
     letter-spacing:0;
@@ -183,8 +182,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 #signupform {
     color: #fff;
-    font-size: 24px; 
-    margin: 0 auto; 
+    font-size: 24px;
+    margin: 0 auto;
     float: none;
 }
 #signup-text {
@@ -208,25 +207,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     width: 230px;
     display: inline-block;
     margin-right: 0px;
-    margin-left: 0px; 
+    margin-left: 0px;
     margin-bottom: 17px;
 }
 .email-updates .btn {
     margin-bottom:17px;
 }
+.sticky-signup .email-close {
+    display: inline-block;
+}
 .email-close {
-  position: absolute;
-  top: 30px;
-  right: 20px;
-  font-size: 36px;
-  color: #fff !important;
-  text-decoration: none !important;
-  line-height: 36px !important;
-  z-index: 1000;
+  display: none;
+  text-decoration: underline;
 }
 .org-container {
     position: absolute;
-    top: 69px; 
+    top: 69px;
     font-size: 13px;
     font-family: Arial;
 }
@@ -276,7 +272,7 @@ p#intro span {
     font-weight: bold;
 }
 #aaron {
-    float: right; 
+    float: right;
     margin: 0 0 40px 40px;
 }
 #take-part {
@@ -330,7 +326,7 @@ div.step p {
     max-width:100%;
 }
 .step .morefb {
-    margin-top:35px; 
+    margin-top:35px;
     margin-bottom:10px
 }
 .step h5 {
@@ -535,7 +531,7 @@ input.btn-lg, .input-lg {border-radius:0;}
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
-    height: 0; 
+    height: 0;
     overflow: hidden;
 }
 #video-preload {
@@ -676,28 +672,28 @@ input.btn-lg, .input-lg {border-radius:0;}
     background-color:black;
     background-image:url('../img/social-icons.png');
     }
-    
+
    #ss6{
         background-position:100% 0 ;
     }
     #ss6:hover{
         background-position:100% 100% ;
     }
-   
+
     #stmb{
         background-position:90% 0 ;
     }
     #stmb:hover{
         background-position:90% 100% ;
     }
-    
+
     #sli{
         background-position:80% 0 ;
     }
     #sli:hover{
         background-position:80% 100% ;
     }
-    
+
     #sfb{
         background-position:70% 0 ;
     }
@@ -719,11 +715,11 @@ input.btn-lg, .input-lg {border-radius:0;}
     #sbh:hover{
         background-position:60% 100% ;
     }
-    
+
         #stwit{
         background-position:50% 0 ;
     }
-    
+
     #stwit {
     border-bottom:0px solid #FFFFFF;
     transition:0.2s ease-out all;
@@ -736,29 +732,29 @@ input.btn-lg, .input-lg {border-radius:0;}
     transition:0.15s ease-in all;
     opacity:1;
 }
-    
+
         #sem{
         background-position:40% 0 ;
     }
     #sem:hover{
         background-position:40% 100% ;
     }
-    
+
       #srss{
         background-position:30% 0 ;
     }
     #srss:hover{
         background-position:30% 100% ;
     }
-    
-    #sgplus{        
+
+    #sgplus{
         background-position:20% 0 ;
     }
     #sgplus:hover{
       background-position:20% 0% ;
         border-bottom:2px solid #43C0E1;
     }
-    
+
      #spin{
         background-position:0% 0 ;
     }
@@ -767,7 +763,7 @@ input.btn-lg, .input-lg {border-radius:0;}
     }
 
 @media (min-width: 767px) {
-    .jumbotron{ 
+    .jumbotron{
         padding-left: 0;
         padding-right: 0;
     }

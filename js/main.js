@@ -123,8 +123,8 @@ if( $('#subscribers-count-sites').length ){
             updateTimeOnSite(timeDiffObj);
 
             setInterval(function(){
-                diff -= 1000; 
-                timeDiffObj = splitTime(diff); 
+                diff -= 1000;
+                timeDiffObj = splitTime(diff);
                 updateTimeOnSite(timeDiffObj);
             }, 1000);
         }
@@ -151,15 +151,18 @@ $.fn.serializeObject = function() {
     });
     return o;
 };
-if(typeof disableSticky === 'undefined') {
-    $(".email-updates").sticky({
-        topSpacing: 0,
-        className: 'sticky-signup'
-    });
-}
 
-$('#email-signup-close').click(function (ev) {
-  $(".sticky-wrapper").remove();
+$(".email-updates").sticky({
+    topSpacing: 0,
+    className: 'sticky-signup'
+});
+
+$('#email-signup-close').click(function () {
+  $(this).remove();
+  var css = document.createElement('style');
+  css.type = 'text/css';
+  css.innerHTML = ".sticky-signup .email-updates { position: static !important }";
+  document.body.appendChild(css);
   return false;
 });
 
@@ -296,7 +299,7 @@ if (!Object.keys) {
     if(typeof alwaysSelected !== 'undefined') {
         referalParam = alwaysSelected;
     }
-    
+
     if (referalParam in referalMap) {
       referalOrg = referalMap[referalParam];
       slug = referalParam;
