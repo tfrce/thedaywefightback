@@ -38,7 +38,7 @@ extra_javascript_in_footer: "var alwaysSelected = 'eff';"
 #### Custom blog post style:
 custom_blog_post_style: "lettertowikipedia"
 ---
-### Members of the Wikimedia community,
+### Members of the Wikipedia community,
 
 Thank you for the lively discussion about participating in The Day We Fight Back taking place on Wikipedia. Wikipedia would not be possible without a robust and distributed decision-making process, and it's powerful to watch it in motion. With that spirit in mind, we'd like to contribute a few points to the discussion, to explain why we are in **strong support** of Wikipedia's participation in The Day We Fight Back on February 11.
 
