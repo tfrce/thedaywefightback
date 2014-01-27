@@ -1,11 +1,12 @@
 ---
-layout: custom_post
-permalink: obama-scorecard
-excerpt: We’ve put together a scorecard showing how Obama’s announcements stack up against 12 common sense fixes that should be a minimum for reforming NSA surveillance. Each necessary reform was worth 1 point, and we were willing to award partial credit for steps in the right direction. See how the President's reforms racked up.
-photo: "/img/social-fb-scorecard.jpg"
+layout: post
+permalink: open-letter-to-wikipedia
+excerpt: "<b>Members of the Wikimedia community</b>,<p>
+Thank you for the lively discussion about participating in The Day We Fight Back taking place on Wikipedia. Wikipedia would not be possible without a robust and distributed decision-making process, and it's powerful to watch it in motion. With that spirit in mind, we'd like to contribute a few points to the discussion</p>"
+#photo: "/img/social-fb-scorecard.jpg"
 
 # Goes in <title> tag:
-title: An Open Letter to the Wikipedia Community   
+title: An Open Letter to the Wikipedia Community
 # Show sticky social buttons in sidebar? Defaults to "true"
 social_sidebar: true
 # Only used in page meta description (for Google). If blank, defaults to homepage:
@@ -35,7 +36,7 @@ custom_url_share_count: true
 extra_javascript_in_footer: "var alwaysSelected = 'eff';"
 ---
 
-Members of the Wikimedia community,
+*Members of the Wikimedia community*,
 
 Thank you for the lively discussion about participating in The Day We Fight Back taking place on Wikipedia. Wikipedia would not be possible without a robust and distributed decision-making process, and it's powerful to watch it in motion. With that spirit in mind, we'd like to contribute a few points to the discussion, to explain why we are in **strong support** of Wikipedia's participation in The Day We Fight Back on February 11.
 
