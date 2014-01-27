@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
-<div class="container">
-	<h1>{{ page.title }}</h1>
-	<p class="meta">{{ page.date | date_to_string }}</p>
+<div class="container blogpost" >
+	<div class="col-md-10 col-lg-8 centered" id="{{ page.custom_blog_post_style }}">
+		<h1>{{ page.title }}</h1>
+		<p class="meta"></p>
 
-	<div class="post col-md-8 centered">
-		{{ content }}
+		<div class="post">
+			{{ content }}
+		</div>
 	</div>
 </div>

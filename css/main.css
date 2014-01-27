@@ -602,6 +602,40 @@ input.btn-lg, .input-lg {border-radius:0;}
     margin-top:0;
 }
 
+div.blogpost {
+    margin-top:30px;
+}
+
+.blogpost .post {
+    margin-top:30px;
+    font-size:18px;
+}
+
+#lettertowikipedia {
+    font-size:22px;
+}
+
+#lettertowikipedia h1 {
+    font-size: 35px;
+}
+
+#lettertowikipedia h3 {
+    text-transform: uppercase;
+    margin-bottom:25px;
+    margin-top:60px;
+}
+
+#lettertowikipedia p {
+    margin-bottom:20px;
+    line-height: 1.6;
+}
+
+#lettertowikipedia .inline-image {
+    float:right; 
+    font-size:14px;
+    padding-right:0;
+}
+
 /* ==========================================================================
    Scorecard
    ==========================================================================*/

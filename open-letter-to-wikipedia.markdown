@@ -1,9 +1,9 @@
 ---
 layout: post
-permalink: open-letter-to-wikipedia
 excerpt: "<b>Members of the Wikimedia community</b>,<p>
 Thank you for the lively discussion about participating in The Day We Fight Back taking place on Wikipedia. Wikipedia would not be possible without a robust and distributed decision-making process, and it's powerful to watch it in motion. With that spirit in mind, we'd like to contribute a few points to the discussion</p>"
 #photo: "/img/social-fb-scorecard.jpg"
+date: 2014-01-17
 
 # Goes in <title> tag:
 title: An Open Letter to the Wikipedia Community
@@ -34,17 +34,25 @@ custom_url_share_count: true
 
 #### Any extra javascript variables go here:
 extra_javascript_in_footer: "var alwaysSelected = 'eff';"
----
 
-*Members of the Wikimedia community*,
+#### Custom blog post style:
+custom_blog_post_style: "lettertowikipedia"
+---
+### Members of the Wikimedia community,
 
 Thank you for the lively discussion about participating in The Day We Fight Back taking place on Wikipedia. Wikipedia would not be possible without a robust and distributed decision-making process, and it's powerful to watch it in motion. With that spirit in mind, we'd like to contribute a few points to the discussion, to explain why we are in **strong support** of Wikipedia's participation in The Day We Fight Back on February 11.
 
 We believe Wikipedia should take part because the project and its crucial mission are threatened by the mass surveillance we now face, and because Wikipedia's participation can have a meaningful impact.
 
-How is Wikipedia threatened by NSA and other mass surveillance? The answer cuts to the very core of its mission to give free access to the sum of all human knowledge. "Free," of course, is not just about the cost—it means that readers and editors have the freedom to learn and contribute. It's that freedom, the freedom of its users to read and write without fear of government reprisal, that is threatened under a mass spying regime. Edward Snowden [wrote on this point](http://freesnowden.is/asksnowden.html) last week: "Study after study has show that human behavior changes when we know we’re being watched. Under observation, we act less free, which means we effectively *are* less free."
+How is Wikipedia threatened by the NSA and mass surveillance? The answer cuts to the very core of its mission to give free access to the sum of all human knowledge. "Free," of course, is not just about the cost—it means that readers and editors have the freedom to learn and contribute. It's that freedom, the freedom of its users to read and write without fear of government reprisal, that is threatened under a mass spying regime. Edward Snowden [wrote on this point](http://freesnowden.is/asksnowden.html) last week: "Study after study has show that human behavior changes when we know we’re being watched. Under observation, we act less free, which means we effectively *are* less free."
 
-It is not Wikipedia's responsibility alone to preserve that freedom, but Wikipedia plays an essential part. As the protests against SOPA demonstrated, Wikipedia—with its enormous user base and traffic—can disseminate of information that is essential to a functioning democracy. Wikipedia can direct much-needed attention to the dangers of mass surveillance and pending legislation and policies that would entrench and extend it further.
+<div class="col-md-6 inline-image">
+	<img src="/img/wikipedia-slide.jpg" alt="wikipedia slide" class="img-responsive"><br />
+	We know that Wikipedia activity is in NSA sights. This slide, featuring Wikipedia's logo, was among those revealed in the XKEYSCORE program.
+</div>
+
+
+It is not Wikipedia's responsibility alone to preserve that freedom, but Wikipedia plays an essential part. As the protests against SOPA demonstrated, Wikipedia—with its enormous user base and traffic—can disseminate the information that is essential to a functioning democracy. Wikipedia can direct much-needed attention to the dangers of mass surveillance and pending legislation and policies that would entrench and extend it further.
 
 Nobody is asking Wikipedia to be a soapbox, to disseminate propaganda, or to take any political stance more radical than imagining a world in which every single person on the planet is given free access to the sum of all human knowledge. We support action because that world simply cannot exist under a shadow of mass surveillance.
 
