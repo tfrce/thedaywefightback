@@ -21,7 +21,7 @@ og_image:  https://thedaywefightback.org/img/social-lettertowikipedia.jpg # Size
 #### Twitter card tags. These show in summar cards when share on Twitter. Defaults to homepage card tags.
 twitter_card_title: "An Open Letter to the Wikipedia Community" #Keep this relatively short
 twitter_card_description: The Wikipedia community should take part in The Day We Fight Back because of the threat that mass surveillance poses.
-# twitter_card_image: https://thedaywefightback.org/img/social-fb-scorecard.jpg
+twitter_card_image: https://thedaywefightback.org/img/social-lettertowikipedia.jpg
 
 #### Share links and text. These are used wherever there's a share button on the page.
 twitter_share_link: "https://twitter.com/intent/tweet?status=An%20open%20letter%20to%20the%20Wikipedia%20community%20from%20EFF%20and%20Demand%20Progress%20about%20the%20threat%20of%20mass%20surveillance%3A%20https%3A%2F%2Fthedaywefightback.org%2Fletter-to-wikipedia&related=daywefightback,sinak,neutralthoughts,stopwatchingus,eff"
