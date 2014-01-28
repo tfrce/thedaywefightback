@@ -9,7 +9,7 @@ Together we will push back against powers that seek to observe, collect, and ana
 
 ## WHAT WE'LL DO ON FEBRUARY 11th:
 
-**If you're in the US**: Thousands of websites will host banners urging people to call/email Congress. Plans may change, but we intend to ask legislators to oppose the FISA Improvements Act, support the USA Freedom Act, and enact protections for non-Americans.
+**If you're in the US**: Thousands of websites will host banners urging people to call/email Congress. We intend to ask legislators to oppose the FISA Improvements Act, support the USA Freedom Act, and enact protections for non-Americans.
 
 **If you're not in the US**: Visitors will be asked to urge appropriate targets to institute privacy protections
 
