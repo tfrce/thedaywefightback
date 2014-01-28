@@ -44,13 +44,14 @@ Thank you for the lively discussion about participating in The Day We Fight Back
 
 We believe Wikipedia should take part because the project and its crucial mission are threatened by the mass surveillance we now face, and because Wikipedia's participation can have a meaningful impact.
 
-How is Wikipedia threatened by the NSA and mass surveillance? The answer cuts to the very core of its mission to give free access to the sum of all human knowledge. "Free," of course, is not just about the cost—it means that readers and editors have the freedom to learn and contribute. It's that freedom, the freedom of its users to read and write without fear of government reprisal, that is threatened under a mass spying regime. Edward Snowden [wrote on this point](http://freesnowden.is/asksnowden.html) last week: "Study after study has show that human behavior changes when we know we’re being watched. Under observation, we act less free, which means we effectively *are* less free."
+How is Wikipedia threatened by the NSA and mass surveillance? The answer cuts to the very core of its mission to give free access to the sum of all human knowledge. "Free," of course, is not just about the cost—it means that readers and editors have the freedom to learn and contribute. It's that freedom, the freedom of its users to read and write without fear of government monitoring, disruption, or even reprisal, that is threatened under a mass spying regime. Edward Snowden [wrote on this point](http://freesnowden.is/asksnowden.html) last week: "Study after study has show that human behavior changes when we know we’re being watched. Under observation, we act less free, which means we effectively *are* less free."
 
 <div class="col-md-6 inline-image">
 	<img src="/img/wikipedia-slide.jpg" alt="wikipedia slide" class="img-responsive"><br />
 	We know that Wikipedia activity is in NSA sights. This slide, featuring Wikipedia's logo, was among those revealed in the XKEYSCORE program.
 </div>
 
+Wikipedia provides access to material that might be considered subversive, that challenges authority structures, that cuts against what one can learn from government propaganda or mainstream media sources. It is precisely the people who engage in the editing and reading of this sort of material who are the most likely to be chilled—and the most likely to be noticed by the surveillance regime. In other words, the people that Wikipedia most needs to reach are the ones whose freedom is being most threatened.
 
 It is not Wikipedia's responsibility alone to preserve that freedom, but Wikipedia plays an essential part. As the protests against SOPA demonstrated, Wikipedia—with its enormous user base and traffic—can disseminate the information that is essential to a functioning democracy. Wikipedia can direct much-needed attention to the dangers of mass surveillance and pending legislation and policies that would entrench and extend it further.
 
