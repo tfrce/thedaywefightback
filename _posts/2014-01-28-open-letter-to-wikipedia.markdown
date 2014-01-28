@@ -1,9 +1,9 @@
 ---
 layout: post
-excerpt: "<b>Members of the Wikimedia community</b>,<p>
-Thank you for the lively discussion about participating in The Day We Fight Back taking place on Wikipedia. Wikipedia would not be possible without a robust and distributed decision-making process, and it's powerful to watch it in motion. With that spirit in mind, we'd like to contribute a few points to the discussion</p>"
-#photo: "/img/social-fb-scorecard.jpg"
-date: 2014-01-17
+excerpt: "Members of the Wikipedia Community: Wikipedia would not be possible without a robust and distributed decision-making process, and it's powerful to watch it in motion. With that spirit in mind, we'd like to contribute a few points to the discussion about taking part in an action on February 11th to raise awareness about the dangers of mass surveillance.</p>"
+permalink: letter-to-wikipedia
+# photo: "/img/social-fb-scorecard.jpg"
+
 
 # Goes in <title> tag:
 title: An Open Letter to the Wikipedia Community
@@ -15,18 +15,18 @@ meta_description: An open letter from The Day We Fight Back to the Wikipedia com
 #### Facebook og tags. These show in summary cards when shared on FB. These default to the homepage og: tags.
 og_title: "An Open Letter to the Wikipedia Community"
 og_description: "The Wikipedia community asking should take part in The Day We Fight Back because of the threat that mass surveillance poses."
-# og_url: https://thedaywefightback.org/obama-scorecard/ # Make sure this is the URL of the actual live page
-# og_image:  https://thedaywefightback.org/img/social-fb-scorecard.jpg # Size should be 1260 x 630px
+og_url: https://thedaywefightback.org/letter-to-wikipedia/ # Make sure this is the URL of the actual live page
+og_image:  https://thedaywefightback.org/img/social-lettertowikipedia.jpg # Size should be 1260 x 630px
 
 #### Twitter card tags. These show in summar cards when share on Twitter. Defaults to homepage card tags.
 twitter_card_title: "An Open Letter to the Wikipedia Community" #Keep this relatively short
-twitter_card_description: The Wikipedia community asking should take part in The Day We Fight Back because of the threat that mass surveillance poses.
+twitter_card_description: The Wikipedia community should take part in The Day We Fight Back because of the threat that mass surveillance poses.
 # twitter_card_image: https://thedaywefightback.org/img/social-fb-scorecard.jpg
 
 #### Share links and text. These are used wherever there's a share button on the page.
-# twitter_share_link: "https://twitter.com/intent/tweet?status=An%20NSA%20Reform%20Scorecard%3A%20How%20%40BarackObama%27s%20changes%20stack%20up%3A%20https%3A%2F%2Fthedaywefightback.org%2Fobama-scorecard&related=daywefightback,sinak,neutralthoughts,stopwatchingus,eff"
-# facebook_share_link: "https://www.facebook.com/sharer/sharer.php?app_id=709021229138321&sdk=joey&u=https%3A%2F%2Fthedaywefightback.org%2Fobama-scorecard%2F&display=popup"
-# google_share_link: "https://plus.google.com/share?url=https://thedaywefightback.org/obama-scorecard"
+twitter_share_link: "https://twitter.com/intent/tweet?status=An%20open%20letter%20to%20the%20Wikipedia%20community%20from%20EFF%20and%20Demand%20Progress%20about%20the%20threat%20of%20mass%20surveillance%3A%20https%3A%2F%2Fthedaywefightback.org%2Fletter-to-wikipedia&related=daywefightback,sinak,neutralthoughts,stopwatchingus,eff"
+facebook_share_link: "https://www.facebook.com/sharer/sharer.php?app_id=709021229138321&sdk=joey&u=https%3A%2F%2Fthedaywefightback.org%letter-to-wikipedia%2F&display=popup"
+google_share_link: "https://plus.google.com/share?url=https://thedaywefightback.org/letter-to-wikipedia/"
 
 #### Show custom share counts for this page? (i.e. not total of homepage?)
 ### If using this, make sure og_url is set correctly above.
@@ -58,3 +58,6 @@ It is not Wikipedia's responsibility alone to preserve that freedom, but Wikiped
 Nobody is asking Wikipedia to be a soapbox, to disseminate propaganda, or to take any political stance more radical than imagining a world in which every single person on the planet is given free access to the sum of all human knowledge. We support action because that world simply cannot exist under a shadow of mass surveillance.
 
 Thank you for your consideration,
+
+<img src="/img/wiki-eff-logo.png" alt="Electronic Frontier foundation" />
+<img src="/img/wiki-dp-logo.png" alt="Demand Progress" />
