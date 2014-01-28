@@ -3,6 +3,7 @@ layout: post
 excerpt: "Members of the Wikipedia Community: Wikipedia would not be possible without a robust and distributed decision-making process, and it's powerful to watch it in motion. With that spirit in mind, we'd like to contribute a few points to the discussion about taking part in an action on February 11th to raise awareness about the dangers of mass surveillance.</p>"
 permalink: letter-to-wikipedia
 # photo: "/img/social-fb-scorecard.jpg"
+draft: true
 
 
 # Goes in <title> tag:
