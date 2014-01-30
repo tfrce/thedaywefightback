@@ -112,7 +112,7 @@ if( $('#subscribers-count-sites').length ){
     //Get time difference
     $.ajax({
         type: "GET",
-        url: '/',
+        url: '/blank.html',
         success: function(data, status, xhr) {
             var serverDateTime = (xhr.getResponseHeader('Date'));
             serverDate = new Date(serverDateTime);
