@@ -41,7 +41,7 @@ custom_blog_post_style: "lettertowikipedia"
 ---
 ### Members of the Wikipedia community,
 
-Thank you for the lively discussion about participating in The Day We Fight Back taking place on Wikipedia. Wikipedia would not be possible without a robust and distributed decision-making process, and it's powerful to watch it in motion. With that spirit in mind, we'd like to contribute a few points to the discussion, to explain why we are in **strong support** of Wikipedia's participation in The Day We Fight Back on February 11.
+Thank you for the lively discussion about participating in The Day We Fight Back. Although it was disappointing that the conversation didn't reach consensus, it's also true that Wikipedia would not be possible without a robust and distributed decision-making process, and it's powerful to watch it in motion. With that spirit in mind, we hope to contribute a few points to the discussion, to explain why we are in **strong support** of re-opening the proposal for Wikipedia's participation in The Day We Fight Back on February 11.
 
 We believe Wikipedia should take part because the project and its crucial mission are threatened by the mass surveillance we now face, and because Wikipedia's participation can have a meaningful impact.
 
