@@ -116,7 +116,7 @@ if( $('#subscribers-count-sites').length ){
         success: function(data, status, xhr) {
             var serverDateTime = (xhr.getResponseHeader('Date'));
             serverDate = new Date(serverDateTime);
-            liveDate = new Date(Date.UTC(2014, 1, 12, 8, 0));
+            liveDate = new Date(Date.UTC(2014, 1, 11, 8, 0));
             var diff = liveDate - serverDate;
 
             timeDiffObj = splitTime(diff);
