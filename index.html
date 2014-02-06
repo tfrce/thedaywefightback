@@ -61,9 +61,49 @@ extra_javascript_in_footer:
             </div>
         </div>
     </div>
+   <a name="banner-live"></a> 
+    <div class="container banner-live" id="actions">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 centered">
+                <div class="step row">
+                  <h4>UPDATE: Add the banner code to your site today</h4>
+                      <img src="/img/banner_preview.png" style="margin-bottom:20px" />
+                      <p>Our embeddable banner is now ready and available for you to add to your website.</p> 
+                      <p>The banner changes automatically based on the nationality of the visitors. See the live demos here: <a href="http://tfrce.github.io/thedaywefightback.js/example/banner.html" target="_blank">US version</a>, <a href="http://tfrce.github.io/thedaywefightback.js/example/banner_international.html">international version</a>.</p> 
+                      <p>Adding to your banner is simple, just <strong>add the code below to your site, just before the closing &lt;/body&gt; tag</strong>.</p>
+                      <pre>
+&lt;!--[if !(lte IE 8)]&gt;&lt;!--&gt; 
+   &lt;script type="text/javascript"&gt; 
+     (function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+   &lt;/script&gt;
+&lt;!--&lt;![endif]--&gt;</pre>
+                      <p><strong>You can add the code starting now - the banner will automatically activate at 12am EST on February 11th.</strong></p>
+                      <p>For more information about the banner and optional settings, see our <a href="https://github.com/tfrce/thedaywefightback.js">Github Repo</a>.</p>
+                      <div id="greybox">
+                        <h5>Let us know you're adding the banner:</h5>
+
+                        <div class="form-inline banner-signup-form">
+                          <form id="email-banner-form" action="">
+                            <input type="hidden" name="banner" value="1">
+                            <div class="form-group">
+                              <label class="sr-only" for="id_email" >Email address</label>
+                              <input type="email" class="form-control banner-signup input-lg" name="email"  id="id_email" placeholder="Your email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required" />
+                            </div>
+                            <div class="form-group">
+                              <label class="sr-only" for="banner-domain">Password</label>
+                              <input type="text" class="form-control domain-input input-lg" id="banner-domain" placeholder="Your domain(s)" name="domain" required="required" />
+                            </div>
+                            <input class="btn btn-default btn-lg" type="submit" value="Submit" />
+                          </form>
+                        </div>
+                      </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
 
     <div class="container" id="letter">
-        <!-- Example row of columns -->
         <div class="row">
             <div class="col-sm-10 col-md-10 col-lg-8 centered">
                 <h2>DEAR USERS OF THE INTERNET,</h2>
@@ -101,28 +141,7 @@ extra_javascript_in_footer:
                     <h4>1: SIGN UP TO ADD A BANNER TO YOUR SITE</h4>
 
                     <div class="col-sm-10 centered">
-                        <img src="/img/banner_preview.png" style="margin-bottom:20px" />
-                        <p>We’re creating embeddable banners and widgets that you’ll be able to add to your site to encourage  visitors to participate in the day of action. The photo above is just a draft - the final design is yet to come.</p>
-                        <p>Sign up here if you have a site that can participate and we’ll let you know how to implement a widget when they’re ready. And if you work at a tech company or startup, lobby the management and ask them to join too.</p>
-                        <p><b>If you're not in the US:</b> Visitors will be asked to urge their  local representatives to institute privacy protections.</p>
-                        <div id="greybox">
-                          <h5>Sign up and get notified when they're ready:</h5>
-
-                          <div class="form-inline banner-signup-form">
-                            <form id="email-banner-form" action="">
-                              <input type="hidden" name="banner" value="1">
-                              <div class="form-group">
-                                <label class="sr-only" for="id_email" >Email address</label>
-                                <input type="email" class="form-control banner-signup input-lg" name="email"  id="id_email" placeholder="Your email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required" />
-                              </div>
-                              <div class="form-group">
-                                <label class="sr-only" for="banner-domain">Password</label>
-                                <input type="text" class="form-control domain-input input-lg" id="banner-domain" placeholder="Your domain(s)" name="domain" required="required" />
-                              </div>
-                              <input class="btn btn-default btn-lg" type="submit" value="Submit" />
-                            </form>
-                          </div>
-                      </div>
+                        <p class="text-center"><a href="#banner-live">Click here to see the code.</a></p>
                     </div>
                 </div>
 

@@ -240,6 +240,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     line-height: normal;
     float: left;
 }
+.banner-live pre {
+    font-size:12px;
+    margin: 15px 0;
+}
+.banner-live {margin-bottom:30px;}
 #letter, #whatwewilldo {
     width:100%;
     padding:32px 0 44px 0;
