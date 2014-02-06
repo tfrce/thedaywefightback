@@ -5,7 +5,6 @@ permalink: letter-to-wikipedia
 # photo: "/img/social-fb-scorecard.jpg"
 draft: false
 
-
 # Goes in <title> tag:
 title: An Open Letter to the Wikipedia Community
 # Show sticky social buttons in sidebar? Defaults to "true"
