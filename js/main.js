@@ -288,6 +288,22 @@ if (!Object.keys) {
         'dk': {
             name: 'Daily Kos',
             policy: 'http://www.dailykos.com/special/privacy'
+        },
+        'ca': {
+            name: 'Credo Action',
+            policy: 'http://credoaction.com/privacy/'
+        },
+        'aclu': {
+            name: 'ACLU',
+            policy: 'https://www.aclu.org/american-civil-liberties-union-privacy-statement'
+        },
+        'pda': {
+            name: 'Progressive Democrats of America',
+            policy: 'http://www.pdamerica.org/about-pda/privacy-policy'
+        },
+        'of': {
+            name: 'Campaign for America\'s Future',
+            policy: 'http://ourfuture.org/privacy'
         }
     };
     var referalKeys = Object.keys(referalMap);
