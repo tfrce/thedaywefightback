@@ -4,7 +4,7 @@ layout: default
 <div class="container blogpost" >
 	<div class="col-md-10 col-lg-8 centered" id="{{ page.custom_blog_post_style }}">
 		<h1>{{ page.title }}</h1>
-		<p class="meta">{{ page.date | date_to_string }}</p>
+		{% if page.show_date != false %}<p class="meta">{{ page.date | date_to_string }}</p>{% endif %}
 
 		<div class="post">
 			{{ content }}
