@@ -73,7 +73,7 @@ extra_javascript_in_footer:
                       <p>The banner changes automatically based on the nationality of the visitors. See the live demos here: <a href="http://tfrce.github.io/thedaywefightback.js/example/banner.html" target="_blank" id="demo-link">US version</a>, <a href="http://tfrce.github.io/thedaywefightback.js/example/banner_international.html">international version</a>.</p> 
                       <p>Adding the banner to your site is simple, just <strong>add the code below to your site, just before the closing &lt;/body&gt; tag</strong>.</p>
                       <pre>
-&lt;!--[if !(lte IE 8)]&gt;&lt;!--&gt; 
+&lt;!--[if !(lt IE 8)]&gt;&lt;!--&gt; 
    &lt;script type="text/javascript"&gt; 
      (function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
    &lt;/script&gt;
@@ -239,7 +239,7 @@ extra_javascript_in_footer:
     }
     if (vars['r'] == "eff") {
         var el = document.querySelectorAll('pre');
-        el[0].innerHTML = '&lt;!--[if !(lte IE 8)]&gt;&lt;!--&gt; \n   &lt;script type="text/javascript"&gt; \n       var tdwfb_config={greeting:"Dear Internet Users",disableDate:false,callOnly:true};(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()\n   &lt;/script&gt;\n&lt;!--&lt;![endif]--&gt;';
+        el[0].innerHTML = '&lt;!--[if !(lt IE 8)]&gt;&lt;!--&gt; \n   &lt;script type="text/javascript"&gt; \n       var tdwfb_config={greeting:"Dear Internet Users",disableDate:false,callOnly:true};(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()\n   &lt;/script&gt;\n&lt;!--&lt;![endif]--&gt;';
         var el = document.querySelectorAll('#banner-preview-image');
         el[0].setAttribute('src', '/img/banner_preview_call.png');
         var el = document.querySelectorAll('#demo-link');
