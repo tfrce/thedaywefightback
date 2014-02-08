@@ -68,9 +68,9 @@ extra_javascript_in_footer:
                 <div class="step row">
                   <h4 style="margin-bottom:15px">UPDATE: Add the banner code to your site today</h4>
                   <p class="text-center" style="margin-top:0; margin-bottom:15px;">First time here? Keep scrolling or <a href="#theletter">click here</a> to read about what we're planning.</p>
-                      <img src="/img/banner_preview.png" style="margin-bottom:20px" />
+                      <img src="/img/banner_preview.png" style="margin-bottom:20px" id="banner-preview-image"/>
                       <p>Our embeddable banner is now ready and available for you to add to your website.</p> 
-                      <p>The banner changes automatically based on the nationality of the visitors. See the live demos here: <a href="http://tfrce.github.io/thedaywefightback.js/example/banner.html" target="_blank">US version</a>, <a href="http://tfrce.github.io/thedaywefightback.js/example/banner_international.html">international version</a>.</p> 
+                      <p>The banner changes automatically based on the nationality of the visitors. See the live demos here: <a href="http://tfrce.github.io/thedaywefightback.js/example/banner.html" target="_blank" id="demo-link">US version</a>, <a href="http://tfrce.github.io/thedaywefightback.js/example/banner_international.html">international version</a>.</p> 
                       <p>Adding the banner to your site is simple, just <strong>add the code below to your site, just before the closing &lt;/body&gt; tag</strong>.</p>
                       <pre>
 &lt;!--[if !(lte IE 8)]&gt;&lt;!--&gt; 
@@ -225,3 +225,26 @@ extra_javascript_in_footer:
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+    var vars = [], hash;
+        var q = document.URL.split('?')[1];
+        if(q != undefined){
+            q = q.split('&');
+            for(var i = 0; i < q.length; i++){
+                hash = q[i].split('=');
+                vars.push(hash[1]);
+                vars[hash[0]] = hash[1];
+            }
+    }
+    if (vars['r'] == "eff") {
+        var el = document.querySelectorAll('pre');
+        el[0].innerHTML = '&lt;!--[if !(lte IE 8)]&gt;&lt;!--&gt; \n   &lt;script type="text/javascript"&gt; \n       var tdwfb_config={greeting:"Dear Internet Users",disableDate:false,callOnly:true};(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()\n   &lt;/script&gt;\n&lt;!--&lt;![endif]--&gt;';
+        var el = document.querySelectorAll('#banner-preview-image');
+        el[0].setAttribute('src', '/img/banner_preview_call.png');
+        var el = document.querySelectorAll('#demo-link');
+        el[0].setAttribute('href', 'http://tfrce.github.io/thedaywefightback.js/example/banner_callonly.html');
+
+    }
+</script>
+
