@@ -245,6 +245,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin: 15px 0;
 }
 .banner-live {margin-bottom:30px;}
+.banner-live .step h5.howtoaddcode {
+    text-align:left;
+    margin-top:20px;
+}
 #letter, #whatwewilldo {
     width:100%;
     padding:32px 0 44px 0;
