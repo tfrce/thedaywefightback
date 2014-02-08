@@ -43,7 +43,7 @@ February 11th is the day we fight back against NSA surveillance. In addition to 
 
 Hosting a local event is a great way to harness grassroots energy in fighting surveillance abuses. Below are some ideas for local events you can organize. Be sure to let us know your plans so we can include it to our growing of activists and concerned individuals that are joining the fight against mass, illegal government surveillance. Email us at [contact@thedaywefightback.org](mailto:contact@thedaywefightback.org).
 
-[See a list of planned so far here.](/events/)
+[See a list of planned events so far here.](/events/)
 
 **Tip:** You may want to start an email list for participants who want to help organize future events, share news, and continue the conversation about mass surveillance. Here’s a sample [email sign-up sheet](https://www.eff.org/document/day-we-fight-back-sign-sheet).
 
