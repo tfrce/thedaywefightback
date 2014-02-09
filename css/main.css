@@ -913,3 +913,558 @@ div.blogpost {
 .lt-ie9 .centered {
     float:none!important;
 }
+
+
+
+/* =====================================*/
+/* Mobile banner */
+/* =====================================*/
+
+.mobile-banner.visible-xs {
+  margin-top:5px;
+  height: 100%;
+}
+.mobile-banner img {
+  height: 89px;
+  margin: 0 auto;
+  margin-bottom:10px;
+}
+
+/* =====================================*/
+/* CSS Sprite */
+/* =====================================*/
+.i {
+    background-image: url('imgs/image.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+.i-email {
+    width: 172px;
+    height: 19px;
+    background-position: -1px -25px;
+    margin-top:13px;
+}
+.i-call {
+    width: 144px;
+    height: 22px;
+    background-position: -1px -1px;
+    margin-top:30px;
+}
+.i-logo {
+    width: 279px;
+    height: 30px;
+    background-position: -1px -46px;
+    margin-top:10px;
+}
+
+/* =====================================*/
+/* Left side of banner */
+/* =====================================*/
+
+.leftside, .rightside {
+    padding:0;
+}
+
+.leftsidecontainer {
+    width: 84.75%;
+    margin: 60px auto 0 auto;
+    margin-left: 9.5%;
+    margin-right: 5.75%;
+}
+
+.scrolling-banner-text {
+    color: #fff;
+    font-size:20px;
+    line-height:1.1;
+    width: 100%;
+    text-align:center;
+    height: 85px;
+  position:relative;
+}
+.scrolling-banner-text div {
+  position: absolute;
+  bottom:0;
+}
+.scrolling-banner-text span.fact {
+  display:inline-block;
+  font-weight: 700;
+  font-style: italic;
+  font-size:13px;
+  background-color: #F2C45A;
+  color: #000;
+  padding: 5px 7px 5px 8px;
+  position: relative;
+  bottom: 2px;
+  margin-right: 4px;
+  line-height: 1em;
+  }
+.scrolling-banner-text span.fact:hover {
+  background-color: #262626;
+  color: #F2C45A;
+}
+
+@media (max-width: 900px){
+    .scrolling-banner-text {
+    }
+}
+
+.scrolling-banner-text a {
+    color: #f2c45a;
+}
+.leftsidecontainer .divider {
+    background: #fff;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    height: 1px;
+}
+.leftsidecontainer .divider div {
+  height: 100%;
+  width: 0;
+  background: #F2C45A;
+  z-index:100;
+}
+.leftsidecontainer .logotext {
+    margin-top:10px;
+}
+
+/* =====================================*/
+/* Right side of banner */
+/* =====================================*/
+
+.rightsidecontainer {
+  margin: 0 50px 0 33px;
+}
+
+.rightsidecontainer h2 {
+  font-size:20px;
+  font-weight:900;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color:#f2c45a;
+  margin: 15px 0 0 0;
+}
+
+.rightsidecontainer h3 {
+  font-size:14px;
+  font-weight:900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color:white;
+  margin:0;   
+}
+
+.rightsidecontainer ul {
+  padding-left:15px;
+}
+
+.rightsidecontainer li {
+  font-family: "open sans", sans-serif;
+  font-size:12px;
+  color:white;
+  margin-bottom:5px;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+ .rightsidecontainer {
+    margin: 0 25px 0 15px;
+  } 
+}
+
+@media (min-width: 979px) {
+  .rightsidecontainer h2 {
+    font-size:25px;
+    font-weight:900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .rightsidecontainer h3 {
+    font-size:17px;
+    letter-spacing:1px;
+    text-align: center;
+  }
+}
+
+/* =====================================*/
+/* Call and email forms */
+/* =====================================*/
+.phone-container, .email-container, .calls-counter, .emails-counter {
+    width: 35.85%;
+    float:left;
+}
+.phone-container, .calls-counter {
+    margin-right: 9.43%;
+    margin-left:9.43%;
+}
+@media (max-width: 900px){
+    .phone-container, .calls-counter {
+        margin-left: 3%;
+        margin-right: 5%;
+    }
+    .phone-container, .email-container, .calls-counter, .emails-counter {
+        width: 42.5%;
+    }
+}
+@media (max-width: 800px){
+    .rightside.top {
+      position: relative;
+      top: -7px;
+    }
+  }
+.call-form, .email-form {
+  margin-top: 70px;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #9e9e9e;
+    font-style:italic;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    line-height:23px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #9e9e9e !important;
+    font-style:italic !important;
+    font-weight: 500 !important;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #9e9e9e !important;
+    font-style:italic !important;
+    font-weight: 500 !important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #9e9e9e !important;
+    font-style:italic !important;
+    font-weight: 500 !important;
+}
+.call-form .form-group,
+.email-form .form-group{
+  margin-bottom: 0;
+}
+.call-form label,
+.email-form label {
+  color: #fff;
+  display: block;
+  text-align: justify !important;
+  letter-spacing: 1px;
+  line-height: 20px;
+  padding: 0 !important;
+  height: 54px;
+  position:relative;
+}
+.call-form label img,
+.email-form label img {
+    position:absolute;
+    bottom:5px;
+}
+
+.call-form input.form-control,
+.email-form input.form-control,
+.international input  {
+  margin-top: 8px;
+  border-radius: 0 !important;
+  height: 50px;
+}
+@media (max-width: 900px){
+   .form-control {
+    font-size: 13px;
+    }
+    .call-form label img,
+    .email-form label img {
+        position:absolute;
+        bottom:5px;
+    }
+}
+.call-form input[type="submit"],
+.email-form input[type="submit"],
+.international input[type="submit"] {
+line-height: 26px;
+height: 29px;
+width: 100%;
+text-transform: uppercase;
+text-align: center;
+background-color: #F2C45A;
+font-weight: 700;
+border: 0;
+margin-top:5px;
+letter-spacing: 1px;
+font-size:12px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.call-form input[type="submit"]:hover,
+.email-form input[type="submit"]:hover,
+.international input[type="submit"]:hover  {
+  background-color: #262626;
+  color: #F2C45A;
+}
+
+/* 
+    Call Only
+*/
+
+.phone-only-container {
+    padding: 0 20px;
+}
+
+.phone-only-container input {
+    padding-left:10px;
+}
+
+.phone-only-container .call-form {
+    margin-top:60px;
+}
+
+.email-instead {
+    text-align:right;
+    padding-top:15px;
+}
+.twilio-container {
+  width: 100%;
+  max-width: 190px;
+  margin: 0 auto;
+}
+.twilio-poweredby, .twilio-privacy {
+    margin-top:6px;
+    opacity: .6;
+      margin-bottom:3px;
+}
+.twilio-poweredby {
+  width: 60%;
+}
+.twilio-privacy {
+  width: 40%;
+}
+.twilio-privacy:hover, .twilio-poweredby:hover {
+    opacity:.8;
+}
+
+.phone-only-container input[type="submit"] {
+    font-style: italic;
+    font-size:16px;
+    padding:5px 0 0 0;
+    height:30px;
+    margin-top:7px;
+    letter-spacing: 1px;
+    width: 200px;
+}
+
+.phone-only-container a {
+    font-size:12px;
+    font-weight: bold;
+}
+
+@media (max-width:800px) {
+    .phone-only-container a {
+        font-size:11px;
+    }
+}
+
+
+.email-icon {
+    padding-right:6px;
+    vertical-align: middle;
+}
+
+@media (max-width:850px) {
+    .email-icon {
+        display:none;
+    }
+}
+
+.phone-only-container a:hover {
+    color:white;
+    text-decoration: none;
+}
+
+.full-input {
+    width:100%;
+}
+
+
+
+/*
+    Footer
+*/
+
+.footer .leftsidecontainer {
+  margin: 0 auto;
+  margin-left: 9.5%;
+  margin-right: 5.7%;
+}
+.footer .rightsidecontainer {
+  margin-right: 9.4%;
+}
+
+.footer-wrapper {
+  position:fixed;
+  bottom:0;
+  left:0;
+  width: 100%;
+  height: 50px;
+  background: #262626;
+}
+
+.calls-counter, .emails-counter, .footer-left  {
+  line-height: 50px;
+  height: 40px;
+  color: #efefef;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+
+
+.footer-left, .footer-left a {
+  font-weight: 700;
+  color: #5C5C5C;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size:14px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.footer-left a:hover {
+  color: #F2C45A;
+  text-decoration: none;
+}
+.footer-left span {
+  display: inline-block;
+  margin: 0 15px;
+}
+#call-count, #email-count {
+  color:white;
+  font-weight:500;
+}
+.calls-counter, .emails-counter {
+  font-weight: 700;
+}
+#banner-container {
+    height: 300px;
+}
+
+@media (max-width: 900px){
+  .calls-counter, .emails-counter {
+    font-size:13px;
+    letter-spacing:0.5px;
+  }
+
+}
+
+/* See http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css/#Height if we start having problems*/
+.abs-centered {
+    margin: auto;
+      position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
+}
+.org-logo-slider {
+    display: none;
+}
+@media (max-height: 60px) {
+    .footer-left {
+        display: none;
+    }
+    .org-logo-slider {
+        display: block;
+    }
+}
+.placeholder {
+    color: #ccc;
+}
+
+/* =====================================*/
+/* =====================================*/
+/* International banner */
+/* =====================================*/
+/* ==============================d=======*/
+
+.nandp-container {
+  margin-right: 9.5%;
+  margin-left: 3%;
+  text-align:center;
+  margin-top:46px;
+}
+.international .form-group.inline {
+  width: 32%;
+  display:inline-block;
+  float:left;
+  margin-right:2%;
+  margin-bottom: 7px;
+}
+.international .form-group.inline.last {
+  margin-right:0;
+}
+.international select {
+  margin-top:9px;
+}
+.international input[type="text"] {
+  height: 35px;
+}
+.international input[type="submit"] {
+  font-size:20px;
+  height:35px;
+  padding-top:5px;
+  margin-top:0px;
+}
+.international h3 {
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "brandon_grotesque";
+  margin-top:12px;
+  line-height: 1.3;
+  margin-bottom: 5px;
+}
+
+.international h3 a:hover {
+  color: #a27c23;
+  text-decoration: none;
+  }
+.international .int-pencil {
+  width:35px;
+}
+.international .checkbox {
+  float:left;
+  margin-top: 0;
+  margin-bottom:7px;
+}
+.international .checkbox label {
+  color: #fff;
+}
+.international .checkbox input {
+  height: 14px;
+  width: 14px;
+  margin-top: 3px;
+}
+.footer .signature-counter {
+  margin-left: 3%;
+}
+.int-share img {
+  width: 32%;
+  margin-right: 1.25%;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  margin-top:5px;
+}
+.int-share img:hover {
+opacity: 0.8;
+}
+
+@media (max-width: 991px){
+  .nandp-container {
+  margin-left: 9.5%; 
+  }
+  .international .checkbox label {
+    font-size:16px;
+    }
+  .international .form-group.inline {
+    margin-bottom:10px;
+  }
+  .international h3 {
+    font-size:20px;
+  }
+  .international input[type="submit"] {
+    margin-top:5px;
+  }
+}
