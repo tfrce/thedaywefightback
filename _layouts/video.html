@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>The Day We Fight Back: The Video</title>
+  <meta name="description" content="February 11th 2014 is the day the Internet rises up to fight back against mass surveillance. Watch the video. ">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="author" href="humans.txt" />
+
+  <!--  CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/odometer.css" rel="stylesheet">
+  <link href="/css/open-sans.css" rel="stylesheet">
+  <link href="/css/main.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script type="text/javascript">
+        window.html5 = { 'elements': 'mark section customelement' };
+      </script>
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Facebook OpenGraph tags -->
+<meta property="og:title" content="Remember the SOPA blackout? The Internet is rising up in protest once again on February 11th."/>
+<meta property="og:description" content="After you watch this, you might want to take part too."/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://thedaywefightback.org/video/"/>
+<meta property="og:image" content="https://thedaywefightback.org/img/social-fb-videopage.jpg"/>
+<meta property="og:image:secure_url" content="https://thedaywefightback.org/img/social-fb-videopage.jpg"/>
+<meta property="og:site_name" content="TheDayWeFightBack.org"/>
+<meta property="fb:app_id" content="709021229138321"/>
+<meta property="fb:admins" content="36801504"/>
+ 
+
+  <!-- Twitter Card tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@daywefightback">
+<meta name="twitter:creator" content="@daywefightback">
+<meta name="twitter:title" content="Remember SOPA? The Internet is rising up in protest again.">
+<meta name="twitter:description" content="This time it's against mass surveillance. After you watch this, you might want to join too.">
+<meta name="twitter:image" content="https://thedaywefightback.org/img/social-fb-video.jpg">
+
+</head>
+
+<body style="background-color: #000;">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    {% include nav.html %}
+
+    <div class="jumbotron video" id="branding" style="margin-bottom: 0;">
+        <div class="container">
+            <div id="headergraphic">
+              <a href="/">
+                <h2>February 11th 2014 is</h2>
+                <h1>The Day We Fight Back</h1>
+                <h2>Against Mass Surveillance</h2>
+              </a>
+            </div>
+            {% if page.url == "/index.html" |%}
+            <img id="logos" src="/img/logos.png" class="hidden-xs img-responsive" />
+            <img id="logos-mobile" src="/img/logos-mobile@2x.png" class="visible-xs" />
+            {% endif %}
+            <!--<p class="subscribers-count"></p>-->
+        </div>
+    </div>
+
+    {{content}}
+
+    <script src="/js/jquery-1.10.2.min.js"></script>
+    <script>window.jQuery || document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.map"><\/script>');
+
+      var tfrceConfig = {
+      };
+      </script>
+    <script src="/js/libs.min.js"></script>
+    <script src="/js/main.js"></script>
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.taskforce.is/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "1"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
+</body>
+</html>

@@ -1,0 +1,31 @@
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.10.2.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.map"><\/script>');
+        {% if page.extra_javascript_in_footer %}{{ page.extra_javascript_in_footer }}{% endif %}
+          var tfrceConfig = {
+              {% if page.custom_url_share_count == true %}
+              shareCountURL: '{{ page.og_url }}',
+              loadTotals: true
+              {% endif %}
+          };
+      </script>
+    <script src="/js/libs.min.js"></script>
+    <script src="/js/main.js"></script>
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.taskforce.is/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "1"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
