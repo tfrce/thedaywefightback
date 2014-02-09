@@ -55,7 +55,7 @@ extra_javascript_in_footer: "var alwaysSelected = 'eff';"
   </div>
   <div class="col-sm-12 col-md-10 centered text-center">
 	<img src="/img/scorecard-post.png" class="hidden-xs hidden-sm centered" alt="Obama's scorecard on NSA reform"> <img src="/img/scorecard-post.png" class="hidden-lg hidden-md img-responsive" alt="Obama's scorecard on NSA reform"><br>
-	<a href="{{%20page.facebook_share_link%20}}" class="fblinkthis"><img src="/img/share-on-fb.png" alt="share on facebook"></a> <a href="{{%20page.twitter_share_link%20}}" class="twlinkthis"><img src="/img/share-on-tw.png" alt="share on twitter"></a> <a href="{{%20page.google_share_link%20}}" class="gpluslinkthis"><img src="/img/share-on-g.png" alt="share on google"></a>
+	<a href="{{ page.facebook_share_link }}" class="fblinkthis"><img src="/img/share-on-fb.png" alt="share on facebook"></a> <a href="{{ page.twitter_share_link }}" class="twlinkthis"><img src="/img/share-on-tw.png" alt="share on twitter"></a> <a href="{{ page.google_share_link }}" class="gpluslinkthis"><img src="/img/share-on-g.png" alt="share on google"></a>
   </div>
 </div>
 <div class="col-md-8 centered" id="scorecard-container">
