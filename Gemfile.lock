@@ -24,7 +24,6 @@ GEM
       liquid (~> 2.3)
       maruku (~> 0.5)
     kramdown (0.14.0)
-    redcarpet (3.0.0)
     liquid (2.4.1)
     maruku (0.6.1)
       syntax (>= 1.0.0)
@@ -33,9 +32,9 @@ GEM
     syntax (1.0.0)
 
 PLATFORMS
-  ruby (1.9.2)
+  ruby
 
 DEPENDENCIES
   RedCloth
   rack-jekyll!
-  redcarpet (3.0.0)
+  redcarpet

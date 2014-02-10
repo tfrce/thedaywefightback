@@ -7,3 +7,4 @@ gem "RedCloth"            # if you want to use the Textile Markup Language
 gem 'rack-jekyll', :git => 'https://github.com/adaoraul/rack-jekyll.git', :require => 'rack/jekyll'
 #gem "foreman"             # this is a tool to test and use the Procfile locally
 #gem "heroku"              # if you install the Heroku Toolbelt you won't need this but it's good practice
+gem "redcarpet"
