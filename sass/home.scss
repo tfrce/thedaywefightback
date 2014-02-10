@@ -184,6 +184,30 @@ h1, h2, h3, h4, h5 {
 	font-weight: bold;
 	letter-spacing: 0.1em;
 }
+nav {
+	ul {
+		list-style-type: none;
+		padding: 0;
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-size: 0.9em;
+		padding-top: 0.5em;
+		li {
+			display: inline;
+			padding: 0 1em;
+			@include italic;
+			font-weight: normal;
+			a {
+				opacity: 0.7;
+				@include transition;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
 header {
 	background: #111 url(bg-header.jpg) no-repeat center top;
 	background-size: auto 100%;
@@ -555,9 +579,18 @@ footer {
 	}
 }
 
+#toggle {
+	display: none;
+}
+
 @media screen and (max-width: 767px) {
 	body {
 		font-size: 14px;
+	}
+	section img {
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
 	}
 	header h1 {
 		font-size: 1.1em;
@@ -584,7 +617,46 @@ footer {
 	#action article, #take-part article.intro {
 		font-size: 1.2em;
 	}
-	header .mobile {
-		display: block;
+	header {
+		text-align: left;
+		h1, .mobile {
+			display: block;
+			text-align: center;
+		}
 	}
+	.toggle { display: block; position: relative; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; text-align: center; }
+		.toggle:after {
+	content: 'Menu';
+	display: block;
+	padding: 0.5em 0;
+	border-radius: 0;
+	width: 100%;
+	background: darken($highlight,10%);
+	color: #333;
+	margin: 0;
+	@include italic;
+
+
+	}
+	
+	nav ul {
+		display: none;
+		opacity: 0;
+		background: #FAFAFA;
+		font-size: 1em;
+		margin-top: 0;
+		li {
+			display: block;
+			border-bottom: 1px solid #DDD;
+			text-align: left;
+			a {
+				padding: 1em;
+				opacity: 1;
+				display: block;
+			}
+		}
+	}
+	
+	#toggle:checked + nav #menu { display: block; opacity: 1;}
+	
 }
