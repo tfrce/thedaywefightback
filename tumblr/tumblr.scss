@@ -196,8 +196,6 @@ header {
 	width: 100%;
 	display: table;
 	text-align: center;
-	position: relative;
-	z-index: 2;
 	.center {
 		display: table-cell;
 		vertical-align: middle;
@@ -417,7 +415,6 @@ footer {
 	margin-top: -2em;
 	padding-bottom: 4em;
 	position: relative;
-	z-index: 1;
 }
 @media screen and (max-width: 900px) {
 	article {
