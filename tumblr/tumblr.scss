@@ -275,7 +275,7 @@ h1, h2, h3, h4, h5 {
 article {
 	background: #FFF;
 	overflow: hidden;
-	@include column(7);
+	@include column(6);
 	@include center;
 	padding: 1.5em 1.5em 0em;
 	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
@@ -322,7 +322,7 @@ article {
 	}
 	&.photo, &.video {
 		padding: 0;
-		@include column(9);
+		@include column(8);
 		@include center;
 		img {
 			width: 100%;
@@ -422,7 +422,7 @@ footer {
 		@include center;
 		margin-top: -2em;
 		&.photo, &.video {
-			@include column(10);
+			@include column(9);
 			@include center;
 		}
 	}
