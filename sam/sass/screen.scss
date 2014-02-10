@@ -210,58 +210,76 @@ header {
 	}
 	h2 {
 		@include italic;
+		font-weight: normal;
 		color: #888;
 		margin-top: -0.5em;
 		text-shadow: 0 0 10px #222, 0 0 10px #222;
 	}
-	.form-container {
-		width: 100%;
-		border-top: 1px solid rgba(255,255,255,0.1);
-		background: rgba(0,0,0,0.2);
-		
-		padding-bottom: 1.5em;
-		@include adjust-font-size-to(14px);
+	.mobile {
+		display: none;
+		text-align: center;
 	}
-	.form-container .container {
+}
+.form-container {
+	width: 100%;
+	border-top: 1px solid rgba(255,255,255,0.1);
+	background: rgba(0,0,0,0.2);
+	text-align: center;
+	.container {
 		@include clearfix;
 		margin: 0 auto;
-		max-width: 700px;
+		max-width: 980px;
 	}
-	form {
-		@include column(6);
-		p {
-			margin-bottom: 0;
-			color: #AAA;
-		}
-		label {
-			display: block;
-		}
-		label img {
-			margin-bottom: 0.5em;
-		}
-		input {
-			width: 200px;
-			background: #FFF;
-			padding: 0.5em 0;
-			text-indent: 0.8em;
-			border: none;
-			display: inline-block;
-			width: 200px;
-			color: #333;
-		}
-	}
-	input#submit {
-		background: $highlight;
-		border: none;
-		text-align: center;
-		padding: 0 1em;
-		text-indent: 0em;
-		line-height: 2.4em;
-		height: 2.45em;
-		width: auto;
-		vertical-align: top;
+	.form-footer {
+		background: #222;
+		padding: 0.8em 0;
+		margin-top: 1.8em;
+		font-size: 0.9em;
+		text-align: left;
 		@include italic;
+		font-style: normal;
+		color: #666;
+		a {
+			color: #666;
+		}
+		.important {
+			color: #CCC;
+		}
+		.meta {
+			@include column(6);
+		}
+		.calls-counter,.emails-counter {
+			@include column(3);
+			text-align: right;
+			span {
+				color: #CCC;
+			}
+		}
 	}
+}
+
+form {
+	@include column(6);
+	p {
+		margin-bottom: 0;
+		color: #AAA;
+	}
+	label {
+		display: block;
+	}
+	label img {
+		margin-bottom: 0.5em;
+	}
+	input {
+		width: 250px;
+		background: #FFF;
+		padding: 0.7em 0;
+		text-indent: 1.1em;
+		border: none;
+		display: inline-block;
+		color: #333;
+	}
+	
 	
 	.twilio-container {
 		padding-top: 1em;
@@ -279,7 +297,28 @@ header {
 	}
 }
 
-section {
+input#submit, .mobile a {
+	background: $highlight;
+	border: none;
+	text-align: center;
+	padding: 0 1em;
+	text-indent: 0em;
+	line-height: 2.4em;
+	height: 2.9em;
+	width: auto;
+	color: #333;
+	vertical-align: top;
+	@include italic;
+}
+.mobile a {
+	padding: 0.5em 1em;
+}
+
+
+
+section, footer {
+	padding: 6em 0;
+	@include clearfix;
 	div.container {
 		max-width: 980px;
 		margin: 0 auto;
@@ -288,8 +327,8 @@ section {
 	h2 {
 		@include column(12);
 		margin-top: 0;
-		font-size: 1.8em;
-		margin-bottom: 0.5em;
+		font-size: 2.25em;
+		margin-bottom: 0.8em;
 		span {
 			border-top: 4px solid $highlight;
 			padding-top: 1em;
@@ -310,9 +349,6 @@ aside {
 	}
 }
 #facts {
-	background: #EEE url(bg-body.jpg) no-repeat center top;
-	padding: 6em 0;
-	@include clearfix;
 	ul {
 		list-style-type: none;
 		padding: 0;
@@ -322,6 +358,7 @@ aside {
 			font-size: 1.2em;
 			line-height: 1.5em;
 			padding: 1.5em 0;
+			min-height: 120px;
 			cite {
 				display: block;
 				text-align: left;
@@ -334,4 +371,213 @@ aside {
 	}
 }
 
+#action {
+	background: #111;
+	color: #EEE;
+	h2 {
+		margin-bottom: 1.5em;
+	}
+	article {
+		@include column(9);
+		font-size: 1.7em;
+		line-height: 1.5em;
+		display: block;
+		li {
+			margin: 0.5em 0;
+			padding-left: 0.5em;
+		}
+	}
+	ul {
+		margin: 1em 0;
+	}
+	aside {
+		border-top-color: #333;
+		margin-top: 3em;
+		display: block;
+	}
+	.bill {
+		background: #FFF;
+		color: #555;
+		@include column(6);
+		margin-top: 2em;
+		border-bottom: 4px solid #000;
+		svg {
+			height: 48px;
+			width: 48px;
+			margin: 0 auto;
+			margin-top: 2em;
+			display: block;
+		}
+		h4 {
+			font-size: 1.8em;
+			text-align: center;
+			line-height: 1em;
+			margin-top: 1em;
+			padding: 0 1.111111112em;
+		}
+		p, ul {
+			width: auto;
+			display: block;
+			float: none;
+			padding: 0 2em;
+		}
+		ul {
+			padding-left: 3.5em;
+			margin: 1.5em 0;
+		}
+		&.good {
+			border-top: 4px solid #8dd632;
+			svg {
+				fill: #8dd632;
+			}
+			h4 {
+				color: #8dd632;
+			}
+		}
+		&.bad {
+			border-top: 4px solid #e0133c;
+			svg {
+				fill: #e0133c;
+			}
+			h4 {
+				color: #e0133c;
+			}
+		}
+		p {
+			margin: 1em 0;
+		}
+		aside {
+			font-size: 0.9em;
+			margin: 0 2em;
+			margin-top: 2em;
+			padding-bottom: 2em;
+			width: auto;
+			display: block;
+			border-top-color: #DDD;
+			float: none;
+			
+			ul {
+				font-size: 1em;
+				margin: 0;
+				list-style-type: none;
+				padding: 0;
+				padding-top: 1em;
+				li {
+					border-top: 1px solid #EEE;
+					line-height: 1.25em;
+					margin: 0;
+					padding: 1em 0;
+					a {
+						margin: 0;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+#take-part {
+	background: #FAFAFA;
+	article.intro {
+		font-size: 1.5em;
+	}
+	article {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		@include column(9);
+	}
+	h3 {
+		margin-top: 1em;
+		padding-top: 1.5em;
+		border-top: 3px solid #EEE;
+	}
+	ul.install {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		li {
+			display: inline;
+			line-height: 1.5em;
+			a {
+				background: $highlight;
+				display: inline-block;
+				margin-bottom: 0.25em;
+				padding: 0.5em 1em;
+				font-size: 0.8em;
+				line-height: 1em;
+				color: #333;
+				@include italic;
+			}
+		}
+	}
+	pre {
+		display: block;
+		background: #EEE;
+		font-size: 0.8em;
+		overflow: hidden;
+		word-break: break-all;
+		word-wrap: break-word;
+		padding: 1em;
+		color: #888;
+	}
+}
+
+footer {
+	background: #111;
+	padding: 2em 0;
+	color: #AAA;
+	font-size: 0.9em;
+	.form-container {
+		background: #000;
+		border: none;
+		border-bottom: 1px solid #222;
+		padding-bottom: 2em;
+		margin-bottom: 2em;
+		h2 {
+			font-size: 1.5em;
+		}
+		p {
+			margin-top: 1em;
+		}
+	}
+	p {
+		margin: 0;
+		margin-bottom: 0.25em;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		font-size: 14px;
+	}
+	header h1 {
+		font-size: 1.1em;
+	}
+	.form-container {
+		display: none;
+	}
+	section {
+		padding: 3em 0;
+		h2 {
+			font-size: 1.4em;
+			padding-top: 0.5em;
+			margin-bottom: 0;
+		}
+	}
+	
+	h2, #facts ul li, #action article, #take-part article, #action .bill {
+		@include column(12);
+		min-height: 0;
+	}
+	#facts ul li {
+		padding: 1em 0;
+	}
+	#action article, #take-part article.intro {
+		font-size: 1.2em;
+	}
+	header .mobile {
+		display: block;
+	}
+}
 
