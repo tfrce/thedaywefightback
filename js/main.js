@@ -57,7 +57,7 @@ function splitTime(msec){
 // Update the day/hr/min/sec on page
 function updateTimeOnSite(timeDiffObj) {
 daysOd.update(timeDiffObj['d']);
-hoursOd.update(timeDiffObj['h']);
+hoursOd.update(timeDiffObj['h']-3);
 minutesOd.update(timeDiffObj['m']);
 secondsOd.update(timeDiffObj['s']);
 }
