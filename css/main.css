@@ -75,6 +75,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .navbar-nav.navbar-right:last-child {
     margin-right: 0;
 }
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
 .jumbotron {
     background-color: #000;
     padding-top:0px;
@@ -1473,6 +1483,19 @@ font-size:12px;
   transition: all 0.1s ease-in-out;
   margin-top:5px;
 }
+p#readmore {
+    margin-top:30px;
+
+}
+span#readmore {
+    text-transform: uppercase;
+    font-size:20px;
+    cursor: pointer;
+    cursor: hand;
+}
+span#readmore:hover {
+    color: #fff;
+}
 .int-share img:hover {
 opacity: 0.8;
 }
@@ -1502,43 +1525,47 @@ opacity: 0.8;
 
 a {
     text-decoration: underline;
-    color: #777777;
+    color: #444444;
 }
 a:hover {
-    color: #333333;
+    color: #000000;
 
 }
 .jumbotron#newsite .container {
     width
 }
 .just-the-facts {
-    margin-top:75px;
+    margin-top:50px;
+}
+.just-the-facts img {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 .fact {
-    font-size: 46px;
-    font-family: 'brandon_grotesque';
-    font-weight: 700;
+    font-size: 19px;
     text-align: center;
-    line-height:1.1;
+    line-height:1.6;
+}
+.fact strong{
 }
 .full-width.fact {
-    line-height:50px;
-    font-size: 44px;
-    margin-top:60px;
+    margin-top:40px;
+    text-align: left;
 }
 .half-width.fact {
-    font-size:32px;
     text-align: left;
-    margin-top:50px;
+    margin-top:40px;
 }
 .fact .fact-source {
     font-style: italic;
     font-size: 20px;
     color: #777777;
 }
-.half-width.fact .fact-source {
+.full-width.fact .fact-source {
     margin-left:20px;
-    margin-top:20px;
+    font-size:14px;
+    margin-top:10px;
 }
 .fact-source a {
     color: #777777;
@@ -1548,37 +1575,82 @@ a:hover {
     color: #333333;
 }
 .additional-resources {
-    border-top:10px solid #000;
-    border-bottom:10px solid #000;
+    border-top:3px solid #000;
+    border-bottom:3px solid #000;
     padding: 10px 0;
-    font-size: 27px;
+    font-size: 20px;
     font-family: 'brandon_grotesque';
     font-weight: 700;
     text-align: center;
-    margin-top:70px;
-    margin-bottom:70px;
+    margin-top:40px;
+    margin-bottom:40px;
 }
 .additional-resources a {
     display: inline-block;
     margin: 0 15px;
+    font-family: "Open Sans";
 }
 
 div.what-can-we-do {
     background: #000;
 }
 img.what-can-we-do {
-    margin-top: 120px;
+    margin-bottom: 30px;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .what-can-we-do .sub {
-    font-size: 58px;
-    line-height: 1.1;
+    font-size: 25px;
+    line-height: 1.2;
     font-family: 'brandon_grotesque';
     font-weight: 700;
-    margin-top: 60px;
+    margin-top: 40px;
     color: #fff;
+    margin-bottom:60px;
 }
 .what-can-we-do .sub span {
     color: #f2c45a;
+}
+.what-can-we-do .lawbox {
+    background: #fff;
+    margin-bottom:80px;
+}
+.what-can-we-do h4 {
+    text-align: center;
+    font-family: 'brandon_grotesque';
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.sub ul {
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:30px;
+}
+.what-can-we-do .freedomact h4 {
+    color: #1ca70d;
+}
+.what-can-we-do .fisaact h4 {
+    color: #d60d0d;
+}
+.what-can-we-do ul {
+    padding-left: 25px;
+}
+.what-can-we-do ul li {
+    margin-bottom:10px;
+}
+
+
+@media (min-width: 768px) {
+    .what-can-we-do .col-sm-6 {
+        width: 48%;
+    }
+    .what-can-we-do .col-sm-6.freedomact {
+        margin-right: 4%;
+    }
 }
 
 @media (min-width: 768px) {
