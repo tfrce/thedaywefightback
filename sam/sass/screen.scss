@@ -214,63 +214,65 @@ header {
 		margin-top: -0.5em;
 		text-shadow: 0 0 10px #222, 0 0 10px #222;
 	}
-	.form-container {
-		width: 100%;
-		border-top: 1px solid rgba(255,255,255,0.1);
-		background: rgba(0,0,0,0.2);
-		.form-footer {
-			background: #222;
-			padding: 0.8em 0;
-			margin-top: 1.8em;
-			font-size: 0.9em;
-			text-align: left;
-			@include italic;
-			font-style: normal;
-			color: #666;
-			a {
-				color: #666;
-			}
-			.important {
-				color: #CCC;
-			}
-			.meta {
-				@include column(6);
-			}
-			.calls-counter,.emails-counter {
-				@include column(3);
-				text-align: right;
-				span {
-					color: #CCC;
-				}
-			}
-		}
-	}
-	.form-container .container {
+}
+.form-container {
+	width: 100%;
+	border-top: 1px solid rgba(255,255,255,0.1);
+	background: rgba(0,0,0,0.2);
+	text-align: center;
+	.container {
 		@include clearfix;
 		margin: 0 auto;
 		max-width: 980px;
 	}
-	form {
-		@include column(6);
-		p {
-			margin-bottom: 0;
-			color: #AAA;
+	.form-footer {
+		background: #222;
+		padding: 0.8em 0;
+		margin-top: 1.8em;
+		font-size: 0.9em;
+		text-align: left;
+		@include italic;
+		font-style: normal;
+		color: #666;
+		a {
+			color: #666;
 		}
-		label {
-			display: block;
+		.important {
+			color: #CCC;
 		}
-		label img {
-			margin-bottom: 0.5em;
+		.meta {
+			@include column(6);
 		}
-		input {
-			width: 250px;
-			background: #FFF;
-			padding: 0.7em 0;
-			text-indent: 1.1em;
-			border: none;
-			display: inline-block;
-			color: #333;
+		.calls-counter,.emails-counter {
+			@include column(3);
+			text-align: right;
+			span {
+				color: #CCC;
+			}
 		}
+	}
+}
+
+form {
+	@include column(6);
+	p {
+		margin-bottom: 0;
+		color: #AAA;
+	}
+	label {
+		display: block;
+	}
+	label img {
+		margin-bottom: 0.5em;
+	}
+	input {
+		width: 250px;
+		background: #FFF;
+		padding: 0.7em 0;
+		text-indent: 1.1em;
+		border: none;
+		display: inline-block;
+		color: #333;
 	}
 	input#submit {
 		background: $highlight;
@@ -301,7 +303,9 @@ header {
 	}
 }
 
-section {
+
+
+section, footer {
 	padding: 6em 0;
 	@include clearfix;
 	div.container {
@@ -343,6 +347,7 @@ aside {
 			font-size: 1.2em;
 			line-height: 1.5em;
 			padding: 1.5em 0;
+			min-height: 120px;
 			cite {
 				display: block;
 				text-align: left;
@@ -487,6 +492,30 @@ aside {
 		word-wrap: break-word;
 		padding: 1em;
 		color: #888;
+	}
+}
+
+footer {
+	background: #111;
+	padding: 2em 0;
+	color: #AAA;
+	font-size: 0.9em;
+	.form-container {
+		background: #000;
+		border: none;
+		border-bottom: 1px solid #222;
+		padding-bottom: 2em;
+		margin-bottom: 2em;
+		h2 {
+			font-size: 1.5em;
+		}
+		p {
+			margin-top: 1em;
+		}
+	}
+	p {
+		margin: 0;
+		margin-bottom: 0.25em;
 	}
 }
 
