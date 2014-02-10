@@ -4,7 +4,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 @import "compass/css3";
 @import "compass/utilities";
 @mixin animation($content) {
-  @include experimental(animation, $content, -webkit, -moz, -o, -ms, official);
+	@include experimental(animation, $content, -webkit, -moz, -o, -ms, official);
 }
 @mixin keyframes($name) {
 @-webkit-keyframes #{$name} {
@@ -48,7 +48,7 @@ $total-width: 100%;
 
 	&:before,
 	&:after {
-	    content:"";
+		content:"";
 	    display:table;
 	}
 	&:after {
@@ -522,7 +522,6 @@ aside {
 		color: #888;
 	}
 }
-
 footer {
 	background: #111;
 	padding: 2em 0;
@@ -580,4 +579,3 @@ footer {
 		display: block;
 	}
 }
-
