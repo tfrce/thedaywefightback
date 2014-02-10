@@ -222,7 +222,11 @@ a.mobile {
 h1, h2, h3, h4, h5 {
 	margin-top: 0;
 }
-
+.caption {
+	padding: 1em;
+	max-width: 500px;
+	margin: 0 auto;
+}
 article {
 	background: #FFF;
 	overflow: hidden;
@@ -269,37 +273,15 @@ article {
 		padding: 0;
 		@include column(9);
 		@include center;
-		figure {
-			line-height: 0;
-			width: 100%;
-			height: auto;
-			margin: 0;
-			position: relative;
-			&:hover span.caption {
-				opacity:0;
-			}
-			span.caption {
-				@include transition(opacity);
-				display: block;
-				padding: 4%;
-				padding-top: 4em;
-				@include adjust-font-size-to(15px);
-				text-align: left;
-				color: #FFF;
-				position: absolute;
-				bottom: -0px;
-				width: 92%;
-				left: 0;
-				text-shadow: 0 1px 1px #000;
-				@include background-image(linear-gradient(bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%));
-			}
-		}
 		img {
 			width: 100%;
 			height: auto;
 		}
 		span.meta {
 			margin: 0;
+			.like_button, .reblog_button {
+				display: inline-block;
+			}
 		}
 	}
 	&.quote span.meta {
@@ -316,15 +298,12 @@ div#pagination {
 	text-align: center;
 	clear: both;
 	padding-bottom: 4em;
-	a {
-		@include adjust-font-size-to(18px);
-		&.next:before {
-			content: '•';
-			padding: 0 1em;
-			text-decoration: none!important;
-			color: #bbb;
-		}
+	@include adjust-font-size-to(18px);
+	span {
+		padding: 0 1em;
+		color: #bbb;
 	}
+
 }
 
 footer {
@@ -385,20 +364,6 @@ footer {
 		margin-bottom: 3em;
 		margin-top: -2em;
 		line-height: 1.5em;
-		figure span.caption {
-			width: auto;
-			@include adjust-font-size-to(16px);
-			line-height: 1.5em;
-			background: #FAFAFA;
-			position: static;
-			color: #666;
-			text-shadow: none;
-			padding: 1em;
-			margin: 1em;
-			&:hover {
-				opacity:1;
-			}
-		}
 		span.meta {
 			@include adjust-font-size-to(14px);
 		}
