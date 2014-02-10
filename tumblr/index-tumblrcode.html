@@ -5,7 +5,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="stylesheet" href="http://thedaywefightback.org/tumblr/tumblr.css" type="text/css" />
 		<script type="text/javascript" src="http://thedaywefightback.org/js/jquery-1.11.0.min.js"></script>
@@ -69,8 +69,8 @@
 				{Body}
 
 				<span class="meta">
+					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
 					{ReblogButton} {LikeButton}
-					{block:NoteCount}<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong>{/block:NoteCount} 
 				</span>
 			</article>
 			{/block:Text}
@@ -86,8 +86,8 @@
 				{/block:Caption}
 				
 				<span class="meta">
+					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
 					{ReblogButton} {LikeButton}
-					{block:NoteCount}<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong>{/block:NoteCount} 
 				</span>
 			</article>
 			{/block:Photo}
@@ -105,8 +105,8 @@
 				{/block:Caption}
 				
 				<span class="meta">
+					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
 					{ReblogButton} {LikeButton}
-					{block:NoteCount}<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong>{/block:NoteCount} 
 				</span>
 			</article>
 			{/block:Panorama}
@@ -122,8 +122,8 @@
 				{/block:Caption}
 				
 				<span class="meta">
+					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
 					{ReblogButton} {LikeButton}
-					{block:NoteCount}<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong>{/block:NoteCount} 
 				</span>
 			</article>
 			{/block:Photoset}
@@ -139,12 +139,12 @@
 				{/block:Caption}
 				
 				<span class="meta">
+					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
 					{ReblogButton} {LikeButton}
-					{block:NoteCount}<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong>{/block:NoteCount} 
 				</span>
 			</article>
 			{/block:Video}
-			
+						
 			{block:Quote}
 			<article class="quote">
 				<blockquote>
@@ -156,8 +156,8 @@
 				{/block:Source}
 				
 				<span class="meta">
+					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
 					{ReblogButton} {LikeButton}
-					{block:NoteCount}<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong>{/block:NoteCount} 
 				</span>
 			</article>
 			{/block:Quote}
@@ -173,8 +173,8 @@
 				{/block:Caption}
 				
 				<span class="meta">
+					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
 					{ReblogButton} {LikeButton}
-					{block:NoteCount}<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong>{/block:NoteCount} 
 				</span>
 			</article>
 			{/block:Link}
@@ -185,6 +185,12 @@
 					{block:PreviousPage} <span>&bull;</span> <a href="{PreviousPage}" class="prev">Newer posts &rarr;</a>{/block:PreviousPage}
 				</div>
 			{/block:Pagination}
+			
+			{block:PermalinkPage} 
+				{block:PostNotes} 
+					{PostNotes-16}
+				{/block:PostNotes}
+			{/block:PermalinkPage}
 			
 		{/block:Posts}
 		</section>

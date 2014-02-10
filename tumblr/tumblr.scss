@@ -330,6 +330,40 @@ div#pagination {
 
 }
 
+ol.notes {
+	max-width: 500px;
+	padding: 0 2em;
+	margin: 0 auto;
+	list-style-type: none;
+	li.note {
+		padding: 0.5em;
+		font-size: 0.9em;
+		line-height: 1.25em;
+		border-bottom: 1px solid #EEE;
+		img.avatar {
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			margin-right: 1em;
+			vertical-align: middle;
+		}
+		span.action {
+			font-weight: bold;
+		}
+		.answer_content {
+			font-weight: normal;
+		}
+		blockquote {
+			padding-left: 1em;
+			margin: 0.5em 0;
+			border-left: 2px solid #DDD;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
 footer {
 	border-top: 1px solid #DDD;
 	@include adjust-font-size-to(12px);
