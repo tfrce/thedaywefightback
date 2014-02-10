@@ -296,15 +296,17 @@ if (!Object.keys) {
         'aclu': {
             name: 'ACLU',
             policy: 'https://www.aclu.org/american-civil-liberties-union-privacy-statement'
-        },
+        }
+/* These names are too long and spill out of the container
         'pda': {
             name: 'Progressive Democrats of America',
             policy: 'http://www.pdamerica.org/about-pda/privacy-policy'
-        },
+        }
         'of': {
             name: 'Campaign for America\'s Future',
             policy: 'http://ourfuture.org/privacy'
-        }
+        },
+*/
     };
     var referalKeys = Object.keys(referalMap);
     var referalParam = getParameterByName('r');
