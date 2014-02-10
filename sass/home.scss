@@ -4,7 +4,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 @import "compass/css3";
 @import "compass/utilities";
 @mixin animation($content) {
-  @include experimental(animation, $content, -webkit, -moz, -o, -ms, official);
+	@include experimental(animation, $content, -webkit, -moz, -o, -ms, official);
 }
 @mixin keyframes($name) {
 @-webkit-keyframes #{$name} {
@@ -48,7 +48,7 @@ $total-width: 100%;
 
 	&:before,
 	&:after {
-	    content:"";
+		content:"";
 	    display:table;
 	}
 	&:after {
@@ -116,42 +116,42 @@ body {
 
 @font-face {
     font-family: 'brandon_grotesque';
-    src: url('fonts/brandongrotesque-regular-webfont.eot');
-    src: url('fonts/brandongrotesque-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/brandongrotesque-regular-webfont.woff') format('woff'),
-         url('fonts/brandongrotesque-regular-webfont.ttf') format('truetype'),
-         url('fonts/brandongrotesque-regular-webfont.svg#brandon_grotesque_regularRg') format('svg');
+    src: url('../fonts/brandongrotesque-regular-webfont.eot');
+    src: url('../fonts/brandongrotesque-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brandongrotesque-regular-webfont.woff') format('woff'),
+         url('../fonts/brandongrotesque-regular-webfont.ttf') format('truetype'),
+         url('../fonts/brandongrotesque-regular-webfont.svg#brandon_grotesque_regularRg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'brandon_grotesque';
-    src: url('fonts/brandongrotesque-mediumitalic-webfont.eot');
-    src: url('fonts/brandongrotesque-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/brandongrotesque-mediumitalic-webfont.woff') format('woff'),
-         url('fonts/brandongrotesque-mediumitalic-webfont.ttf') format('truetype'),
-         url('fonts/brandongrotesque-mediumitalic-webfont.svg#brandon_grotesqueMdIt') format('svg');
+    src: url('../fonts/brandongrotesque-mediumitalic-webfont.eot');
+    src: url('../fonts/brandongrotesque-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brandongrotesque-mediumitalic-webfont.woff') format('woff'),
+         url('../fonts/brandongrotesque-mediumitalic-webfont.ttf') format('truetype'),
+         url('../fonts/brandongrotesque-mediumitalic-webfont.svg#brandon_grotesqueMdIt') format('svg');
     font-weight: 500;
     font-style: italic;
 }
 @font-face {
     font-family: 'brandon_grotesque';
-    src: url('fonts/brandongrotesque-blackitalic-webfont.eot');
-    src: url('fonts/brandongrotesque-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/brandongrotesque-blackitalic-webfont.woff') format('woff'),
-         url('fonts/brandongrotesque-blackitalic-webfont.ttf') format('truetype'),
-         url('fonts/brandongrotesque-blackitalic-webfont.svg#brandon_grotesqueblack_italic') format('svg');
+    src: url('../fonts/brandongrotesque-blackitalic-webfont.eot');
+    src: url('../fonts/brandongrotesque-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brandongrotesque-blackitalic-webfont.woff') format('woff'),
+         url('../fonts/brandongrotesque-blackitalic-webfont.ttf') format('truetype'),
+         url('../fonts/brandongrotesque-blackitalic-webfont.svg#brandon_grotesqueblack_italic') format('svg');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'brandon_grotesque';
-    src: url('fonts/brandongrotesque-black-webfont.eot');
-    src: url('fonts/brandongrotesque-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/brandongrotesque-black-webfont.woff') format('woff'),
-         url('fonts/brandongrotesque-black-webfont.ttf') format('truetype'),
-         url('fonts/brandongrotesque-black-webfont.svg#brandon_grotesqueblack') format('svg');
+    src: url('../fonts/brandongrotesque-black-webfont.eot');
+    src: url('../fonts/brandongrotesque-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brandongrotesque-black-webfont.woff') format('woff'),
+         url('../fonts/brandongrotesque-black-webfont.ttf') format('truetype'),
+         url('../fonts/brandongrotesque-black-webfont.svg#brandon_grotesqueblack') format('svg');
     font-weight: 700;
     font-style: normal;
 }
@@ -183,6 +183,30 @@ h1, h2, h3, h4, h5 {
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 0.1em;
+}
+nav {
+	ul {
+		list-style-type: none;
+		padding: 0;
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-size: 0.9em;
+		padding-top: 0.5em;
+		li {
+			display: inline;
+			padding: 0 1em;
+			@include italic;
+			font-weight: normal;
+			a {
+				opacity: 0.7;
+				@include transition;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
 }
 header {
 	background: #111 url(bg-header.jpg) no-repeat center top;
@@ -522,6 +546,14 @@ aside {
 		color: #888;
 	}
 }
+#footer-form {
+	background: #333;
+	padding: 2em 0;
+	.form-container {
+		border: none;
+		background: transparent;
+	}
+}
 
 footer {
 	background: #111;
@@ -547,9 +579,18 @@ footer {
 	}
 }
 
+#toggle {
+	display: none;
+}
+
 @media screen and (max-width: 767px) {
 	body {
 		font-size: 14px;
+	}
+	section img {
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
 	}
 	header h1 {
 		font-size: 1.1em;
@@ -576,8 +617,46 @@ footer {
 	#action article, #take-part article.intro {
 		font-size: 1.2em;
 	}
-	header .mobile {
-		display: block;
+	header {
+		text-align: left;
+		h1, .mobile {
+			display: block;
+			text-align: center;
+		}
 	}
-}
+	.toggle { display: block; position: relative; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; text-align: center; }
+		.toggle:after {
+	content: 'Menu';
+	display: block;
+	padding: 0.5em 0;
+	border-radius: 0;
+	width: 100%;
+	background: darken($highlight,10%);
+	color: #333;
+	margin: 0;
+	@include italic;
 
+
+	}
+	
+	nav ul {
+		display: none;
+		opacity: 0;
+		background: #FAFAFA;
+		font-size: 1em;
+		margin-top: 0;
+		li {
+			display: block;
+			border-bottom: 1px solid #DDD;
+			text-align: left;
+			a {
+				padding: 1em;
+				opacity: 1;
+				display: block;
+			}
+		}
+	}
+	
+	#toggle:checked + nav #menu { display: block; opacity: 1;}
+	
+}

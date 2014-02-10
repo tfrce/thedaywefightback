@@ -8,12 +8,18 @@
   <link rel="author" href="humans.txt" />
 
   <!--  CSS -->
+  
+  {% if page.url == "/index.html"%}
+  <link href="/css/home.css" rel="stylesheet">
+  <script type="text/javascript" src="http://d1agz031tafz8n.cloudfront.net/thedaywefightback.js/thedaywefightback/js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://d1agz031tafz8n.cloudfront.net/thedaywefightback.js/thedaywefightback/js/jquery.placeholder.min.js"></script>
+  <script type="text/javascript" src="http://d1agz031tafz8n.cloudfront.net/thedaywefightback.js/thedaywefightback/js/easyXDM.min.js"></script>
+  <script type='text/javascript' src="/js/main.js"></script>
+  {% else %}
+  <link href="/css/main.css" rel="stylesheet">
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/open-sans.css" rel="stylesheet">
-  {% if page.url == "/index.html"%}
-  <link href="/css/odometer.css" rel="stylesheet">
   {% endif %}
-  <link href="/css/main.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
