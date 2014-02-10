@@ -2,6 +2,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/js/jquery-1.10.2.min.js"></script>
+
     <script>
         window.jQuery || document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.map"><\/script>');
         {% if page.extra_javascript_in_footer %}{{ page.extra_javascript_in_footer }}{% endif %}
@@ -10,9 +11,11 @@
               shareCountURL: '{{ page.og_url }}'
               {% endif %}
           };
-      </script>
+    </script>
+
     <script src="/js/libs.min.js"></script>
     <script src="/js/main.js"></script>
+
     <!-- Piwik -->
     <script type="text/javascript">
       var _paq = _paq || [];
