@@ -214,6 +214,10 @@ header {
 		margin-top: -0.5em;
 		text-shadow: 0 0 10px #222, 0 0 10px #222;
 	}
+	.mobile {
+		display: none;
+		text-align: center;
+	}
 }
 .form-container {
 	width: 100%;
@@ -274,18 +278,7 @@ form {
 		display: inline-block;
 		color: #333;
 	}
-	input#submit {
-		background: $highlight;
-		border: none;
-		text-align: center;
-		padding: 0 1em;
-		text-indent: 0em;
-		line-height: 2.4em;
-		height: 2.9em;
-		width: auto;
-		vertical-align: top;
-		@include italic;
-	}
+	
 	
 	.twilio-container {
 		padding-top: 1em;
@@ -301,6 +294,23 @@ form {
 			height: 18px;
 		}
 	}
+}
+
+input#submit, .mobile a {
+	background: $highlight;
+	border: none;
+	text-align: center;
+	padding: 0 1em;
+	text-indent: 0em;
+	line-height: 2.4em;
+	height: 2.9em;
+	width: auto;
+	color: #333;
+	vertical-align: top;
+	@include italic;
+}
+.mobile a {
+	padding: 0.5em 1em;
 }
 
 
@@ -472,9 +482,11 @@ aside {
 		margin: 0;
 		li {
 			display: inline;
+			line-height: 1.5em;
 			a {
 				background: $highlight;
 				display: inline-block;
+				margin-bottom: 0.25em;
 				padding: 0.5em 1em;
 				font-size: 0.8em;
 				line-height: 1em;
@@ -516,6 +528,40 @@ footer {
 	p {
 		margin: 0;
 		margin-bottom: 0.25em;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		font-size: 14px;
+	}
+	header h1 {
+		font-size: 1.1em;
+	}
+	.form-container {
+		display: none;
+	}
+	section {
+		padding: 3em 0;
+		h2 {
+			font-size: 1.4em;
+			padding-top: 0.5em;
+			margin-bottom: 0;
+		}
+	}
+	
+	h2, #facts ul li, #action article, #take-part article, #action .bill {
+		@include column(12);
+		min-height: 0;
+	}
+	#facts ul li {
+		padding: 1em 0;
+	}
+	#action article, #take-part article.intro {
+		font-size: 1.2em;
+	}
+	.mobile {
+		display: block;
 	}
 }
 
