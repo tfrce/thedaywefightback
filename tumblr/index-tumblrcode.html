@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="http://thedaywefightback.org/tumblr/tumblr.css" type="text/css" />
+		<script type="text/javascript" src="http://d1agz031tafz8n.cloudfront.net/thedaywefightback.js/thedaywefightback/js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="http://d1agz031tafz8n.cloudfront.net/thedaywefightback.js/thedaywefightback/js/jquery.placeholder.min.js"></script>
+		<script type="text/javascript" src="http://d1agz031tafz8n.cloudfront.net/thedaywefightback.js/thedaywefightback/js/easyXDM.min.js"></script>
+		<script type='text/javascript' src="http://thedaywefightback.org/tumblr/main.js"></script>
+		
+	</head>
+	
+	<body>
+		
+		<header>
+			<div class="center">
+				<h1><a href="http://thedaywefightback.org"><img src="http://thedaywefightback.org/tumblr/logo.png" alt="" /> The Day We Fight Back</a></h1>
+				
+				<a href="http://thedaywefightback.org" class="mobile">Take Action &rarr;</a>
+				<div class="form-container">
+				    <form method="get" action="http://call.taskforce.is/create" class="call-form" role="form" autocomplete="on">
+				            <label class="control-label" for="userPhone">
+				                <img src="http://thedaywefightback.org/tumblr/call-your-legislators.png" alt="Call your legislators!" class="img-responsive"/>
+				            </label>
+				            <input type="text"  data-format="+1 (ddd) ddd-dddd" placeholder="YOUR PHONE NUMBER" name="phone" class="form-control bfh-phone" id="userPhone" x-autocompletetype="phone">
+				       
+				          <input id="submit" type="submit" value="Next &rarr;" class="">
+				          <span id="error-text"></span>
+				      <div class="twilio-container">
+				        <a href="https://twilio.com" target="_blank"><img class="twilio-poweredby" src="http://thedaywefightback.org/tumblr/poweredby.png" ></a><a href="https://www.twilio.com/legal/privacy" target="_blank"><img class="twilio-privacy" src="http://thedaywefightback.org/tumblr/twilio-privacypolicy.png" ></a>
+				      </div>
+				    </form>
+				    <form method="get" action="http://call.taskforce.is/create" class="email-form" role="form"  autocomplete="on">
+				            <label class=" control-label" for="userEmail">
+				                <img src="http://thedaywefightback.org/tumblr/email-your-legislators.png" alt="Email your legislators!" class="img-responsive"/>
+				            </label>
+				            <input type="email" placeholder="YOUR EMAIL ADDRESS" name="email" class="form-control" id="userEmail"  x-autocompletetype="email">
+				        
+				          <input id="submit" type="submit" value="Next &rarr;" class="">
+				          <span id="error-text"></span>
+				    </form>
+				</div>
+				
+			</div>
+		</header>
+		
+		<section>
+		{block:Posts}
+			{block:Text}
+			<article class="text">
+				{block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+				
+				{Body}
+
+				<span class="meta">
+					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
+					{ReblogButton} {LikeButton}
+				</span>
+			</article>
+			{/block:Text}
+			
+			{block:Photo}
+			<article class="photo">
+				<figure>
+					<img src="{PhotoURL-500}" alt="{PhotoAlt}" />
+				</figure>
+				
+				{block:Caption}
+					<div class="caption">{Caption}</div>
+				{/block:Caption}
+				
+				<span class="meta">
+					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
+					{ReblogButton} {LikeButton}
+				</span>
+			</article>
+			{/block:Photo}
+			
+			{block:Panorama}
+			<article class="photo panorama">
+				<figure>
+					{LinkOpenTag}
+						<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+					{LinkCloseTag}
+				</figure>
+				
+				{block:Caption}
+					<div class="caption">{Caption}</div>
+				{/block:Caption}
+				
+				<span class="meta">
+					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
+					{ReblogButton} {LikeButton}
+				</span>
+			</article>
+			{/block:Panorama}
+			
+			{block:Photoset}
+			<article class="photo photoset">
+				<figure>
+					{Photoset-500}
+				</figure>
+				
+				{block:Caption}
+					<div class="caption">{Caption}</div>
+				{/block:Caption}
+				
+				<span class="meta">
+					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
+					{ReblogButton} {LikeButton}
+				</span>
+			</article>
+			{/block:Photoset}
+			
+			{block:Video}
+			<article class="video">
+				<div class='responsive'>
+					{Video-500}
+				</div>
+				
+				{block:Caption}
+					<div class="caption">{Caption}</div>
+				{/block:Caption}
+				
+				<span class="meta">
+					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
+					{ReblogButton} {LikeButton}
+				</span>
+			</article>
+			{/block:Video}
+						
+			{block:Quote}
+			<article class="quote">
+				<blockquote>
+					&ldquo;{Quote}&rdquo;
+				</blockquote>
+				
+				{block:Source}
+					<cite>&mdash; {Source}</cite>
+				{/block:Source}
+				
+				<span class="meta">
+					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
+					{ReblogButton} {LikeButton}
+				</span>
+			</article>
+			{/block:Quote}
+			
+			{block:Link}
+			<article class="link">
+				<blockquote>
+					<a href="{URL}" class="link" {Target}>{Name}</a>
+				</blockquote>
+				
+				{block:Caption}
+					<div class="caption">{Caption}</div>
+				{/block:Caption}
+				
+				<span class="meta">
+					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
+					{ReblogButton} {LikeButton}
+				</span>
+			</article>
+			{/block:Link}
+			
+			{block:Pagination}
+				<div id="pagination">
+					{block:NextPage}<a href="{NextPage}" class="next">&larr; Older posts</a>{block:NextPage}
+					{block:PreviousPage} <span>&bull;</span> <a href="{PreviousPage}" class="prev">Newer posts &rarr;</a>{/block:PreviousPage}
+				</div>
+			{/block:Pagination}
+			
+			{block:PermalinkPage} 
+				{block:PostNotes} 
+					{PostNotes-16}
+				{/block:PostNotes}
+			{/block:PermalinkPage}
+			
+		{/block:Posts}
+		</section>
+		
+		<footer>
+			<div class="container">
+				&copy; The Day We Fight Back &bull; Header image by <a href="http://commons.wikimedia.org/wiki/File:Anti_ACTA_demonstration_in_Tartu.JPG">Ivo Kruusamägi</a>
+			</div>
+		</footer>
+	</body>
+</html>
