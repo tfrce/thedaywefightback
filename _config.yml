@@ -1,3 +1,4 @@
 name: Blog - The Day We Fight Back
 markdown: redcarpet
 pygments: true
+exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, gems]
