@@ -364,6 +364,20 @@ form {
 		color: #333;
 		vertical-align: middle;
 	}
+	span.select {
+		display: inline-block;
+		position: relative;
+		&:after {
+			content: '';
+			position:absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			width: 48px;
+			background: #FFF url(../img/select-arrow.png) no-repeat 1em center;
+			pointer-events: none;
+		}
+	}
 
 
 	.twilio-container {
