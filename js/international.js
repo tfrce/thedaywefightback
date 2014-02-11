@@ -36,6 +36,7 @@
           return false;
         }
         $('.nandp-form').html('<p style="text-align: center;">Thank you</p>');
+        
         var rpc = new easyXDM.Rpc({
             remote: "https://email-congress.herokuapp.com/xdm/cors/"
         },
