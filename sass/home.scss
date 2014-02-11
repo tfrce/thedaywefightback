@@ -659,6 +659,10 @@ aside {
 		@include column(12);
 		margin-top: 1.5em;
 		margin-bottom: 3em;
+		h2 {
+			color: #AAA;
+			font-size: 1.5em;
+		}
 	}
 	h3 {
 		margin-top: 1em;
