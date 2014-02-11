@@ -19,6 +19,9 @@
 
   {% if page.layout == "home-international" or page.layout == "home" %}
     <script type='text/javascript' src="/js/homepage.js"></script>
+	    {% if page.layout == "home-international" %}
+	   		<script type='text/javascript' src="/js/international.js"></script>
+	    {% endif %}
     {% else %}
       <script src="/js/main.js"></script>
     {% endif %}
