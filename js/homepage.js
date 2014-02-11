@@ -107,7 +107,12 @@ $(document).ready( function () {
         if(!isValidEmail(userEmail)){
             rumbleEl(userEmailEl);
         } else {
-            window.open('//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/thedaywefightback/email-tool.html?email=' + userEmail, "_blank", "width=786,height=920,scrollbars=yes");
+            if(getQueryVariable('r')) {
+                window.open('//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/thedaywefightback/email-tool.html?email=' + userEmail + '&r=' + getQueryVariable('r'), "_blank", "width=786,height=920,scrollbars=yes");
+
+            } else {
+                window.open('//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/thedaywefightback/email-tool.html?email=' + userEmail, "_blank", "width=786,height=920,scrollbars=yes");
+            }
         }
         return false;
     });
