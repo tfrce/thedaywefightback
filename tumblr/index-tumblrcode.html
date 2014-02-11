@@ -187,6 +187,10 @@
 					<cite>&mdash; {Source}</cite>
 				{/block:Source}
 				
+				{block:Caption}
+					<div class="caption">{Caption}</div>
+				{/block:Caption}
+				
 				<span class="meta">
 					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
 					{ReblogButton} {LikeButton}
@@ -200,9 +204,9 @@
 					<a href="{URL}" class="link" {Target}>{Name}</a>
 				</blockquote>
 				
-				{block:Caption}
-					<div class="caption">{Caption}</div>
-				{/block:Caption}
+				{block:Description}
+					<div class="caption">{Description}</div>
+				{/block:Description}
 				
 				<span class="meta">
 					<strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong> 
