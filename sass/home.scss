@@ -167,6 +167,12 @@ $highlight: #F2C45A;
 
 /* CSS START */
 
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
 body {
 	background: #FAFAFA;
 	font: 16px/1.5em 'brandon_grotesque', Helvetica, Arial, sans-serif;
@@ -263,6 +269,9 @@ header {
 		@include italic;
 		font-style: normal;
 		color: #666;
+		.container {
+			max-width: 896px;
+		}
 		a {
 			color: #666;
 		}
@@ -271,6 +280,7 @@ header {
 		}
 		.meta {
 			@include column(6);
+			margin: 0;
 		}
 		.calls-counter,.emails-counter {
 			@include column(3);
@@ -660,7 +670,6 @@ footer {
 	#toggle:checked + nav #menu { display: block; opacity: 1;}
 	
 }
-
 .sharecenter {
     height: 88px;
     margin-top: 80px;
