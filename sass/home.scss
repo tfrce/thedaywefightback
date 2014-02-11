@@ -238,7 +238,7 @@ header {
 	h1 {
 		margin: 1.3em auto 2.2em auto;
 		letter-spacing: 0.1em;
-		font-size: 1.9em;
+		font-size: 1.8em;
 		line-height: 1.25em;
 		text-transform: uppercase;
 		strong {
@@ -877,13 +877,14 @@ ul.stack {
 .hidden { display: none; }
 
 .add-banner {
-	background: #000;
-	background: rgba(0,0,0,0.8);
+	background: transparent;
+	border-top: 1px solid #222;
 	display: block;
 	width: 100%;
-	font-size: 0.9em;
+	font-size: 0.85em;
 	padding: 0.8em 0;
 	color: #CCC;
+	margin-top: 2em;
 	strong {
 		@include italic;
 		letter-spacing: 0.25em;
@@ -897,6 +898,9 @@ ul.stack {
 			color: #000;
 		}
 	}
+}
+.form-container .form-footer {
+	margin-top: 0;
 }
 
 
