@@ -735,6 +735,10 @@ footer {
 	body {
 		font-size: 14px;
 	}
+	#social .social-count {
+		@include column(6);
+		margin-bottom: 4em;
+		}
 	#video .video-container img {
 		width: 100%;
 		height: auto;
