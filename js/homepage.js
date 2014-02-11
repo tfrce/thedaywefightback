@@ -188,7 +188,8 @@ $(document).ready( function () {
     
     });
     $('#video-preload').click( function(){
-        $('.video-container').addClass('playing').html('<iframe width="853" height="480" src="//www.youtube-nocookie.com/embed/aGmiw_rrNxk?rel=0&vq=hd1080&autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $('#video').addClass('playing');
+        $('.video-container').html('<div class="responsive"><iframe width="853" height="480" src="//www.youtube-nocookie.com/embed/aGmiw_rrNxk?rel=0&vq=hd1080&autoplay=1" frameborder="0" allowfullscreen></iframe></div>');
     });
 });
 
