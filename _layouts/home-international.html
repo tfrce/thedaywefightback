@@ -244,6 +244,20 @@
 		 {% include scripts.html %}
 
 		<script type="text/javascript">
+		      window.tdwfbParseLocation = function (data) {
+		      	if(data){
+		      		if(data.country.iso_code === 'us' || data.country.iso_code === 'US') {
+						window.location = '/';		      			
+		      		}
+      			};
+      		}
+
+        var script = document.createElement('script');
+        script.src = 'https://geoip.taskforce.is/?callback=tdwfbParseLocation';
+        document.getElementsByTagName('head')[0].appendChild(script);
+
+
+
 			function selectText(containerid) {
 			        if (document.selection) {
 			            var range = document.body.createTextRange();

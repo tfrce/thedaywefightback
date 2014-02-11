@@ -342,7 +342,7 @@ form {
 	label img {
 		margin-bottom: 0.5em;
 	}
-	input {
+	input, select {
 		width: 250px;
 		background: #FFF;
 		padding: 0.7em 0;
@@ -389,8 +389,15 @@ form {
 		text-align: right;
 	}
 	select {
-		width: 100%;
 		color: #333;
+		text-indent: 0;
+		padding-left: 5%;
+		width: 95%;
+		-webkit-appearance: none;
+		padding-right: 5%;
+		border-radius: 0;
+		overflow: hidden;
+		position: relative;
 	}
 }
 ::-webkit-input-placeholder { /* WebKit browsers */
