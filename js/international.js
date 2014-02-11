@@ -43,6 +43,7 @@
                 request: {}
             }
         });
+        $('.nandp-form').html('<p style="text-align: center;">Thank you</p>');
 
         rpc.request({
           url: "https://email-congress.herokuapp.com/signature",
@@ -50,7 +51,6 @@
           data: data
         }, function(response){
         });
-        $('.nandp-form').html('<p style="text-align: center;">Thank you</p>');
         // Assume success
         /*
         $('.international .rightside.top.before').addClass('animate flipOutX');
