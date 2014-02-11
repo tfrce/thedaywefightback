@@ -209,5 +209,36 @@ $( ".gpluslinkthis" ).click(function() {
     window.open(url,"Share on Google Plus","width=500,height=436");
     return false;
 })
+var shareUrl = tfrceConfig.shareCountURL || 'https://thedaywefightback.org';
+$.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=' + shareUrl, {
+    success: function(res, err) {
+        $.each(res, function(network, value) {
+            var count = value;
+            if (count / 10000 > 1) {
+                count = Math.ceil(count / 1000) + 'k'
+            }
+            $('[data-network="' + network + '"]').attr('count', count);
+        })
+    },
+    dataType: 'jsonp',
+    cache         : true,
+    jsonpCallback : 'myCallback'
+});
+if(tfrceConfig.loadTotals) {
+    $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://thedaywefightback.org', {
+        success: function(res, err) {
+            $.each(res, function(network, value) {
+                var count = value;
+                if (count / 10000 > 1) {
+                    count = Math.ceil(count / 1000) + 'k'
+                }
+                $('[data-network-totals="' + network + '"]').attr('count', count);
+            })
+        },
+        dataType: 'jsonp',
+        cache         : true,
+        jsonpCallback : 'myCallback'
+    });
+}
 
 
