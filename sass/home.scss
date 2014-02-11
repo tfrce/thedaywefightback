@@ -236,7 +236,7 @@ header {
 		vertical-align: middle;
 	}
 	h1 {
-		margin: 2.5em auto;
+		margin: 1.3em auto 2.2em auto;
 		letter-spacing: 0.1em;
 		font-size: 1.9em;
 		line-height: 1.25em;
@@ -244,7 +244,7 @@ header {
 		strong {
 			display: block;
 			color: $highlight;
-			font-size: 1.5em;
+			font-size: 1.59em;
 			line-height: 1.25em;
 		}
 	}
@@ -261,10 +261,10 @@ header {
 	}
 	figure {
 		padding: 0 1em;
-		max-width: 768px;
+		max-width: 688px;
 		margin: 0 auto;
 		display: block;
-		margin-top: 1em;
+		margin-top: 1.5em;
 		img {
 			width: 100%;
 			height: auto;
