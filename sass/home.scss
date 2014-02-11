@@ -307,6 +307,9 @@ header {
 		}
 		.meta {
 			@include column(6);
+			span {
+				padding: 0 0.5em;
+			}
 		}
 		.calls-counter,.emails-counter,.signatures-counter {
 			@include column(3);
