@@ -307,7 +307,6 @@ header {
 		}
 		.meta {
 			@include column(6);
-			margin: 0;
 		}
 		.calls-counter,.emails-counter,.signatures-counter {
 			@include column(3);
@@ -354,7 +353,7 @@ form {
 		margin-bottom: 0.5em;
 	}
 	input, select {
-		width: 250px;
+		width: 100%;
 		background: #FFF;
 		padding: 0.7em 0;
 		line-height: 1.5em;
@@ -411,6 +410,7 @@ form {
 	div.int-submit {
 		float: right;
 		text-align: right;
+		margin-left: 1em;
 	}
 	select {
 		color: #333;
@@ -801,7 +801,7 @@ ul.stack {
 			}
 		}
 	}
-	.form-container {
+	.form-container, #take-part .form-container {
 		display: none;
 	}
 	section {
