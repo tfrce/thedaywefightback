@@ -236,15 +236,15 @@ header {
 		vertical-align: middle;
 	}
 	h1 {
-		margin: 1.3em auto 2.2em auto;
+		margin: 2.5em auto;
 		letter-spacing: 0.1em;
-		font-size: 1.8em;
+		font-size: 1.9em;
 		line-height: 1.25em;
 		text-transform: uppercase;
 		strong {
 			display: block;
 			color: $highlight;
-			font-size: 1.59em;
+			font-size: 1.5em;
 			line-height: 1.25em;
 		}
 	}
@@ -264,8 +264,8 @@ header {
 		max-width: 688px;
 		margin: 0 auto;
 		display: block;
-		margin-top: 1.5em;
-		img {
+		margin-top: 1em;
+		img { 
 			width: 100%;
 			height: auto;
 			clear: both;
