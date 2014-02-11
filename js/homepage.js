@@ -183,12 +183,6 @@ $(document).ready( function () {
     function dividerReset() {
             $('.divider > div').css("width", 0);
     }
-
-    var greeting = getQueryVariable('greeting');
-    
-    $('.greeting').text(greeting);
-    var src = $('.switch-locale').attr('href')
-    $('.switch-locale').attr('href', src + '?greeting=' + greeting);
     
     });
     $('#video-preload').click( function(){
