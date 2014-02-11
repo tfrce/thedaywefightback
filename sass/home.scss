@@ -510,6 +510,15 @@ aside {
 		font-size: 1.2em;
 		line-height: 1.5em;
 		@include column(9);
+		@include clearfix;
+	}
+	.form-container {
+		background: #333;
+		padding: 2em 1em;
+		clear: both;
+		@include column(12);
+		margin-top: 1.5em;
+		margin-bottom: 3em;
 	}
 	h3 {
 		margin-top: 1em;
