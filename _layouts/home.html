@@ -337,25 +337,26 @@
 		 {% include scripts.html %}
 
 		<script type="text/javascript">
-			function redirectFlag(query) {
-				var field = query;
-				var url = window.location.href;
-				if(url.indexOf('?' + field + '=') != -1)
-				    return true;
-				else if(url.indexOf('&' + field + '=') != -1)
-				    return true;
-				return false;
+			var vars = [], hash;
+			    var q = document.URL.split('?')[1];
+			    if(q != undefined){
+			        q = q.split('&');
+			        for(var i = 0; i < q.length; i++){
+			            hash = q[i].split('=');
+			            vars.push(hash[1]);
+			            vars[hash[0]] = hash[1];
+			        }
 			}
-			
 			window.tdwfbParseLocation = function (data) {
 		      	if(data){
-		      		if(data.country.iso_code.toLowerCase() !== 'us' && redirectFlag('redirect') == false) {
+		      		if(data.country.iso_code.toLowerCase() !== 'us' && vars['redirect'] == undefined) {
 						window.location = '/international';		      			
 		      		}
       			};
       		}
-      		
-      		
+      		if (vars['r'] == "eff") {
+      			$('body').addClass('call-only');
+      		}
 
         var script = document.createElement('script');
         script.src = 'https://geoip.taskforce.is/?callback=tdwfbParseLocation';
