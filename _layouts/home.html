@@ -73,7 +73,7 @@
 					<div class="form-footer">
 						<div class="container">
 							<div class="meta">
-								<a href="/privacy/" target="_blank">Privacy Policy</a><span> | </span><a href="banner_international.html" class="switch-locale">Not in the USA?</a>
+								<a href="/privacy/" target="_blank">Privacy Policy</a><span> | </span><a href="/international?redirect=nope" class="switch-locale">Not in the USA?</a>
 							</div>
 							<div class="calls-counter">
 							  <span id="call-count">0</span> CALLS PLACED
@@ -328,13 +328,25 @@
 		 {% include scripts.html %}
 
 		<script type="text/javascript">
-				      window.tdwfbParseLocation = function (data) {
+			function redirectFlag(query) {
+				var field = query;
+				var url = window.location.href;
+				if(url.indexOf('?' + field + '=') != -1)
+				    return true;
+				else if(url.indexOf('&' + field + '=') != -1)
+				    return true;
+				return false;
+			}
+			
+			window.tdwfbParseLocation = function (data) {
 		      	if(data){
-		      		if(data.country.iso_code.toLowerCase() !== 'us') {
+		      		if(data.country.iso_code.toLowerCase() !== 'us' && redirectFlag('redirect') == false) {
 						window.location = '/international';		      			
 		      		}
       			};
       		}
+      		
+      		
 
         var script = document.createElement('script');
         script.src = 'https://geoip.taskforce.is/?callback=tdwfbParseLocation';

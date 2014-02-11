@@ -87,7 +87,7 @@
 					<div class="form-footer">
 						<div class="container">
 							<div class="meta">
-								<a href="/privacy/" target="_blank">Privacy Policy</a><span> | </span><a href="banner_international.html" class="switch-locale">Not in the USA?</a>
+								<a href="/privacy/" target="_blank">Privacy Policy</a><span> | </span><a href="/?redirect=nope" class="switch-locale">In the USA?</a>
 							</div>
 							
 
@@ -247,9 +247,19 @@
 		 {% include scripts.html %}
 
 		<script type="text/javascript">
+		function redirectFlag(query) {
+						var field = query;
+						var url = window.location.href;
+						if(url.indexOf('?' + field + '=') != -1)
+						    return true;
+						else if(url.indexOf('&' + field + '=') != -1)
+						    return true;
+						return false;
+					}
+					
 		      window.tdwfbParseLocation = function (data) {
 		      	if(data){
-		      		if(data.country.iso_code.toLowerCase() === 'us') {
+		      		if(data.country.iso_code.toLowerCase() === 'us' && redirectFlag('redirect') == false) {
 						window.location = '/';		      			
 		      		}
       			};
