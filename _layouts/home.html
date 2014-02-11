@@ -330,8 +330,8 @@
 		<script type="text/javascript">
 				      window.tdwfbParseLocation = function (data) {
 		      	if(data){
-		      		if(data.country.iso_code !== 'us' || data.country.iso_code !== 'US') {
-						//window.location = '/international';		      			
+		      		if(data.country.iso_code.toLowerCase() !== 'us') {
+						window.location = '/international';		      			
 		      		}
       			};
       		}

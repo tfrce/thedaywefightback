@@ -90,7 +90,7 @@
 								<a href="http://thedaywefightback.org/privacy/" target="_blank">Privacy Policy</a><span> | </span><a href="banner_international.html" class="switch-locale">Not in the USA?</a>
 							</div>
 							
-				            <div class="calls-counter">
+				            <div class="calls-counter" style="width: 240px;">
 				              SIGNATURES SO FAR: <span class="signature" id="signatory-count" style="font-weight: 500;">--</span>
 				            </div>
 						</div>
@@ -246,8 +246,8 @@
 		<script type="text/javascript">
 		      window.tdwfbParseLocation = function (data) {
 		      	if(data){
-		      		if(data.country.iso_code === 'us' || data.country.iso_code === 'US') {
-						//window.location = '/';		      			
+		      		if(data.country.iso_code.toLowerCase() === 'us') {
+						window.location = '/';		      			
 		      		}
       			};
       		}
