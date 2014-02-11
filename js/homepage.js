@@ -231,7 +231,7 @@ $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googlep
     },
     dataType: 'jsonp',
     cache         : true,
-    jsonpCallback : 'myCallbackww'
+    jsonpCallback : 'myCallbackwww'
 });
 
 
