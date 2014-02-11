@@ -390,6 +390,28 @@ aside {
 		margin: 0 0.5em;
 	}
 }
+
+#video {
+	background: #45391b url('../img/video-bg.jpg') no-repeat right top;
+	background-size: auto 100%;
+	text-align: center;
+	padding: 0;
+	.video-container {
+		padding: 2em 0;
+		background: transparent;
+		@include transition;
+		&.playing {
+			background: rgba(0,0,0,0.8);
+		}
+	}
+	img {
+		margin: 0 auto;
+		display: block;
+		max-width: 798px;
+		cursor: pointer;
+	}
+}
+
 #facts {
 	ul {
 		list-style-type: none;
