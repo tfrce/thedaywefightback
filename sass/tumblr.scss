@@ -279,7 +279,7 @@ article {
 	@include center;
 	padding: 1.5em 1.5em 0em;
 	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
-	blockquote {
+	blockquote.quote {
 		margin: 0;
 		@include adjust-font-size-to(28px);
 		line-height: 1.25em;
@@ -317,7 +317,7 @@ article {
 			color: #AAA;
 		}
 	}
-	&.link blockquote a:after {
+	&.link blockquote.quote a:after {
 		content: ' →';
 	}
 	&.photo, &.video {
@@ -377,6 +377,7 @@ ol.notes {
 	padding: 0 2em;
 	margin: 0 auto;
 	list-style-type: none;
+	@include clearfix;
 	li.note {
 		padding: 0.5em;
 		font-size: 0.9em;
