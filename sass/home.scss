@@ -698,6 +698,11 @@ aside {
 		padding: 1em;
 		color: #888;
 	}
+	#avatar-grid img {
+		display: inline-block;
+		height: 80px;
+		width: auto;
+	}
 }
 #footer-form {
 	background: #333;
@@ -919,14 +924,16 @@ ul.stack {
 #stumblr {
     background-position: right 0;
 }
-.floating-share {
+#socfooter.floating-share {
 	position: fixed;
-	top: 30%;
+	top: 20%;
 	left: 0;
 	z-index: 50;
-	.social-count {
-		@include column(12);
-		margin-bottom: 2em;
+	a.social-count {
+		width: 80px;
+		display: block;
+		float: none;
+		margin-bottom: 3em!important;
 	}
 }
 @media screen and (max-width: 1000px) {
