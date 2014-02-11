@@ -337,8 +337,8 @@ input#submit, .mobile a {
 	text-align: center;
 	padding: 0 1em;
 	text-indent: 0em;
-	line-height: 2.4em;
-	height: 2.9em;
+	line-height: 2.7em;
+	height: 2.75em;
 	width: auto;
 	color: #333;
 	vertical-align: top;
@@ -346,6 +346,14 @@ input#submit, .mobile a {
 }
 .mobile a {
 	padding: 0.5em 1em;
+}
+
+button::-moz-focus-inner, 
+input[type="button"]::-moz-focus-inner, 
+input[type="submit"]::-moz-focus-inner, 
+input[type="reset"]::-moz-focus-inner {
+  padding: 0 !important;
+  border: 0 none !important;
 }
 
 
