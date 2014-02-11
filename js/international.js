@@ -35,8 +35,10 @@
         if(errors) {
           return false;
         }
-        $('.nandp-form').html('<p style="text-align: center;">Thank you</p>');
-        
+
+        $('.nandp-form').hide();
+        $('.thanks').removeClass('hidden');
+
         var rpc = new easyXDM.Rpc({
             remote: "https://email-congress.herokuapp.com/xdm/cors/"
         },
@@ -50,8 +52,8 @@
           url: "https://email-congress.herokuapp.com/signature",
           method: "POST",
           data: data
-        }, function(response){
-        });
+        }, function(response) {});
+
         // Assume success
         /*
         $('.international .rightside.top.before').addClass('animate flipOutX');
@@ -59,10 +61,11 @@
           $('.international .rightside.top.before').addClass("hidden");
           $('.international .rightside.top.thanks').removeClass("hidden").addClass("flipInX");
         ;}, 1000);
-  */
+        */
+
         return false;
       });
-   
+
   function getParameterByName(name) {
       name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
       var regex = new RegExp("[\\?&]" + name + "=([^&\/#]*)"),
@@ -132,7 +135,7 @@
       if(typeof alwaysSelected !== 'undefined') {
           referalParam = alwaysSelected;
       }
-      
+
       if (referalParam in referalMap) {
         referalOrg = referalMap[referalParam];
         slug = referalParam;
@@ -147,8 +150,8 @@
       if(slug === 'eff') {
         $('#subscriber-checkbox').removeAttr('checked');
       }
-      /*
 
+      /*
       var spans = label.getElementsByTagName('span');
       var link = label.getElementsByTagName('a')[0];
       spans[0].innerHTML = referalOrg.name;
@@ -159,9 +162,9 @@
       };
       */
 })();
-$(document).on('ready', function () {
 
-var iso = getQueryVariable('iso');
+$(function () {
+  var iso = getQueryVariable('iso');
 
-$('#userCountry option[value="'+iso+'"]').attr("selected", "selected");
-});  
+  $('#userCountry option[value="'+iso+'"]').attr("selected", "selected");
+});

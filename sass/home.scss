@@ -260,12 +260,12 @@ header {
 		text-align: center;
 	}
 	figure {
-		max-width: 768px;
-		padding: 0 2em;
+		padding: 0 1em;
+		max-width: 688px;
 		margin: 0 auto;
 		display: block;
 		margin-top: 1em;
-		img {
+		img { 
 			width: 100%;
 			height: auto;
 			clear: both;
@@ -307,7 +307,9 @@ header {
 		}
 		.meta {
 			@include column(6);
-			margin: 0;
+			span {
+				padding: 0 0.5em;
+			}
 		}
 		.calls-counter,.emails-counter,.signatures-counter {
 			@include column(3);
@@ -341,6 +343,9 @@ form {
 			color: #CCC;
 			@include italic;
 		}
+		input {
+			width: 100%;
+		}
 	}
 	p {
 		margin-top: 0.5em;
@@ -354,7 +359,7 @@ form {
 		margin-bottom: 0.5em;
 	}
 	input, select {
-		width: 250px;
+		width: 200px;
 		background: #FFF;
 		padding: 0.7em 0;
 		line-height: 1.5em;
@@ -364,10 +369,24 @@ form {
 		color: #333;
 		vertical-align: middle;
 	}
+	span.select {
+		position: relative;
+		&:after {
+			content: '';
+			position:absolute;
+			right: 0;
+			top: 0;
+			height: 120%;
+			width: 48px;
+			background: #FFF url(../img/select-arrow.png) no-repeat 1em center;
+			pointer-events: none;
+		}
+	}
 
 
 	.twilio-container {
 		padding-top: 0.5em;
+		margin-bottom: -1em;
 		a {
 			opacity: 0.5;
 			@include transition(opacity);
@@ -398,6 +417,7 @@ form {
 	div.int-submit {
 		float: right;
 		text-align: right;
+		margin-left: 1em;
 	}
 	select {
 		color: #333;
@@ -759,100 +779,6 @@ ul.stack {
 	}
 }
 
-@media screen and (max-width: 767px) {
-	body {
-		font-size: 14px;
-	}
-	#social .social-count {
-		@include column(6);
-		margin-bottom: 4em;
-		}
-	#video .video-container img {
-		width: 100%;
-		height: auto;
-	}
-	section img {
-		max-width: 100%;
-		height: auto;
-		margin: 0 auto;
-	}
-	header h1 {
-		font-size: 1.1em;
-		figure {
-			max-width: 400px;
-			img {
-				display: none;
-				&.logos-mobile {
-					display: block;
-				}
-			}
-		}
-	}
-	.form-container {
-		display: none;
-	}
-	section {
-		padding: 3em 0;
-		h2 {
-			font-size: 1.4em;
-			padding-top: 0.5em;
-			margin-bottom: 0;
-		}
-	}
-
-	h2, #facts ul li, #action article, #take-part article, #action .bill {
-		@include column(12);
-		min-height: 0;
-	}
-	#facts ul li {
-		padding: 1em 0;
-	}
-	#action article, #take-part article.intro {
-		font-size: 1.2em;
-	}
-	header {
-		text-align: left;
-		h1, .mobile {
-			display: block;
-			text-align: center;
-		}
-	}
-	.toggle { display: block; position: relative; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; text-align: center; }
-		.toggle:after {
-	content: 'Menu';
-	display: block;
-	padding: 0.5em 0;
-	border-radius: 0;
-	width: 100%;
-	background: darken($highlight,10%);
-	color: #333;
-	margin: 0;
-	@include italic;
-
-
-	}
-
-	nav ul {
-		display: none;
-		opacity: 0;
-		background: #FAFAFA;
-		font-size: 1em;
-		margin-top: 0;
-		li {
-			display: block;
-			border-bottom: 1px solid #DDD;
-			text-align: left;
-			a {
-				padding: 1em;
-				opacity: 1;
-				display: block;
-			}
-		}
-	}
-
-	#toggle:checked + nav #menu { display: block; opacity: 1;}
-
-}
 
 .sharecenter {
     height: 88px;
@@ -944,11 +870,146 @@ ul.stack {
 		margin-bottom: 3em!important;
 	}
 }
-@media screen and (max-width: 1000px) {
+
+.responsive { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; }
+
+.responsive iframe, .responsive object, .responsive embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.hidden { display: none; }
+
+.add-banner {
+	background: transparent;
+	border-top: 1px solid #1a1a1a;
+	display: block;
+	width: 100%;
+	font-size: 0.85em;
+	padding: 0.8em 0;
+	color: #CCC;
+	margin-top: 2em;
+	strong {
+		@include italic;
+		letter-spacing: 0.25em;
+		color: $highlight;
+	}
+	&:hover {
+		background: $highlight;
+		text-decoration: none;
+		color: #000;
+		strong {
+			color: #000;
+		}
+	}
+}
+.form-container .form-footer {
+	margin-top: 0;
+}
+
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 1100px) {
 	.floating-share {
 		display: none;
 	}
 }
-.responsive { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; }
 
-.responsive iframe, .responsive object, .responsive embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+@media screen and (max-width: 767px) {
+	body {
+		font-size: 14px;
+	}
+	.add-banner {
+		display: none;
+	}
+	#social .social-count {
+		@include column(6);
+		margin-bottom: 4em;
+		}
+	#video .video-container img {
+		width: 100%;
+		height: auto;
+	}
+	section img {
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+	header h1 { 
+		font-size: 1.1em;
+		figure {
+			max-width: 400px;
+			img {
+				display: none;
+				&.logos-mobile {
+					display: block;
+				}
+			}
+		}
+	}
+	.form-container, #take-part .form-container {
+		display: none;
+	}
+	section {
+		padding: 3em 0;
+		h2 {
+			font-size: 1.4em;
+			padding-top: 0.5em;
+			margin-bottom: 0;
+		}
+	}
+
+	h2, #facts ul li, #action article, #take-part article, #action .bill {
+		@include column(12);
+		min-height: 0;
+	}
+	#facts ul li {
+		padding: 1em 0;
+	}
+	#action article, #take-part article.intro {
+		font-size: 1.2em;
+	}
+	header {
+		text-align: left;
+		h1, .mobile {
+			display: block;
+			text-align: center;
+		}
+	}
+	.toggle { display: block; position: relative; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; text-align: center; }
+		.toggle:after {
+	content: 'Menu';
+	display: block;
+	padding: 0.5em 0;
+	border-radius: 0;
+	width: 100%;
+	background: darken($highlight,10%);
+	color: #333;
+	margin: 0;
+	@include italic;
+
+
+	}
+
+	nav ul {
+		display: none;
+		opacity: 0;
+		background: #FAFAFA;
+		font-size: 1em;
+		margin-top: 0;
+		li {
+			display: block;
+			border-bottom: 1px solid #DDD;
+			text-align: left;
+			a {
+				padding: 1em;
+				opacity: 1;
+				display: block;
+				color: $highlight;
+				font-weight: bold;
+			}
+		}
+	}
+
+	#toggle:checked + nav #menu { display: block; opacity: 1;}
+
+}
+
