@@ -321,6 +321,16 @@ header {
 
 form {
 	@include column(6);
+	&.nandp-form {
+		@include column(12);
+		text-align: left;
+		label {
+			margin-bottom: 0.5em;
+			font-size: 0.8em;
+			color: #CCC;
+			@include italic;
+		}
+	}
 	p {
 		margin-top: 0.5em;
 		margin-bottom: 0;
@@ -358,6 +368,29 @@ form {
 			width: auto;
 			height: 18px;
 		}
+	}
+	fieldset {
+		@include column(4);
+		padding: 0;
+		border: none;
+		text-align: left;
+	}
+	div.checkbox {
+		@include column(12);
+		padding-top: 1em;
+		input {
+			width: auto;
+			margin-right: 1em;
+			vertical-align: middle;
+		}
+	}
+	div.int-submit {
+		float: right;
+		text-align: right;
+	}
+	select {
+		width: 100%;
+		color: #333;
 	}
 }
 ::-webkit-input-placeholder { /* WebKit browsers */
