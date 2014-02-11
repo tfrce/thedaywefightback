@@ -347,10 +347,15 @@
 			            vars[hash[0]] = hash[1];
 			        }
 			}
+
 			window.tdwfbParseLocation = function (data) {
 		      	if(data){
 		      		if(data.country.iso_code.toLowerCase() !== 'us' && vars['redirect'] == undefined) {
-						window.location = '/international';		      			
+		      			if(getQueryVariable('r')) {
+		      				window.location = '/international?r=' + getQueryVariable('r');
+		      			} else {
+							window.location = '/international';		      			
+		      			}
 		      		}
       			};
       		}

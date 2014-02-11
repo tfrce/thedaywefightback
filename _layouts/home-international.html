@@ -272,7 +272,11 @@
 			window.tdwfbParseLocation = function (data) {
 			  	if(data){
 			  		if(data.country.iso_code.toLowerCase() == 'us' && vars['redirect'] == undefined) {
-						window.location = '/';		      			
+						if(getQueryVariable('r')) {
+		      				window.location = '/?r=' + getQueryVariable('r');
+		      			} else {
+							window.location = '/';		      			
+		      			}	      			
 			  		}
 				};
 			}
