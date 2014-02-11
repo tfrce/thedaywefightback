@@ -17,7 +17,7 @@
   <script type='text/javascript' src="/js/homepage.js"></script>
 	  {% if page.template == home-international %}
 	  <script type='text/javascript' src="/js/international.js"></script>
-	  {% else %}
+	  {% endif %}
   {% else %}
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/open-sans.css" rel="stylesheet">
@@ -28,7 +28,7 @@
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
       <script type="text/javascript">
-        window.html5 = { 'elements': 'mark section customelement' };
+        window.html5 = { 'elements': 'figure mark header footer article aside section customelement' };
       </script>
 
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
