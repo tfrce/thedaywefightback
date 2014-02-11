@@ -89,13 +89,10 @@
 							<div class="meta">
 								<a href="http://thedaywefightback.org/privacy/" target="_blank">Privacy Policy</a><span> | </span><a href="banner_international.html" class="switch-locale">Not in the USA?</a>
 							</div>
-							<div class="calls-counter">
-							  <span id="call-count">0</span> CALLS PLACED
-							</div>
-							<div class="emails-counter">
-							   <span id="email-count">0</span> EMAILS SENT
-							</div>
 							
+				            <div class="calls-counter">
+				              SIGNATURES SO FAR: <span class="signature" id="signatory-count" style="font-weight: 500;">--</span>
+				            </div>
 						</div>
 					</div>
 				</div>
@@ -250,11 +247,6 @@
 		 {% include scripts.html %}
 
 		<script type="text/javascript">
-			document.getElementById("bill-details").style.display = 'none';		
-			function showMore(e) {
-				document.getElementById("bill-details").style.display = 'block';
-				document.getElementById("expand-bills").style.display = 'none';
-			}
 			function selectText(containerid) {
 			        if (document.selection) {
 			            var range = document.body.createTextRange();
