@@ -333,12 +333,13 @@ form {
 
 input#submit, .mobile a {
 	background: $highlight;
+	font-size: 1em;
 	border: none;
 	text-align: center;
 	padding: 0 1em;
 	text-indent: 0em;
-	line-height: 2.4em;
-	height: 2.9em;
+	line-height: 2.7em;
+	height: 2.75em;
 	width: auto;
 	color: #333;
 	vertical-align: top;
@@ -346,6 +347,13 @@ input#submit, .mobile a {
 }
 .mobile a {
 	padding: 0.5em 1em;
+}
+
+input::-moz-focus-inner { 
+	border: 0; 
+	padding: 0; 
+	margin-top:-2px; 
+	margin-bottom: -2px; 
 }
 
 
@@ -382,6 +390,32 @@ aside {
 		margin: 0 0.5em;
 	}
 }
+
+#video {
+	background: #45391b url('../img/video-bg.jpg') no-repeat right top;
+	background-size: auto 100%;
+	text-align: center;
+	padding: 0 2em;
+	&.playing {
+		background: #000;
+		padding: 0;
+	}
+	.video-container {
+		background: transparent;
+		max-width: 940px;
+		margin: 0 auto;
+		@include transition;
+		
+	}
+	
+	img {
+		margin: 0 auto;
+		display: block;
+		max-width: 798px;
+		cursor: pointer;
+	}
+}
+
 #facts {
 	ul {
 		list-style-type: none;
@@ -392,7 +426,7 @@ aside {
 			font-size: 1.2em;
 			line-height: 1.5em;
 			padding: 1.5em 0;
-			min-height: 120px;
+			min-height: 170px;
 			cite {
 				display: block;
 				text-align: left;
@@ -712,7 +746,7 @@ footer {
     content: attr(count);
     display: block;
     left: 50%;
-    margin-left: -32px;
+    margin-left: -27px;
     width: 54px;
     padding: 5px;
     line-height: 1em;
@@ -765,3 +799,6 @@ footer {
 		display: none;
 	}
 }
+.responsive { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; } 
+
+.responsive iframe, .responsive object, .responsive embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
