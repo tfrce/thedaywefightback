@@ -11,8 +11,7 @@
         {% if page.extra_javascript_in_footer %}{{ page.extra_javascript_in_footer }}{% endif %}
           var tfrceConfig = {
               {% if page.custom_url_share_count == true %}
-              shareCountURL: '{{ page.og_url }}',
-              loadTotals: true
+              shareCountURL: '{{ page.og_url }}'
               {% endif %}
           };
       </script>
@@ -38,4 +37,3 @@
       })();
     </script>
     <!-- End Piwik Code -->
-
