@@ -801,7 +801,7 @@ footer {
     }
 }
 .social-count:after {
-    background: $highlight;
+    background: #fff;
     text-transform: uppercase;
     font-style: italic;
     font-weight: bold;
@@ -845,7 +845,6 @@ footer {
     background-color: black;
     background-image: url('../imgs/social-icons.png');
 }
-
 #sfb {
     background-position: 66.6666% 0;
 }
