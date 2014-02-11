@@ -309,12 +309,15 @@ header {
 			@include column(6);
 			margin: 0;
 		}
-		.calls-counter,.emails-counter {
+		.calls-counter,.emails-counter,.signatures-counter {
 			@include column(3);
 			text-align: right;
 			span {
 				color: #CCC;
 			}
+		}
+		.signatures-counter {
+			@include column(6);
 		}
 	}
 }
