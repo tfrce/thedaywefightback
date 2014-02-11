@@ -481,6 +481,8 @@ aside {
 	margin-top: 2em;
 	a {
 		margin: 0 0.5em;
+		font-weight: normal;
+		text-transform: normal;
 	}
 }
 
@@ -618,7 +620,6 @@ aside {
 			display: block;
 			border-top-color: #DDD;
 			float: none;
-
 			ul {
 				font-size: 1em;
 				margin: 0;
