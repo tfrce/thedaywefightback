@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+	
+	{% include head.html %}
+	
+	<body>
+		{% include social_sidebar.html %}
+		<!--[if lt IE 9]>
+			<div id="update" style="background: #FFF; border: 10px solid #FF0000; color: #000; font-weight: bold; text-align: center; padding: 1em; position: relative;z-index: 2000;">
+				Your browser is out of date. As a result, this page may not display correctly. <a href="http://yourbrowser.net">Learn more &rarr;</a>
+			</div>
+		<![endif]-->
+		
+		<header>
+				<input type="checkbox" id="toggle" />
+				<nav>
+					<label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu" onclick></label>
+					<ul id="menu">
+					    <li><a href="/">Home</a></li>
+					    <li><a href="/events/">Events</a></li>
+					    <li><a href="/video/">Video</a></li>
+					    <li><a href="/blog">Blog</a></li>
+					    <li><a href="/press/">Press release</a></li>
+					    <li><a href="mailto:contact@thedaywefightback.org">Contact</a></li>
+					</ul>
+				</nav>
+				<h1>
+					Today, February 11th, 2014 is
+					<strong>The Day We Fight Back</strong>
+					against mass surveillance
+					<figure>
+						<img src="/img/logos.png" class="logos" />
+						<img src="/img/logos-mobile.png" class="logos-mobile" />
+					</figure>
+				</h1>
+				
+				<div class="mobile">
+					<a href="tel:+12025520505">Call your representative &rarr;</a>
+					<p>We'll give you a script and connect you automatically.</p>
+				</div>
+				<div class="form-container">
+					<div class="container">
+						<h2>Take action now</h2>
+					    <form method="post" action="https://necessaryandproportionate.org/individual-sign" class="nandp-form inline-form" role="form" autocomplete="on">
+					                              <fieldset>
+					                                	<label for="userName">
+					                                		Your full name
+					                                	</label>
+					                                	  <input type="text"  data-format="+1 (ddd) ddd-dddd" placeholder="FULL NAME" name="name"  id="userName" x-autocompletetype="name">
+					                                </fieldset>
+					                              <fieldset>
+					                                	<label for="userEmail">
+					                                		Your email
+					                                	</label>
+					                                	  <input type="text"  placeholder="YOUR EMAIL" name="email"  id="userEmail" x-autocompletetype="email">
+					                                </fieldset>
+					                              <fieldset>
+					                                	<label for="userCountry">
+					                                		Your country
+					                                	</label>
+					                                	  <select id="userCountry" name="country" class="form-control required">
+					                                		<option value="AF" selected="selected">Afghanistan</option><option value="AX">Aland Islands</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BQ">Bonaire, Sint Eustatius and Saba</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island</option><option value="BR">Brazil</option><option value="IO">British Indian Ocean Territory</option><option value="VG">British Virgin Islands</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo (Brazzaville)</option><option value="CD">Congo (Kinshasa)</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CW">Curaçao</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard Island and McDonald Islands</option><option value="HN">Honduras</option><option value="HK">Hong Kong S.A.R., China</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IM">Isle of Man</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="CI">Ivory Coast</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JE">Jersey</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao S.A.R., China</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia</option><option value="MD">Moldova</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="MP">Northern Mariana Islands</option><option value="KP">North Korea</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PS">Palestinian Territory</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russia</option><option value="RW">Rwanda</option><option value="BL">Saint Barthélemy</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin (French part)</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome and Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SX">Sint Maarten (Dutch part)</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia and the South Sandwich Islands</option><option value="KR">South Korea</option><option value="SS">South Sudan</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SJ">Svalbard and Jan Mayen</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syria</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="VI">U.S. Virgin Islands</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US">United States</option><option value="UM">United States Minor Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VA">Vatican</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="WF">Wallis and Futuna</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option>
+					                                	  </select>
+					                                </fieldset>
+					                      
+					    
+					                            <div class="checkbox">
+					                              <div class="int-submit">
+					                              	<input id="submit" type="submit" value="Take action >>" class="">
+					                              </div>
+					                              <input type="hidden" class="org-slug" name="org" value="" />
+					                              <label>
+					                                <input type="checkbox">Opt in to emails from <span class="org-name"></span> (<a class="org-privacy int-privacy-policy-link" href="">privacy policy</a>)
+					                              </label>
+					                              
+					                            </div>
+					    
+					    
+					                          <span id="error-text"></span>
+					                        
+					                      </form>
+					</div>
+					
+					<div class="form-footer">
+						<div class="container">
+							<div class="meta">
+								<a href="http://thedaywefightback.org/privacy/" target="_blank">Privacy Policy</a><span> | </span><a href="banner_international.html" class="switch-locale">Not in the USA?</a>
+							</div>
+							<div class="calls-counter">
+							  <span id="call-count">0</span> CALLS PLACED
+							</div>
+							<div class="emails-counter">
+							   <span id="email-count">0</span> EMAILS SENT
+							</div>
+							
+						</div>
+					</div>
+				</div>
+		</header>
+		
+		<section id="facts">
+			<div class="container">
+				<h2><span>The Facts</span></h2>
+				
+				<ul>
+					<li>
+						The NSA "has <strong>secretly broken into</strong> the main communications links that connect <strong>Yahoo and Google data centers</strong> around the world." 
+						 <cite>
+						   &mdash; <a href="http://www.washingtonpost.com/world/national-security/nsa-infiltrates-links-to-yahoo-google-data-centers-worldwide-snowden-documents-say/2013/10/30/e51d661e-4166-11e3-8b74-d89d714ca4dd_story.html"> The New York Times</a>
+						</cite>
+					</li>
+					<li>
+						The NSA "is <strong>harvesting hundreds of millions of contact lists</strong> from personal e-mail and instant messaging accounts around the world."
+						 <cite>
+						   &mdash; <a href="http://www.washingtonpost.com/world/national-security/nsa-collects-millions-of-e-mail-address-books-globally/2013/10/14/8e58b5be-34f9-11e3-80c6-7e6dd8d22d8f_story.html"> Washington Post</a>
+						</cite>
+					</li>
+					<li>
+						The NSA "is gathering nearly <strong>5 billion records a day</strong> on the whereabouts of cellphones around the world." 
+						 <cite>
+						   &mdash; <a href="http://www.washingtonpost.com/world/national-security/nsa-tracking-cellphone-locations-worldwide-snowden-documents-show/2013/12/04/5492873a-5cf2-11e3-bc56-c6ca94801fac_story.html"> Washington Post</a>
+						</cite>
+					</li>
+					<li>
+						The NSA collects the content and metadata of <strong>emails, web activity, chats, social networks, and everything else</strong> from fiber-optic cables "that carry much of the world's Internet and phone data." 
+						 <cite>
+						   &mdash; <a href="http://www.washingtonpost.com/wp-srv/special/politics/prism-collection-documents/"> Washington Post</a>
+						</cite>
+					</li>
+					<li>
+						NSA "officers on several occasions have channeled their agency's enormous eavesdropping power to <strong>spy on love interests</strong>." 
+						 <cite>
+						   &mdash; <a href="http://blogs.wsj.com/washwire/2013/08/23/nsa-officers-sometimes-spy-on-love-interests/"> The New York Times</a>
+						</cite>
+					</li>
+					<li>
+						NSA "is secretly piggybacking” on Internet advertisers' <strong>"cookies" and location data</strong> “to <strong>pinpoint targets for government hacking</strong> and to bolster surveillance."
+						 <cite>
+						   &mdash; <a href="http://www.washingtonpost.com/blogs/the-switch/wp/2013/12/10/nsa-uses-google-cookies-to-pinpoint-targets-for-hacking/"> Washington Post</a>
+						</cite>
+					</li>
+				</ul>
+				
+				<aside>
+					Read more: <a href="https://en.wikipedia.org/wiki/Global_surveillance_disclosures_(2013–present)">Wikipedia</a> <a href="https://www.eff.org/nsa-spying">EFF.org</a> <a href="http://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded">The Guardian</a>
+				</aside>
+				
+				
+			</div>
+		</section>
+		
+		<section id="video">
+				<div class="video-container">
+				    <img src="/img/video-splash-2.png" id="video-preload" />
+				</div>
+		</section>
+		
+		<section id="take-part">
+			<div class="container">
+				<h2><span>Take part</span></h2>
+				<article class="intro">
+					<p>The SOPA and PIPA protests were successful because we all took part, as a community. <strong>As Aaron Swartz put it, everybody "made themselves the hero of their own story."</strong> We can set a date, but we need all of you, the users of the Internet, to make it a movement.</p>
+				</article>
+				
+				<div class="form-container">
+						<form method="get" action="http://call.taskforce.is/create" class="call-form" role="form" autocomplete="on">
+								<label class="control-label" for="userPhone">
+									<img src="http://thedaywefightback.org/tumblr/call-your-legislators.png" alt="Call your legislators!" class="img-responsive"/>
+								</label>
+								<input type="text"  data-format="+1 (ddd) ddd-dddd" placeholder="YOUR PHONE NUMBER" name="phone" class="form-control bfh-phone" id="userPhone" x-autocompletetype="phone">
+						   
+							  <input id="submit" type="submit" value="Next &rarr;" class="">
+							  <p>We'll call you, show you a script and connect you.</p>
+							  <span id="error-text"></span>
+						  <div class="twilio-container">
+							<a href="https://twilio.com" target="_blank"><img class="twilio-poweredby" src="http://thedaywefightback.org/tumblr/poweredby.png" ></a><a href="https://www.twilio.com/legal/privacy" target="_blank"><img class="twilio-privacy" src="http://thedaywefightback.org/tumblr/twilio-privacypolicy.png" ></a>
+						  </div>
+						</form>
+						<form method="get" action="http://call.taskforce.is/create" class="email-form" role="form"  autocomplete="on">
+								<label class=" control-label" for="userEmail">
+									<img src="http://thedaywefightback.org/tumblr/email-your-legislators.png" alt="Email your legislators!" class="img-responsive"/>
+								</label>
+								<input type="email" placeholder="YOUR EMAIL ADDRESS" name="email"  id="userEmail"  x-autocompletetype="email">
+							
+							  <input id="submit" type="submit" value="Next &rarr;" class="">
+							  <p>It only takes a few minutes.</p>
+							  <span id="error-text"></span>
+						</form>					
+				</div>
+				
+				
+				<article>
+				
+					<h3>Add the banner to your site</h3>
+										
+					<ul class="install">
+						<li><a href="https://www.cloudflare.com/apps/the_day_we_fight_back">One-click Cloudflare app</a></li>
+						<li><a href="https://github.com/modemlooper/thedaywefightback.wp">Wordpress Plugin</a></li>
+						<li><a href="https://github.com/mrjameshamilton/thedaywefightback.drupal">Drupal 7.x Plugin</a></li>
+						<li><a href="https://github.com/betweenbrain/tdwfb/archive/master.zip">Joomla Plugin</a></li>
+						<li><a href="https://github.com/tfrce/thedaywefightback.js/blob/gh-pages/SUBREDDIT.md">Subreddit plugin</a></li>
+					</ul>
+					
+					<p>Or simply copy the code below and add it just before the closing </body> tag in your site's HTML.</p>
+					
+<pre id="selectable" onclick="selectText('selectable')">&lt;!--[if !(lt IE 8)]&gt;&lt;!--&gt;
+   &lt;script type="text/javascript"&gt;
+     (function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+   &lt;/script&gt;
+&lt;!--&lt;![endif]--&gt;</pre>
+					
+					<p><strong>Add the banner now.</strong> It will activate at 12am EST on February 11th.</p>
+					
+					<p>See the live demos here: <a href="http://tfrce.github.io/thedaywefightback.js/example/banner.html" target="_blank" id="demo-link">US version</a>, <a href="http://tfrce.github.io/thedaywefightback.js/example/banner_international.html">international version</a>. The banner changes automatically based on the locations of visitors.</p>
+					
+					<p>For more information about the banner and optional settings, see our <a href="https://github.com/tfrce/thedaywefightback.js">Github Repo</a>.</p>
+					
+				</article>
+				<article>
+					<h3>Tell the world you're taking part</h3>
+					<div id="social">
+						
+						<a href="https://twitter.com/intent/tweet?status=Today%2C%20I%20took%20a%20stand%20against%20mass%20surveillance%20by%20the%20NSA.%20Will%20you%20join%20me%3F%20https%3A%2F%2Fthedaywefightback.org%2F%20%23stopthensa&amp;related=daywefightback,sinak,neutralthoughts,stopwatchingus,eff" count="17k" data-network="twitter" target="_blank" class="twitter-button social-count twlinkthis">
+							<div class="sicon" id="stwit"></div>
+						</a>
+						<a href="https://www.facebook.com/sharer.php?s=99&amp;appid=2309869772&amp;p%5B0%5D=650914438280933&amp;p%5B1%5D=10100707845993119&amp;share_source_type=unknown" data-network="facebook" count="46k" target="_blank" class="social-count facebook-button fblinkthis">
+							<div class="sicon" id="sfb"></div>
+						</a>
+						<a count="3941" href="https://plus.google.com/share?url=https://thedaywefightback.org" data-network="googleplus" target="_blank" class="social-count google-button gpluslinkthis">
+							<div class="sicon" id="sgplus"></div>
+						</a>
+						<a href="http://www.tumblr.com/reblog/76206324022/RnSfIgVu" target="_blank" class="social-count tumblr-button">
+							<div class="sicon" id="stumblr"></div>
+						</a>
+					</div>
+					
+					<p>Use the <strong>#stopthensa</strong> hashtag on Twitter to help spread the word!</p>
+					
+					<h3>More things you can do</h3>
+					<ul>
+						<li><a href="/events">Attend an event</a> in your area</li>
+						<li><a href="http://www.askthem.io/">Ask your representatives</a> the tough questions</li>
+						<li><a href="https://writeyourrep.org/daywefightback/">Write to your representative</a> about NSA reform</li>
+						<li>Download <a href="https://play.google.com/store/apps/details?id=com.taskforce.thedaywefightback">The Day We Fight Back app</a> on Google Play</li>
+						<li>Download the <a href="https://itunes.apple.com/us/app/reform-the-nsa/id805284622?mt=8">Reform The NSA</a> app on iTunes</li>
+					</ul>
+				</article>
+			</div>
+		</section>
+		
+		<footer>
+			
+			
+			<div class="container">
+				<p>Coded by <a href="https://twitter.com/neutralthoughts" target="_blank">Thomas Davis</a>, <a href="https://sina.is" target="_blank">Sina Khanifar</a> and <a href="https://twitter.com/beaugunderson">Beau Gunderson</a>. Designed by <a href="http://samm.me/" target="_blank">Sam Mularczyk</a> and <a href="http://maxistentialism.com/" target="_blank">Max Temkin</a>. Header image by <a href="http://commons.wikimedia.org/wiki/File:Anti_ACTA_demonstration_in_Tartu.JPG">Ivo Kruusamägi</a>.</p>
+				<p>This site is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a> License. <a href="/privacy/" style="float: right;">Privacy Policy (updated February 6th, 2014)</a></p>
+			</div>
+		</footer>
+		
+		<script type="text/javascript">
+			document.getElementById("bill-details").style.display = 'none';		
+			function showMore(e) {
+				document.getElementById("bill-details").style.display = 'block';
+				document.getElementById("expand-bills").style.display = 'none';
+			}
+			function selectText(containerid) {
+			        if (document.selection) {
+			            var range = document.body.createTextRange();
+			            range.moveToElementText(document.getElementById(containerid));
+			            range.select();
+			        } else if (window.getSelection) {
+			            var range = document.createRange();
+			            range.selectNode(document.getElementById(containerid));
+			            window.getSelection().addRange(range);
+			        }
+			    }
+		</script>
+	</body>
+</html>

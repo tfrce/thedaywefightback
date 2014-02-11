@@ -125,14 +125,14 @@ $(document).ready( function () {
         });
     }
     if($('#call-count').length > 0) {
-        $.ajax('//dczwo4qqyofa4.cloudfront.net/count?campaign_id=tdwfb', {
+        $.ajax('//dczwo4qqyofa4.cloudfront.net/count?campaign=tdwfb', {
             success: function(res, err) {
               var demo = new countUp("call-count", 0, res.count, 0, 2);
-            demo.start();
+                demo.start();
             },
             dataType: 'jsonp',
             cache         : true,
-            jsonpCallback : 'ccca'
+            jsonpCallback : 'cccas'
         });
     }
     if($('#signatory-count').length > 0) {
@@ -213,7 +213,7 @@ $( ".gpluslinkthis" ).click(function() {
     window.open(url,"Share on Google Plus","width=500,height=436");
     return false;
 })
-var shareUrl = tfrceConfig.shareCountURL || 'https://thedaywefightback.org';
+var shareUrl =  'https://thedaywefightback.org';
 $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=' + shareUrl, {
     success: function(res, err) {
         $.each(res, function(network, value) {
@@ -226,23 +226,8 @@ $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googlep
     },
     dataType: 'jsonp',
     cache         : true,
-    jsonpCallback : 'myCallback'
+    jsonpCallback : 'myCallbackww'
 });
-if(tfrceConfig.loadTotals) {
-    $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://thedaywefightback.org', {
-        success: function(res, err) {
-            $.each(res, function(network, value) {
-                var count = value;
-                if (count / 10000 > 1) {
-                    count = Math.ceil(count / 1000) + 'k'
-                }
-                $('[data-network-totals="' + network + '"]').attr('count', count);
-            })
-        },
-        dataType: 'jsonp',
-        cache         : true,
-        jsonpCallback : 'myCallback'
-    });
-}
+
 
 
