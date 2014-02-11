@@ -749,3 +749,8 @@ footer {
 		margin-bottom: 2em;
 	}
 }
+@media screen and (max-width: 1000px) {
+	.floating-share {
+		display: none;
+	}
+}
