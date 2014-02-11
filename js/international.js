@@ -50,12 +50,15 @@
           data: data
         }, function(response){
         });
+        $('.nandp-form').html('<p style="text-align: center;">Thank you</p>');
         // Assume success
+        /*
         $('.international .rightside.top.before').addClass('animate flipOutX');
         window.setTimeout(function(){
           $('.international .rightside.top.before').addClass("hidden");
           $('.international .rightside.top.thanks').removeClass("hidden").addClass("flipInX");
         ;}, 1000);
+  */
         return false;
       });
    
