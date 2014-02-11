@@ -37,8 +37,13 @@
 				</h1>
 				
 				<div class="mobile">
-					<a href="tel:+12025520505">Call your representative &rarr;</a>
+					<a href="tel:+12025520505" class="mobile-call-url">Call your representative &rarr;</a>
 					<p>We'll give you a script and connect you automatically.</p>
+					<div style="display: none;" class="mobile-what-to-say">
+					<h3>What to say</h3>
+						<p>I am one of your constituents, and I’m calling to ask you to take action against mass surveillance by the NSA.</p>
+						<p>I’d like Senator/Representative ____ to support and co-sponsor the <strong>USA Freedom Act</strong>. I would also like you to oppose S. 1631, the so-called <strong>FISA Improvements Act</strong>. Moreover, I’d like you to work to prevent the NSA from <strong>undermining encryption standards</strong> and to <strong>protect the privacy rights of non-Americans</strong>.</p>
+					</div>
 				</div>
 				<div class="form-container call-only">
 					<div class="container">
@@ -363,7 +368,9 @@
       		if (vars['r'] == "eff") {
       			$('body').addClass('call-only');
       		}
-
+      		$('.mobile-call-url').on('click', function () {
+      			$('.mobile-what-to-say').show();
+      		})
         var script = document.createElement('script');
         script.src = 'https://geoip.taskforce.is/?callback=tdwfbParseLocation';
         document.getElementsByTagName('head')[0].appendChild(script);
