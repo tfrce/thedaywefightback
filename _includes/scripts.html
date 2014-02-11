@@ -2,7 +2,10 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/js/jquery-1.10.2.min.js"></script>
-
+  {% if page.template == home || page.template == home-international %}
+    <script type="text/javascript" src="http://d1agz031tafz8n.cloudfront.net/thedaywefightback.js/thedaywefightback/js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="http://d1agz031tafz8n.cloudfront.net/thedaywefightback.js/thedaywefightback/js/easyXDM.min.js"></script>
+    {% endif %}
     <script>
         window.jQuery || document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.map"><\/script>');
         {% if page.extra_javascript_in_footer %}{{ page.extra_javascript_in_footer }}{% endif %}
@@ -11,11 +14,14 @@
               shareCountURL: '{{ page.og_url }}'
               {% endif %}
           };
-    </script>
-
+      </script>
     <script src="/js/libs.min.js"></script>
-    <script src="/js/main.js"></script>
 
+  {% if page.template == home || page.template == home-international %}
+    <script type='text/javascript' src="/js/homepage.js"></script>
+    {% else %}
+      <script src="/js/main.js"></script>
+    {% endif %}
     <!-- Piwik -->
     <script type="text/javascript">
       var _paq = _paq || [];
@@ -23,7 +29,7 @@
       _paq.push(["enableLinkTracking"]);
 
       (function() {
-        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.taskforce.is/";
+        var u="https://analytics.taskforce.is/";
         _paq.push(["setTrackerUrl", u+"piwik.php"]);
         _paq.push(["setSiteId", "1"]);
         var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";

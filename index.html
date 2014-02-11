@@ -1,18 +1,18 @@
 ---
-layout: default
+layout: home
 # Goes in <title> tag:
 title: The Day We Fight Back - February 11th 2014
 # Show sticky social buttons in sidebar? Defaults to "true"
-social_sidebar:
+social_sidebar: true
 # Only used in page meta description (for Google). If blank, defaults to homepage:
-meta_description:
+meta_description: February 11th 2014 is the day the Internet rises up to fight back against mass surveillance. Join us.
 
 #### Facebook og tags. These show in summary cards when shared on FB.
 ###  Defaults to the homepage og: tags.
-og_title:
-og_description:
-og_url: https://thedaywefightback.org/ # Make sure this is the URL of the actual live page
-og_image:  # Size should be 1260 x 630px
+# og_title: 
+# og_description: 
+# og_url:  # Make sure this is the URL of the actual live page
+# og_image:  # Size should be 1260 x 630px
 
 #### Twitter card tags. These show in summar cards when share on Twitter.
 ### Defaults to homepage card tags.
@@ -21,224 +21,15 @@ twitter_card_description:
 twitter_card_image:
 
 #### Share links and text. These are used wherever there's a share button on the page.
-twitter_share_link: "https://twitter.com/intent/tweet?status=Thousands%20of%20websites%20are%20planning%20a%20massive%20protest%20to%20end%20surveillance%20on%20Feb%2011th.%20I%E2%80%99m%20joining%20them%20%E2%80%94%20will%20you%3F%20https%3A%2F%2Fthedaywefightback.org&related=daywefightback,sinak,neutralthoughts,stopwatchingus,eff"
-facebook_share_link: "https://www.facebook.com/sharer.php?s=99&appid=2309869772&p%5B0%5D=650914438280933&p%5B1%5D=10100707845993119&share_source_type=unknown"
-google_share_link: "https://plus.google.com/share?url=https://thedaywefightback.org"
+twitter_share_link: "https://twitter.com/intent/tweet?status=Today%2C%20I%20took%20a%20stand%20against%20mass%20surveillance%20by%20the%20NSA%20.%20Will%20you%20join%20me%3F%20https%3A%2F%2Fthedaywefightback.org%2F%20%23stopthensa&related=daywefightback,sinak,neutralthoughts,stopwatchingus,eff"
+facebook_share_link: "https://www.facebook.com/sharer/sharer.php?app_id=709021229138321&u=https%3A%2F%2Fthedaywefightback.org%2F&display=popup"
+google_share_link: "https://plus.google.com/share?url=https://thedaywefightback.org/"
 
 #### Show custom share counts for this page? (i.e. not total of homepage?)
 ### If using this, make sure og_url is set correctly above.
-custom_url_share_count: false
+# custom_url_share_count: false
 
 #### Any extra javascript variables go here:
 extra_javascript_in_footer:
 ---
-
-    <div class="signup">
-    </div>
-    <div class="email-updates">
-        <div class="container" id="signup">
-            <div class="row">
-                <div class="col-lg-9 centered">
-                    <form id="email-update-form" action="">
-                        <div id="signup-text">
-                          SIGN UP FOR EMAIL UPDATES:&nbsp;
-                        </div>
-                        <div class="email-box">
-                            <input type="email" class="form-control email-input" placeholder="Enter your email" id="id_email" name="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required" />
-                            <input class="btn btn-default" type="submit" value="Submit" />
-                            <div class="org-container">
-                                <input type="checkbox" checked name="subscribe" id="subscriber-checkbox" />
-                                <input type="hidden" class="org-slug" name="org" value="" />
-                                <label for="subscriber-checkbox">Also sign up for emails from
-                                    <span class="org-name"></span>
-                                    (<a class="org-privacy" href="" target="_blank">privacy policy</a>)
-                                    <!-- <a id="email-signup-close" class="email-close" href="#" title="close">Close</a> -->
-                                </label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-   <a name="banner-live"></a>
-    <div class="container banner-live" id="actions">
-        <div class="row">
-            <div class="col-md-10 col-lg-8 centered">
-                <div class="step row">
-                  <h4 style="margin-bottom:15px">UPDATE: Add the Banner to Your Site</h4>
-                  <p class="text-center" style="margin-top:0; margin-bottom:15px;">First time here? Keep scrolling or <a href="#theletter">click here</a> to read about what we're planning.</p>
-                      <img src="/img/banner_preview.png" style="margin-bottom:20px" id="banner-preview-image"/>
-                      <h5 class="howtoaddcode">How to add the code:
-                        <a class="btn btn-primary" href="http://wordpress.org/plugins/tdwfb/">Wordpress Plugin</a> <a class="btn btn-primary" href="https://www.cloudflare.com/apps/the_day_we_fight_back">One-click Cloudflare app</a>
-                      </h5>
-                      <p>Or simply copy the code below and add it just before the closing &lt;/body&gt; tag in your site's HTML.</p>
-                      <pre>
-&lt;!--[if !(lt IE 8)]&gt;&lt;!--&gt;
-   &lt;script type="text/javascript"&gt;
-     (function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
-   &lt;/script&gt;
-&lt;!--&lt;![endif]--&gt;</pre>
-                      <p><strong>Add the banner now. It will activate at 12am EST on February 11th.</strong></p>
-                      <p>See the live demos here: <a href="http://tfrce.github.io/thedaywefightback.js/example/banner.html" target="_blank" id="demo-link">US version</a>, <a href="http://tfrce.github.io/thedaywefightback.js/example/banner_international.html">international version</a>. The banner changes automatically based on the location of visitors.</p>
-                      <p>For more information about the banner and optional settings, see our <a href="https://github.com/tfrce/thedaywefightback.js">Github Repo</a>.</p>
-                      <div id="greybox">
-                        <h5>Let us know you're adding the banner:</h5>
-                        <a name="theletter"></a>
-                        <div class="form-inline banner-signup-form">
-                          <form id="email-banner-form" action="">
-                            <input type="hidden" name="banner" value="1">
-                            <div class="form-group">
-                              <label class="sr-only" for="id_email" >Email address</label>
-                              <input type="email" class="form-control banner-signup input-lg" name="email"  id="id_email" placeholder="Your email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$" required="required" />
-                            </div>
-                            <div class="form-group">
-                              <label class="sr-only" for="banner-domain">Password</label>
-                              <input type="text" class="form-control domain-input input-lg" id="banner-domain" placeholder="Your domain(s)" name="domain" required="required" />
-                            </div>
-                            <input class="btn btn-default btn-lg" type="submit" value="Submit" />
-                          </form>
-                        </div>
-                      </div>
-              </div>
-          </div>
-      </div>
-    </div>
-
-    <div class="container" id="letter">
-        <div class="row">
-            <div class="col-sm-10 col-md-10 col-lg-8 centered">
-                <h2>DEAR USERS OF THE INTERNET,</h2>
-                <p>In January 2012 we defeated the SOPA and PIPA censorship legislation with the largest Internet protest in history. Today we face another critical threat, one that again undermines the Internet and the notion that any of us live in a genuinely free society: mass surveillance.</p>
-                <p>In celebration of the win against SOPA and PIPA two years ago, and in memory of one of its leaders, <a href="http://www.theguardian.com/commentisfree/2013/jan/12/aaron-swartz-heroism-suicide1" target="_blank">Aaron Swartz</a>, we are planning a day of protest against mass surveillance, to take place <span>this February 11th</span>.</p>
-                <p>Together we will push back against powers that seek to observe, collect, and analyze our every digital action. Together, we will make it clear that such behavior is not compatible with democratic governance. Together, if we persist, we will win this fight.</p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container" id="whatwewilldo">
-        <!-- Example row of columns -->
-        <div class="row" id="intro">
-            <div class="col-sm-10 col-md-10 col-lg-8 centered">
-                <h2>WHAT WE'LL DO ON FEBRUARY 11th:</h2>
-                <p><span>If you're in the US:</span> Thousands of websites will host banners urging people to call/email Congress. We'll ask legislators to oppose the <a target="_blank" href="https://www.aclu.org/blog/national-security-technology-and-liberty/sen-dianne-feinsteins-nsa-reforms-bad-privacy-bad">FISA Improvements Act</a>, support the <a target="_blank" href="https://www.aclu.org/blog/national-security/usa-freedom-act-real-spying-reform">USA Freedom Act</a>, and enact protections for non-Americans.</p>
-                <p><span>If you're not in the US:</span> Visitors will be asked to urge appropriate targets to institute privacy protections.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="take-part">
-        <h2>Take Part: This is <span>your</span> moment</h2>
-    </div>
-
-    <div class="container" id="actions">
-        <div class="row">
-            <div class="col-md-10 col-lg-8 centered">
-                <div class="row">
-                    <p id="intro" class="col-sm-10 centered">The SOPA and PIPA protests were successful because we all took part, as a community. <span>As Aaron Swartz put it, everybody "made themselves the hero of their own story."</span> We can set a date, but we need all of you, the users of the Internet, to make it a movement.</p>
-                </div>
-
-                <div class="step row">
-                    <h4>1: TELL THE WORLD YOU'RE TAKING PART</h4>
-                    <div class="col-sm-10 centered">
-                        <div id="socbar" class="down sharecenter row">
-                          <div class="col-xs-4 social-link-container">
-                            <a href="{{ page.twitter_share_link }}" count="0" data-network="twitter" target="_blank"  class="twitter-button social-count twlinkthis">
-                                <div class="sicon" id="stwit"></div>
-                            </a>
-                          </div>
-                          <div class="col-xs-4 social-link-container">
-                            <a href="{{ page.facebook_share_link }}" data-network="facebook" count="0" target="_blank" class="social-count facebook-button fblinkthis" >
-                                <div class="sicon" id="sfb"></div>
-                            </a>
-                          </div>
-                          <div class="col-xs-4 social-link-container">
-                            <a count="0" href="{{ page.google_share_link }}" data-network="googleplus" target="_blank" class="social-count google-button gpluslinkthis" >
-                                <div class="sicon" id="sgplus"></div>
-                            </a>
-                          </div>
-                          <!--<div class="col-xs-3 social-link-container">
-                            <a style="margin-right: 0;" href="https://www.thunderclap.it/projects/3417-8-4-is-1984day-stopthensa" target="_blank">
-                                <img style="margin-top: 2px" src="img/thunderclap.jpg">
-                            </a>
-                          </div>-->
-                        </div>
-                        <div style="clear: both;"></div>
-
-                        <p class="text-center morefb" >
-                          <strong>Show your support by <a href="http://twibbon.com/Support/the-day-we-fight-back-2"  target="_blank">changing your profile photo</strong></a>:
-                        </p>
-                        <p class="text-center" >
-                          <a href="http://twibbon.com/Support/the-day-we-fight-back-2" target="_blank"><img src="/img/twibbon.jpg" id="twibbon"></a>
-                        </p>
-
-                        <div id="fb-share-graphics">
-                          <p class="text-center morefb">
-                            <strong>Click to share one of these photos on Facebook:</a></strong>
-                          </p>
-                          <div class="col-sm-6">
-                            <a class="fblinkthis" href="https://www.facebook.com/sharer.php?s=2&appid=2305272732&p%5B0%5D=650914438280933&p%5B1%5D=1073741839&share_source_type=unknown" target="_blank" >
-                              <img class="img-responsive" src="/img/fb4s.jpg" alt="Ben Franklin quote about privacy and security" />
-                            </a>
-                          </div>
-                          <div class="col-sm-6">
-                            <a class="fblinkthis" href="https://www.facebook.com/sharer.php?s=2&appid=2305272732&p%5B0%5D=650914438280933&p%5B1%5D=1073741831&share_source_type=unknown" target="_blank">
-                              <img class="img-responsive" src="/img/fb1s.jpg" alt="Lebowski is against surveillance too" />
-                            </a>
-                          </div>
-                          <div class="col-sm-6">
-                            <a class="fblinkthis" href="https://www.facebook.com/sharer.php?s=2&appid=2305272732&p%5B0%5D=650914438280933&p%5B1%5D=1073741830&share_source_type=unknown" target="_blank">
-                              <img class="img-responsive" src="/img/fb2s.jpg" alt="This person is in for The Day We Fight Back" />
-                            </a>
-                          </div>
-                          <div class="col-sm-6">
-                            <a class="fblinkthis" href="https://www.facebook.com/sharer.php?s=2&appid=2305272732&p%5B0%5D=650914438280933&p%5B1%5D=1073741828&share_source_type=unknown" target="_blank">
-                              <img class="img-responsive" src="/img/fb3s.jpg" alt="We're protecting you - keep browsing" />
-                            </a>
-                          </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="step row">
-                    <h4>2: JOIN THE CONVERSATION ON REDDIT</h4>
-                    <p class="text-center">Plan, organize and advocate over at <a href="http://thedaywefightback.reddit.com" target="_blank">/r/thedaywefightback</a></p>
-                    <div class="col-sm-10 centered">
-                        <script src="https://d37nz0y4gkxvxe.cloudfront.net" type="text/javascript"></script>
-                    </div>
-                </div>
-                <div class="step row">
-                    <h4>3: BE CREATIVE: DO WHATEVER YOU CAN</h4>
-                    <div class="col-sm-10 centered">
-                    <p>This moment is whatever we, the broad community of people who care about the Internet, make of it.  Post a comment with a link to every NSA-related story. Make and share a meme.  Build a website.  Organize an event.</p>
-                    <p>Then <a href="mailto:contact@thedaywefightback.org">tell us about it</a> so we can spread the word.</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script type="text/javascript">
-    var vars = [], hash;
-        var q = document.URL.split('?')[1];
-        if(q != undefined){
-            q = q.split('&');
-            for(var i = 0; i < q.length; i++){
-                hash = q[i].split('=');
-                vars.push(hash[1]);
-                vars[hash[0]] = hash[1];
-            }
-    }
-    if (vars['r'] == "eff") {
-        var el = document.querySelectorAll('pre');
-        el[0].innerHTML = '&lt;!--[if !(lt IE 8)]&gt;&lt;!--&gt; \n   &lt;script type="text/javascript"&gt; \n       var tdwfb_config={greeting:"Dear Internet Users",disableDate:false,callOnly:true};(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()\n   &lt;/script&gt;\n&lt;!--&lt;![endif]--&gt;';
-        var el = document.querySelectorAll('#banner-preview-image');
-        el[0].setAttribute('src', '/img/banner_preview_call.png');
-        var el = document.querySelectorAll('#demo-link');
-        el[0].setAttribute('href', 'http://tfrce.github.io/thedaywefightback.js/example/banner_callonly.html');
-
-    }
-</script>
 

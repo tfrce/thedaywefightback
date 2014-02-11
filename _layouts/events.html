@@ -2,32 +2,27 @@
 layout: default
 ---
 <script type="text/javascript">
-var vars = [], hash;
-var q = document.URL.split('?')[1];
-
-if (q != undefined){
-  q = q.split('&');
-
-  for (var i = 0; i < q.length; i++) {
-    hash = q[i].split('=');
-    vars.push(hash[1]);
-    vars[hash[0]] = hash[1];
-  }
-}
-
-if (vars['r'] == "eff") {
-  window.location.href = "http://thedaywefightback.org/?r=eff";
-}
+	var vars = [], hash;
+	    var q = document.URL.split('?')[1];
+	    if(q != undefined){
+	        q = q.split('&');
+	        for(var i = 0; i < q.length; i++){
+	            hash = q[i].split('=');
+	            vars.push(hash[1]);
+	            vars[hash[0]] = hash[1];
+	        }
+	}
+	if (vars['r'] == "eff") {
+		window.location.href = "http://thedaywefightback.org/?r=eff";
+	}
 </script>
-
 <div class="container blogpost" >
- <div class="col-md-10 col-lg-8 centered" id="{{ page.custom_blog_post_style }}">
-  <h1>{{ page.title }}</h1>
+	<div class="col-md-10 col-lg-8 centered" id="{{ page.custom_blog_post_style }}">
+		<h1>{{ page.title }}</h1>
+		{% if page.show_date != false %}<p class="meta">{{ page.date | date_to_string }}</p>{% endif %}
 
-  {% if page.show_date != false %}<p class="meta">{{ page.date | date_to_string }}</p>{% endif %}
-
-  <div class="post">
-   {{ content }}
-  </div>
- </div>
+		<div class="post">
+			{{ content }}
+		</div>
+	</div>
 </div>
