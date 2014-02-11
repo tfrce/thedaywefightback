@@ -340,6 +340,9 @@ form {
 			color: #CCC;
 			@include italic;
 		}
+		input {
+			width: 100%;
+		}
 	}
 	p {
 		margin-top: 0.5em;
@@ -353,7 +356,7 @@ form {
 		margin-bottom: 0.5em;
 	}
 	input, select {
-		width: 100%;
+		width: 200px;
 		background: #FFF;
 		padding: 0.7em 0;
 		line-height: 1.5em;
