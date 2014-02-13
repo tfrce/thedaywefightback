@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: results
 excerpt: " In addition to a huge online demonstration, groups around the world are planning events on the local level to protest surveillance abuses. Here's our guide on how to set up an event in your area."
 permalink: the-results
 # photo: "/img/social-fb-scorecard.jpg"
@@ -43,37 +43,55 @@ Results of the protest
 
 Thanks citizens who participated yesterday in raising awareness and letting congress know that we stand united against overreaching spy glasses.
 
+<ul>
 
+	<li>
+		<h3><span id="result-calls">96, 000</span></h3>
+		<h4>Calls</h4>
+		
+		We added the total number of calls and incomplete plus the outliers today some short description in italics
+	</li>
+	
+	<li>
+		<h3><span id="result-emails">549, 000</span></h3>
+		<h4>Emails</h4>
+		190,000 people registered to send an email to 3 representatives within their zipcode.
+	</li>
+	
+	<br class="clear" />
+	
+	<li>
+		<h3><span id="result-petitions">244, 000</span></h3>
+		<h4>Signatures</h4>
+	</li>
+	
+	<li>
+		<h3><span id="result-website">1, 100, 000</span></h3>
+		<h4>Website Visitors</h4>
+	</li>
+	
+	<br class="clear" />
+	
+	<li>
+		<h3><span id="result-banner">256, 000, 000</span></h3>
+		<h4>People reached</h4>
+	</li>
+	
+	<li>
+		<h3><span id="result-twitter">80, 000 +</span></h3>
+		<h4>Tweets</h4>
+	</li>
+	
+	<br class="clear" />
+	
+	<li>
+		<h3><span id="result-facebook">410, 000</span></h3>
+		<h4>Facebook posts</h4>
+	</li>
+	<br class="clear" />
 
-#Calls<br />
-##<span id="result-calls">96, 000</span> <br />
-We added the total number of calls and incomplete plus the outliers today some short description in italics
+</ul>
 
-#Emails<br />
-##<span id="result-emails">549, 000</span><br />
-190, 000 registed to send an email to their representatives of their zipcode. Because 3 representatives per zip code will be sending the total.
-
-
-#Petitions<br />
-##<span id="result-petitions">244, 000</span><br />
-The international community also joined together to show their support for liberty blah
-
-#Website Visitors<br />
-##<span id="result-website">1, 100, 000</span><br />
-The homepage for the day we fight back received over
-
-#Banner Appeared<br />
-##<span id="result-banner">256, 000, 000</span><br />
-Thanks to everybody who signed up to show the banner on their site, we managed to reach a large amount of people with our banner.
-
-#Twitter<br />
-##<span id="result-twitter">80, 000</span><br />
-This is the number of shares the url got on twitter. It excludes the number of people who used the hash tag.
-
-#Facebook<br />
-##<span id="result-facebook">410, 000</span><br />
-We had 410, 000 interactions on our homepage url. This number does not include post that didn’t include the url.
-
-What next<br />
+####What next
 Share these totals and viva la etc
 

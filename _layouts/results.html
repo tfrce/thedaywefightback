@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+	{% include head.html %}
+
+	<body>
+		{% include social_sidebar.html %}
+		<!--[if lt IE 9]>
+			<div id="update" style="background: #FFF; border: 10px solid #FF0000; color: #000; font-weight: bold; text-align: center; padding: 1em; position: relative;z-index: 2000;">
+				Your browser is out of date. As a result, this page may not display correctly. <a href="http://yourbrowser.net">Learn more &rarr;</a>
+				</div>
+		<![endif]-->
+		<header>
+				<input type="checkbox" id="toggle" />
+				<nav>
+					<label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu" onclick></label>
+					<ul id="menu">
+					    <li><a href="/">Home</a></li>
+					    <li><a href="/events/">Events</a></li>
+					    <li><a href="/blog">Blog</a></li>
+					    <li><a href="/press/">Press release</a></li>
+					    <li><a href="mailto:contact@thedaywefightback.org">Contact</a></li>
+					</ul>
+				</nav>
+				<h1>
+					February 11th, 2014 was
+					<strong>The Day We Fought Back</strong>
+					against mass surveillance
+				</h1>
+		</header>
+		
+		<section class="post">
+			<div class="container">
+				<h2><span>{{ page.title }}</span></h2>
+		
+					<article>{{ content }}</article>
+			</div>
+	</section>
+	
+	<footer>
+	
+	
+				<div class="container">
+					<p>Coded by <a href="https://twitter.com/neutralthoughts" target="_blank">Thomas Davis</a>, <a href="https://sina.is" target="_blank">Sina Khanifar</a> and <a href="https://twitter.com/beaugunderson">Beau Gunderson</a>. Designed by <a href="http://samm.me/" target="_blank">Sam Mularczyk</a> and <a href="http://maxistentialism.com/" target="_blank">Max Temkin</a>. Header image by <a href="http://commons.wikimedia.org/wiki/File:Anti_ACTA_demonstration_in_Tartu.JPG">Ivo Kruusamägi</a>.</p>
+					<p>This site is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a> License. <a href="/privacy/" style="float: right;">Privacy Policy (updated February 6th, 2014)</a></p>
+				</div>
+			</footer>
+			
+			{% include scripts.html %}
+	</body>
+</html>
