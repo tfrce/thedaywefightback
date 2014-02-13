@@ -13,7 +13,7 @@ meta_description: Here's what happened on The Day We Fight Back, by the numbers.
 
 #### Facebook og tags. These show in summary cards when shared on FB. These default to the homepage og: tags.
 og_title: "The Day We Fight Back By The Numbers"
-og_description: "96,000 calls, 555,000 emails, 245,000 signatures and more. Find out what happened this Tuesday."
+og_description: "89,000 calls, 555,000 emails, 245,000 signatures and more. Find out what happened this Tuesday."
 og_url: https://thedaywefightback.org/the-results/ # Make sure this is the URL of the actual live page
 # og_image:  https://thedaywefightback.org/img/social-lettertowikipedia.jpg # Size should be 1260 x 630px
 
