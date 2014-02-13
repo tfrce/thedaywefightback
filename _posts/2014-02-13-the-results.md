@@ -1,32 +1,32 @@
 ---
 layout: results
-excerpt: " In addition to a huge online demonstration, groups around the world are planning events on the local level to protest surveillance abuses. Here's our guide on how to set up an event in your area."
+excerpt: ""
 permalink: the-results
 # photo: "/img/social-fb-scorecard.jpg"
 draft: true
 
 # Goes in <title> tag:
-title: The results
+title: The Day We Fought Back By The Numbers
 # Show sticky social buttons in sidebar? Defaults to "true"
 social_sidebar: true
 # Only used in page meta description (for Google). If blank, defaults to homepage:
-meta_description: Host an Event in Your Local Community on February 11, 2014 as Part of The Day We Fight Back
+meta_description: Here's what happened on The Day We Fight Back, by the numbers.
 
 #### Facebook og tags. These show in summary cards when shared on FB. These default to the homepage og: tags.
-og_title: "Guide to hosting an anti-surveillance event on Feb 11th"
-og_description: "A guide on how to set up an event in your area on February 11th, The Day We Fight Back."
-og_url: https://thedaywefightback.org/host-an-event/ # Make sure this is the URL of the actual live page
+og_title: "The Day We Fight Back By The Numbers"
+og_description: "96,000 calls, 555,000 emails, 245,000 signatures and more. Find out what happened this Tuesday."
+og_url: https://thedaywefightback.org/the-results/ # Make sure this is the URL of the actual live page
 # og_image:  https://thedaywefightback.org/img/social-lettertowikipedia.jpg # Size should be 1260 x 630px
 
 #### Twitter card tags. These show in summar cards when share on Twitter. Defaults to homepage card tags.
-twitter_card_title: "Host an event on The Day We Fight Back" #Keep this relatively short
-twitter_card_description: A guide on how to set up an event in your area on February 11th, The Day We Fight Back.
+twitter_card_title: "The Day We Fight Back By The Numbers" #Keep this relatively short
+twitter_card_description: "On Tuesday thousands of websites rose up in protest against mass surveillance. Here are the numbers."
 # twitter_card_image: https://thedaywefightback.org/img/social-lettertowikipedia.jpg
 
 #### Share links and text. These are used wherever there's a share button on the page.
-twitter_share_link: "https://twitter.com/intent/tweet?status=Want%20to%20host%20an%20event%20on%20February%2011th%20in%20support%20of%20The%20Day%20We%20Fight%20Back%3F%20Read%20this%20guide%3A%20https%3A%2F%2Fthedaywefightback.org%2Fhost-an-event%2F%20%23stopthensa&related=daywefightback,sinak,neutralthoughts,stopwatchingus,eff"
-facebook_share_link: "https://www.facebook.com/sharer/sharer.php?app_id=709021229138321&u=https%3A%2F%2Fthedaywefightback.org%2Fhost-an-event%2F&display=popup"
-google_share_link: "https://plus.google.com/share?url=https://thedaywefightback.org/host-an-event/"
+twitter_share_link: "https://twitter.com/intent/tweet?status=February%2011th%2C%20The%20Day%20We%20Fought%20Back%2C%20by%20the%20numbers%20-%3E%20https%3A%2F%2Fthedaywefightback.org%2Fthe-results%2F%20&related=daywefightback,sinak,neutralthoughts,stopwatchingus,eff"
+facebook_share_link: "https://www.facebook.com/sharer/sharer.php?app_id=709021229138321&u=https%3A%2F%2Fthedaywefightback.org%2Fthe-results%2F&display=popup"
+google_share_link: "https://plus.google.com/share?url=https://thedaywefightback.org/the-results/"
 
 #### Show custom share counts for this page? (i.e. not total of homepage?)
 ### If using this, make sure og_url is set correctly above.
@@ -39,66 +39,67 @@ custom_url_share_count: true
 # custom_blog_post_style: ""
 ---
 
-Results of the protest
+Thanks to everyone who participated on Tuesday. Together we raised awareness and let our legislators know that we stand united against overreaching surveillance.
 
-Thanks citizens who participated yesterday in raising awareness and letting congress know that we stand united against overreaching spy glasses.
+Below are some numbers that quantiy how we did* on Tuesday.  
+<p style="font-size: 16px; margin-top:15px">* The figures below represent a lower bound  - many people took action independently and on other sites that we aren't able to count.</p>
 
 <ul>
 
 	<li>
-		<h3><span id="result-calls">0</span></h3>
-		<h4>Calls</h4>
-		
-		The total number of completed calls reached 89, 000. Some offices didn't have voice mail activated, due to the high volume of calls around 7000 calls weren't answered.
+		<h3><span id="result-banner">0</span></h3>
+		<h4>People saw the banner</h4>
+		Over 24 million Americans and 13 million non-Americans saw The Day We Fight Back banner on Tuesday.
 	</li>
 	
 	<li>
 		<h3><span id="result-emails">0</span></h3>
-		<h4>Emails</h4>
-		185,000 people registered to send an email to their electorate which will be forwarded onto their three representatives.
+		<h4>Emails sent</h4>
+		185,000 Americans registered to send over 555,000 emails, two each to their two Senators and one to their Representative.
 	</li>
-	
+
 	<br class="clear" />
+
+	<li>
+		<h3><span id="result-calls">0</span></h3>
+		<h4>Calls attempted</h4>
+		
+		The total number of completed calls reached 89,000 and another 7,000 calls went uncompleted because  some legislators turned off their voicemail inboxes.
+	</li>
 	
 	<li>
 		<h3><span id="result-petitions">0</span></h3>
 		<h4>Signatures</h4>
-		The international community signed for the <a href="https://necessaryandproportionate.org">necessaryandproportionate.org</a> petition, to demand privacy as a human right.
-	</li>
-	
-	<li>
-		<h3><span id="result-website">0</span></h3>
-		<h4>Homepage visitors</h4>
-		The banner, social media and our many partners drove over 1 million unique website visitors.
+		245,000 people internationally signed the <a href="https://necessaryandproportionate.org">necessaryandproportionate.org</a> petition to demand privacy as a human right. Another 56,000 joined petitions on causes.com and change.org.
 	</li>
 	
 	<br class="clear" />
 	
 	<li>
-		<h3><span id="result-banner">0</span></h3>
-		<h4>People saw the banner</h4>
-		Their were two versions of the banner, one for international which was shown 13 million times and the US version was shown 24 million times.
+		<h3><span id="result-website">0</span>+</h3>
+		<h4>Homepage visitors</h4>
+		The banner, social media and at least 6,000 wesites drove over 1 million unique visitors to the site.
 	</li>
+	
+	<li>
+		<h3><span id="result-facebook">410,000</span></h3>
+		<h4>Facebook shares</h4>
+		This just the number of times the website itself was shared on Facebook.
+	</li>
+	
+	<br class="clear" />
 	
 	<li>
 		<h3><span id="result-twitter">80, 000 +</span></h3>
 		<h4>Tweets</h4>
-		This is just the number of times the thedaywefightback.org was shared on Twitter. There were many other tens of thousands of tweets floating around. #Stopspying was trending on Twitter during the afternoon.
-	</li>
-	
-	<br class="clear" />
-	
-	<li>
-		<h3><span id="result-facebook">410, 000</span></h3>
-		<h4>Facebook interactions</h4>
-		Viral memes and discussion threads were being shared all through the day.
+		This is just the number of times the thedaywefightback.org was shared on Twitter. #StopSpying and #StopTheNSA were trending on Twitter during the afternoon.
 	</li>
 	<br class="clear" />
 
 </ul>
 <div class="row">
 	<div class="span-6">
-	<h3>Congress support</h3>
+	<h3>Legislators</h3>
 
 	<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Proud sponsor of <a href="https://twitter.com/search?q=%23USAFreedomAct&amp;src=hash">#USAFreedomAct</a> 2 protect privacy &amp; civil liberties, reform the <a href="https://twitter.com/search?q=%23NSA&amp;src=hash">#NSA</a> &amp; <a href="https://twitter.com/search?q=%23FISA&amp;src=hash">#FISA</a> court <a href="http://t.co/jGjPVTxv00">http://t.co/jGjPVTxv00</a> <a href="https://twitter.com/search?q=%23TheDayWeFightBack&amp;src=hash">#TheDayWeFightBack</a></p>&mdash; Tom Udall (@SenatorTomUdall) <a href="https://twitter.com/SenatorTomUdall/statuses/433291280865431552">February 11, 2014</a></blockquote>
 
@@ -123,19 +124,26 @@ Thanks citizens who participated yesterday in raising awareness and letting cong
 	<blockquote class="twitter-tweet" lang="en"><p>RT if you want to <a href="https://twitter.com/search?q=%23StoptheNSA&amp;src=hash">#StoptheNSA</a> from collecting your metadata. Today is <a href="https://twitter.com/search?q=%23TheDayWeFightBack&amp;src=hash">#TheDayWeFightBack</a> in the name of privacy. <a href="https://twitter.com/DayWeFightBack">@DayWeFightBack</a> <a href="https://twitter.com/EFF">@EFF</a></p>&mdash; House Judiciary Dems (@HouseJudDems) <a href="https://twitter.com/HouseJudDems/statuses/433261656022343681">February 11, 2014</a></blockquote>
 
 	<blockquote class="twitter-tweet" lang="en"><p>I invite you to join me in the fight against the NSA surveillance program. Today is the day we begin to fight back: <a href="http://t.co/8BSVf49CIi">http://t.co/8BSVf49CIi</a></p>&mdash; Senator Rand Paul (@SenRandPaul) <a href="https://twitter.com/SenRandPaul/statuses/433256806756802560">February 11, 2014</a></blockquote>
-
+	
 
 	<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>I&#39;m working to rein in <a href="https://twitter.com/search?q=%23NSA&amp;src=hash">#NSA</a> <a href="https://twitter.com/search?q=%23Surveillance&amp;src=hash">#Surveillance</a> &amp; mass collection of American&#39;s private <a href="https://twitter.com/search?q=%23data&amp;src=hash">#data</a> <a href="http://t.co/vT2Rtr2Sen">http://t.co/vT2Rtr2Sen</a> <a href="http://t.co/lNAzcl4yMO">pic.twitter.com/lNAzcl4yMO</a></p>&mdash; Rep. Zoe Lofgren (@RepZoeLofgren) <a href="https://twitter.com/RepZoeLofgren/statuses/433108321411678208">February 11, 2014</a></blockquote>
 	</div>
 	<div class="span-6">
-	<h3>Corporate support</h3>
-		<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Join us in taking a stand against mass surveillance. Take 5 min and call/email your legislators today. <a href="https://t.co/vowufSe5uZ">https://t.co/vowufSe5uZ</a> <a href="https://twitter.com/search?q=%23stopthensa&amp;src=hash">#stopthensa</a></p>&mdash; the reddit alien (@reddit) <a href="https://twitter.com/reddit/statuses/433231193757061120">February 11, 2014</a></blockquote>
+	<h3>Companies & Individuals</h3>
+		<blockquote class="twitter-tweet" lang="en"><p>Today I took a stand against mass surveillance. Will you join me? <a href="https://t.co/ZrOMRolOKq">https://t.co/ZrOMRolOKq</a> <a href="https://twitter.com/search?q=%23stopspying&amp;src=hash">#stopspying</a></p>&mdash; Tim Berners-Lee (@timberners_lee) <a href="https://twitter.com/timberners_lee/statuses/433229865202900992">February 11, 2014</a></blockquote>
 
 		<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>It&#39;s time to reform government surveillance. Join us in speaking up to Congress: <a href="http://t.co/RKsmb7UuSm">http://t.co/RKsmb7UuSm</a> <a href="https://twitter.com/search?q=%23thedaywefightback&amp;src=hash">#thedaywefightback</a></p>&mdash; A Googler (@google) <a href="https://twitter.com/google/statuses/433269255564697601">February 11, 2014</a></blockquote>
 
+		<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Today we’re proud to support The Day We Fight Back, to end mass surveillance. <a href="https://t.co/oDOQnBsED6">https://t.co/oDOQnBsED6</a> + <a href="http://t.co/3uYsAVT94t">http://t.co/3uYsAVT94t</a> <a href="https://twitter.com/search?q=%23transparency&amp;src=hash">#transparency</a></p>&mdash; Policy (@policy) <a href="https://twitter.com/policy/statuses/433252370571489280">February 11, 2014</a></blockquote>
+
+		<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Join us in taking a stand against mass surveillance. Take 5 min and call/email your legislators today. <a href="https://t.co/vowufSe5uZ">https://t.co/vowufSe5uZ</a> <a href="https://twitter.com/search?q=%23stopthensa&amp;src=hash">#stopthensa</a></p>&mdash; the reddit alien (@reddit) <a href="https://twitter.com/reddit/statuses/433231193757061120">February 11, 2014</a></blockquote>
+		
+		<blockquote class="twitter-tweet" lang="en"><p>Today is <a href="https://twitter.com/search?q=%23TheDayWeFightBack&amp;src=hash">#TheDayWeFightBack</a>—a worldwide day of activism in opposition to the NSA’s mass spying: <a href="http://t.co/uDXQtJ1YPq">http://t.co/uDXQtJ1YPq</a> <a href="https://twitter.com/search?q=%23StopTheNSA&amp;src=hash">#StopTheNSA</a></p>&mdash; The Nation (@thenation) <a href="https://twitter.com/thenation/statuses/433364322236911616">February 11, 2014</a></blockquote>
+		
+		<blockquote class="twitter-tweet" lang="en"><p>Here&#39;s <a href="https://twitter.com/FreedomofPress">@FreedomofPress</a> on how to participate in Today We Fight Back surveillance protest <a href="https://t.co/JHbGGBZ0cy">https://t.co/JHbGGBZ0cy</a></p>&mdash; Glenn Greenwald (@ggreenwald) <a href="https://twitter.com/ggreenwald/statuses/433310286766813185">February 11, 2014</a></blockquote>
+
 		<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>The Day We Fight Back: <a href="http://t.co/qv0GNLwQc5">http://t.co/qv0GNLwQc5</a></p>&mdash; Tumblr (@tumblr) <a href="https://twitter.com/tumblr/statuses/433285104547692544">February 11, 2014</a></blockquote>
 
-		<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Today we’re proud to support The Day We Fight Back, to end mass surveillance. <a href="https://t.co/oDOQnBsED6">https://t.co/oDOQnBsED6</a> + <a href="http://t.co/3uYsAVT94t">http://t.co/3uYsAVT94t</a> <a href="https://twitter.com/search?q=%23transparency&amp;src=hash">#transparency</a></p>&mdash; Policy (@policy) <a href="https://twitter.com/policy/statuses/433252370571489280">February 11, 2014</a></blockquote>
 
 		<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Join the fight against mass surveillance: <a href="http://t.co/ukA6HcX4E3">http://t.co/ukA6HcX4E3</a>. <a href="https://twitter.com/search?q=%23OnlinePrivacy&amp;src=hash">#OnlinePrivacy</a> <a href="http://t.co/OuZmXEbOJI">pic.twitter.com/OuZmXEbOJI</a></p>&mdash; Firefox (@firefox) <a href="https://twitter.com/firefox/statuses/433284340705808384">February 11, 2014</a></blockquote>
 
@@ -147,15 +155,25 @@ Thanks citizens who participated yesterday in raising awareness and letting cong
 </div>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<style>
-.span-6 {
-	width:48%;
-	float: left;
-}
-</style>
 <div style="clear: both;"></div>
-####What next
-Feel free to return to the homepage and use our free call service and email tool.
+#### This is just the beginning
 
-Share buttons go here
+We called Tuesday "The Day We Fight Back" but of course the fight doesn't end here. To push back against surveillance we need to keep driving actions to educate and push our representatives to take action.
 
+We'll continue to push for reform, and we hope you'll join us.
+
+<div id="social">
+
+	<a href="{{ page.twitter_share_link }}" count="0" data-network="twitter" target="_blank" class="twitter-button social-count twlinkthis">
+		<div class="sicon" id="stwit"></div>
+	</a>
+	<a href="{{ page.facebook_share_link }}" data-network="facebook" count="0" target="_blank" class="social-count facebook-button fblinkthis">
+		<div class="sicon" id="sfb"></div>
+	</a>
+	<a count="0" href="{{ page.google_share_link }}" data-network="googleplus" target="_blank" class="social-count google-button gpluslinkthis">
+		<div class="sicon" id="sgplus"></div>
+	</a>
+	<a href="http://www.tumblr.com/reblog/76297516785/RnSfIgVu" target="_blank" class="social-count tumblr-button">
+		<div class="sicon" id="stumblr"></div>
+	</a>
+</div>

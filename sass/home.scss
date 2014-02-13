@@ -668,6 +668,12 @@ aside {
 		}
 	}
 }
+.post {
+	h2 {
+		line-height: 1.4;
+		font-size: 30px;
+	}
+}
 .post article {
 	font-size: 1.6em;
 	line-height: 1.5em;
@@ -699,7 +705,31 @@ aside {
 		}
 	}
 	
+	.span-6 {
+		width:48%;
+		float: left;
+		h3 {
+			font-size: 21px;
+		}
+	}
 }
+
+@media screen and (max-width: 767px) {
+	.post article {
+		ul {
+			li {
+				@include column(12);
+				padding-bottom: 2em;
+				
+			}
+		}
+	}
+	.span-6 {
+		width:90%;
+		float: left;
+	}
+}
+
 #take-part {
 	background: #FAFAFA;
 	article.intro {
@@ -850,6 +880,7 @@ ul.stack {
     text-align: center;
     position: absolute;
     white-space: nowrap;
+    font-size: 18px;
 }
 .social-count:before {
     border: solid;
@@ -866,7 +897,7 @@ ul.stack {
 }
 .social-count.tumblr-button:after {
 	content: 'Reblog';
-	font-size: 0.6em;
+	    font-size: 13px;
 	padding: .8em 0;
 }
 .sicon {
