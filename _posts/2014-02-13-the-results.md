@@ -96,7 +96,66 @@ Thanks citizens who participated yesterday in raising awareness and letting cong
 	<br class="clear" />
 
 </ul>
+<div class="row">
+	<div class="span-6">
+	<h3>Congress support</h3>
 
+	<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Proud sponsor of <a href="https://twitter.com/search?q=%23USAFreedomAct&amp;src=hash">#USAFreedomAct</a> 2 protect privacy &amp; civil liberties, reform the <a href="https://twitter.com/search?q=%23NSA&amp;src=hash">#NSA</a> &amp; <a href="https://twitter.com/search?q=%23FISA&amp;src=hash">#FISA</a> court <a href="http://t.co/jGjPVTxv00">http://t.co/jGjPVTxv00</a> <a href="https://twitter.com/search?q=%23TheDayWeFightBack&amp;src=hash">#TheDayWeFightBack</a></p>&mdash; Tom Udall (@SenatorTomUdall) <a href="https://twitter.com/SenatorTomUdall/statuses/433291280865431552">February 11, 2014</a></blockquote>
+
+
+	<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Public, activists rallying today to <a href="https://twitter.com/search?q=%23StopTheNSA&amp;src=hash">#StopTheNSA</a> from overreaching. Civil liberties are making a big comeback. Let&#39;s keep it going. <a href="https://twitter.com/search?q=%23p2&amp;src=hash">#p2</a></p>&mdash; Raul M. Grijalva (@RepRaulGrijalva) <a href="https://twitter.com/RepRaulGrijalva/statuses/433287918078013440">February 11, 2014</a></blockquote>
+
+	<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Ben Franklin said it best <a href="https://twitter.com/search?q=%23EndThisDragnet&amp;src=hash">#EndThisDragnet</a> <a href="https://twitter.com/search?q=%23DayWeFightBack&amp;src=hash">#DayWeFightBack</a> <a href="http://t.co/9dxZEcIblZ">pic.twitter.com/9dxZEcIblZ</a></p>&mdash; Ron Wyden (@RonWyden) <a href="https://twitter.com/RonWyden/statuses/433292187481018369">February 11, 2014</a></blockquote>
+
+	<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>As a SOPA, PIPA, &amp; PATRIOT Act opponent, I am taking a stand to <a href="https://twitter.com/search?q=%23StopTheNSA&amp;src=hash">#StopTheNSA</a> &amp; cosponsor the USA FREEDOM Act <a href="https://twitter.com/search?q=%23p2&amp;src=hash">#p2</a> <a href="https://t.co/FjgTZP0PX3">https://t.co/FjgTZP0PX3</a></p>&mdash; Rep. Mike Honda (@RepMikeHonda) <a href="https://twitter.com/RepMikeHonda/statuses/433287715753181184">February 11, 2014</a></blockquote>
+
+
+	<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>The NSA is out of control. <a href="https://twitter.com/search?q=%23NSA&amp;src=hash">#NSA</a> <a href="https://twitter.com/search?q=%23StopTheNSA&amp;src=hash">#StopTheNSA</a> <a href="http://t.co/PZeVjv2imk">pic.twitter.com/PZeVjv2imk</a></p>&mdash; Bernie Sanders (@SenSanders) <a href="https://twitter.com/SenSanders/statuses/433285492176457728">February 11, 2014</a></blockquote>
+
+	<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Support the USA Freedom Act. <a href="https://twitter.com/search?q=%23StopTheNSA&amp;src=hash">#StopTheNSA</a> bulk surveillance. <a href="http://t.co/IPjNGeTFXH">pic.twitter.com/IPjNGeTFXH</a></p>&mdash; Congressman Nadler (@RepJerryNadler) <a href="https://twitter.com/RepJerryNadler/statuses/433291893120577536">February 11, 2014</a></blockquote>
+
+	<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>The <a href="https://twitter.com/search?q=%23NSA&amp;src=hash">#NSA</a>’s surveillance programs need tighter limitations, more transparency &amp; more accountability. <a href="http://t.co/mgZxJZrQXD">pic.twitter.com/mgZxJZrQXD</a></p>&mdash; Rep. Rick Larsen (@RepRickLarsen) <a href="https://twitter.com/RepRickLarsen/statuses/433299077606813696">February 11, 2014</a></blockquote>
+
+	<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>I believe we must create a culture that protects the privacy of American citizens: <a href="http://t.co/ohZ5ec03hb">http://t.co/ohZ5ec03hb</a> <a href="https://twitter.com/search?q=%23stopthensa&amp;src=hash">#stopthensa</a> <a href="http://t.co/N9NVn0iUr1">pic.twitter.com/N9NVn0iUr1</a></p>&mdash; U.S. Rep. Mark Pocan (@repmarkpocan) <a href="https://twitter.com/repmarkpocan/statuses/433281330214748160">February 11, 2014</a></blockquote>
+
+	<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>I support &#39;The Day We Fight Back&#39; protest against NSA domestic surveillance. Mind your own business, NSA! <a href="https://t.co/L3ed0EvZvH">https://t.co/L3ed0EvZvH</a></p>&mdash; Rep. Alan Grayson (@AlanGrayson) <a href="https://twitter.com/AlanGrayson/statuses/433269500985634816">February 11, 2014</a></blockquote>
+
+	<blockquote class="twitter-tweet" lang="en"><p>RT if you want to <a href="https://twitter.com/search?q=%23StoptheNSA&amp;src=hash">#StoptheNSA</a> from collecting your metadata. Today is <a href="https://twitter.com/search?q=%23TheDayWeFightBack&amp;src=hash">#TheDayWeFightBack</a> in the name of privacy. <a href="https://twitter.com/DayWeFightBack">@DayWeFightBack</a> <a href="https://twitter.com/EFF">@EFF</a></p>&mdash; House Judiciary Dems (@HouseJudDems) <a href="https://twitter.com/HouseJudDems/statuses/433261656022343681">February 11, 2014</a></blockquote>
+
+	<blockquote class="twitter-tweet" lang="en"><p>I invite you to join me in the fight against the NSA surveillance program. Today is the day we begin to fight back: <a href="http://t.co/8BSVf49CIi">http://t.co/8BSVf49CIi</a></p>&mdash; Senator Rand Paul (@SenRandPaul) <a href="https://twitter.com/SenRandPaul/statuses/433256806756802560">February 11, 2014</a></blockquote>
+
+
+	<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>I&#39;m working to rein in <a href="https://twitter.com/search?q=%23NSA&amp;src=hash">#NSA</a> <a href="https://twitter.com/search?q=%23Surveillance&amp;src=hash">#Surveillance</a> &amp; mass collection of American&#39;s private <a href="https://twitter.com/search?q=%23data&amp;src=hash">#data</a> <a href="http://t.co/vT2Rtr2Sen">http://t.co/vT2Rtr2Sen</a> <a href="http://t.co/lNAzcl4yMO">pic.twitter.com/lNAzcl4yMO</a></p>&mdash; Rep. Zoe Lofgren (@RepZoeLofgren) <a href="https://twitter.com/RepZoeLofgren/statuses/433108321411678208">February 11, 2014</a></blockquote>
+	</div>
+	<div class="span-6">
+	<h3>Corporate support</h3>
+		<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Join us in taking a stand against mass surveillance. Take 5 min and call/email your legislators today. <a href="https://t.co/vowufSe5uZ">https://t.co/vowufSe5uZ</a> <a href="https://twitter.com/search?q=%23stopthensa&amp;src=hash">#stopthensa</a></p>&mdash; the reddit alien (@reddit) <a href="https://twitter.com/reddit/statuses/433231193757061120">February 11, 2014</a></blockquote>
+
+		<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>It&#39;s time to reform government surveillance. Join us in speaking up to Congress: <a href="http://t.co/RKsmb7UuSm">http://t.co/RKsmb7UuSm</a> <a href="https://twitter.com/search?q=%23thedaywefightback&amp;src=hash">#thedaywefightback</a></p>&mdash; A Googler (@google) <a href="https://twitter.com/google/statuses/433269255564697601">February 11, 2014</a></blockquote>
+
+		<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>The Day We Fight Back: <a href="http://t.co/qv0GNLwQc5">http://t.co/qv0GNLwQc5</a></p>&mdash; Tumblr (@tumblr) <a href="https://twitter.com/tumblr/statuses/433285104547692544">February 11, 2014</a></blockquote>
+
+		<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Today we’re proud to support The Day We Fight Back, to end mass surveillance. <a href="https://t.co/oDOQnBsED6">https://t.co/oDOQnBsED6</a> + <a href="http://t.co/3uYsAVT94t">http://t.co/3uYsAVT94t</a> <a href="https://twitter.com/search?q=%23transparency&amp;src=hash">#transparency</a></p>&mdash; Policy (@policy) <a href="https://twitter.com/policy/statuses/433252370571489280">February 11, 2014</a></blockquote>
+
+		<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Join the fight against mass surveillance: <a href="http://t.co/ukA6HcX4E3">http://t.co/ukA6HcX4E3</a>. <a href="https://twitter.com/search?q=%23OnlinePrivacy&amp;src=hash">#OnlinePrivacy</a> <a href="http://t.co/OuZmXEbOJI">pic.twitter.com/OuZmXEbOJI</a></p>&mdash; Firefox (@firefox) <a href="https://twitter.com/firefox/statuses/433284340705808384">February 11, 2014</a></blockquote>
+
+		<blockquote class="twitter-tweet" lang="en"><p>Fighting Back Responsibly | CloudFlare Blog <a href="http://t.co/Or49Kh1z2A">http://t.co/Or49Kh1z2A</a> via <a href="https://twitter.com/CloudFlare">@CloudFlare</a></p>&mdash; CloudFlare (@CloudFlare) <a href="https://twitter.com/CloudFlare/statuses/433345105441726465">February 11, 2014</a></blockquote>
+
+		<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Take a stand against mass surveillance: &#10;&#10;<a href="https://t.co/AR8H5AgxMq">https://t.co/AR8H5AgxMq</a>&#10;&#10;<a href="https://twitter.com/search?q=%23StopTheNSA&amp;src=hash">#StopTheNSA</a></p>&mdash; DuckDuckGo (@duckduckgo) <a href="https://twitter.com/duckduckgo/statuses/433297185296646144">February 11, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div>
+</div>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<style>
+.span-6 {
+	width:48%;
+	float: left;
+}
+</style>
+<div style="clear: both;"></div>
 ####What next
-Share these totals and viva la etc
+Feel free to return to the homepage and use our free call service and email tool.
+
+Share buttons go here
 
