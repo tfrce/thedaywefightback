@@ -346,12 +346,11 @@ $('span#readmore').click( function(){
 });
 
 $(document).on('ready', function () {
-    
     new countUp("result-calls", 0, 96000, 0, 5).start();
-    new countUp("result-emails", 0, 549000, 0, 5).start();
-    new countUp("result-petitions", 0, 244000, 0, 5).start();
-    new countUp("result-website", 0, 1100000, 0, 5).start();
-    new countUp("result-banner", 0, 256000000, 0, 5).start();
-    new countUp("result-twitter", 0, 800000, 0, 5).start();
+    new countUp("result-emails", 0, 555000, 0, 5).start();
+    new countUp("result-petitions", 0, 245000, 0, 5).start();
+    new countUp("result-website", 0, 1000000, 0, 5).start();
+    new countUp("result-banner", 0, 37000000, 0, 5).start();
+    new countUp("result-twitter", 0, 84000, 0, 5).start();
     new countUp("result-facebook", 0, 410000 + 10000, 0, 5).start();
 })

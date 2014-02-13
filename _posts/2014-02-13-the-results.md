@@ -46,47 +46,47 @@ Thanks citizens who participated yesterday in raising awareness and letting cong
 <ul>
 
 	<li>
-		<h3><span id="result-calls">96, 000</span></h3>
+		<h3><span id="result-calls">0</span></h3>
 		<h4>Calls</h4>
 		
-		We added the total number of calls and incomplete plus the outliers today some short description in italics
+		The total number of completed calls reached 89, 000. Some offices didn't have voice mail activated, due to the high volume of calls around 7000 calls weren't answered.
 	</li>
 	
 	<li>
-		<h3><span id="result-emails">549, 000</span></h3>
+		<h3><span id="result-emails">0</span></h3>
 		<h4>Emails</h4>
-		190,000 people registered to send an email to 3 representatives within their zipcode.
+		185,000 people registered to send an email to their electore which will be forwarded onto their three representatives.
 	</li>
 	
 	<br class="clear" />
 	
 	<li>
-		<h3><span id="result-petitions">244, 000</span></h3>
-		<h4>Signatures</h4>
+		<h3><span id="result-petitions">0</span></h3>
+		<h4>The international community signed for the <a href="https://necessaryandproportionate.org">necessaryandproportionate.org</a> petition, to demand privacy as a human right.</h4>
 	</li>
 	
 	<li>
-		<h3><span id="result-website">1, 100, 000</span></h3>
-		<h4>Website Visitors</h4>
+		<h3><span id="result-website">0</span></h3>
+		<h4>The banner, social media and our many partners drove over 1 million unique website visitors.</h4>
 	</li>
 	
 	<br class="clear" />
 	
 	<li>
-		<h3><span id="result-banner">256, 000, 000</span></h3>
-		<h4>People reached</h4>
+		<h3><span id="result-banner">0</span></h3>
+		<h4>Their were two versions of the banner, one for international which was shown 13 million times and the US version was shown 24 million times.</h4>
 	</li>
 	
 	<li>
 		<h3><span id="result-twitter">80, 000 +</span></h3>
-		<h4>Tweets</h4>
+		<h4>This is just the number of times the thedaywefightback.org was shared on Twitter. There were many other tens of thousands of tweets floating around. #Stopspying was trending on Twitter during the afternoon.</h4>
 	</li>
 	
 	<br class="clear" />
 	
 	<li>
 		<h3><span id="result-facebook">410, 000</span></h3>
-		<h4>Facebook posts</h4>
+		<h4>Viral memes and discussion threads were being shared all through the day.</h4>
 	</li>
 	<br class="clear" />
 
