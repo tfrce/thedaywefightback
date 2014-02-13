@@ -679,6 +679,24 @@ aside {
 	line-height: 1.5em;
 	@include column(12);
 	@include clearfix;
+	.span-6 h3 {
+		text-align: center;
+	}
+	blockquote {
+		background: #222;
+		margin: 0;
+		padding: 1.5em;
+		font-size: 0.6em;
+		line-height: 1.5em;
+		@include column(12);
+		margin-bottom: 10px;
+		color: #EEE;
+		p {
+			margin: 0;
+			font-size: 1.4em;
+			margin-bottom: 0.5em;
+		}
+	}
 	ul {
 		list-style-type: none;
 		padding: 0;
@@ -896,7 +914,7 @@ ul.stack {
     position: absolute;
 }
 .social-count.tumblr-button:after {
-	content: 'Reblog';
+	content: 'Reblog'; 
 	    font-size: 13px;
 	padding: .8em 0;
 }
@@ -976,6 +994,7 @@ ul.stack {
 }
 
 @media screen and (max-width: 767px) {
+	
 	body {
 		font-size: 14px;
 	}
@@ -1072,6 +1091,13 @@ ul.stack {
 	}
 
 	#toggle:checked + nav #menu { display: block; opacity: 1;}
-
+	.post article ul li {
+			@include column(12);
+			font-size: 0.8em;
+			line-height: 1.5em;
+	}
+	div.span-6, div.row {
+		@include column(12);
+	}
 }
 
