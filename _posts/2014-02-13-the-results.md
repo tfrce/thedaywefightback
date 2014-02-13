@@ -41,7 +41,7 @@ custom_url_share_count: true
 Thanks to everyone who participated on Tuesday. Together we demonstrated that activists, organizations, and companies can [work in unison](http://www.flickr.com/photos/117264256@N06/sets/72157640854489604/) to fight mass surveillance, and laid a foundation for escalation over months to come.
 
 Below are some numbers that quantiy how we did* on Tuesday.  
-<p style="font-size: 16px; margin-top:15px">* The figures below represent a lower bound  - many people took action independently and using tools on other sites.  The statistics below  don't include for most of that activity.</p>
+<p style="font-size: 16px; margin-top:15px">* The figures below represent a lower bound  - many people took action independently and using tools on other sites.  The statistics below  don't include most of that activity.</p>
 
 <ul>
 
@@ -77,7 +77,7 @@ Below are some numbers that quantiy how we did* on Tuesday.
 	<li>
 		<h3><span id="result-website">0</span>+</h3>
 		<h4>Homepage visitors</h4>
-		The banner, social media and at least 6,000 wesites drove over 1 million unique visitors to the site.
+		The banner, social media and at least 6,000 websites drove over 1 million unique visitors to the homepage.
 	</li>
 	
 	<li>
@@ -157,7 +157,7 @@ Below are some numbers that quantiy how we did* on Tuesday.
 <div style="clear: both;"></div>
 #### This is just the beginning
 
-We called Tuesday "The Day We Fight Back" but of course the fight doesn't end here. To push back against surveillance we need to keep acting to educate and push our representatives to take action.
+We called Tuesday "The Day We Fight Back", but of course the fight doesn't end here. To push back against surveillance, we need to keep acting to educate and urge our representatives to take action.
 
 We've laid a strong foundation, but there's much more yet to come.
 
