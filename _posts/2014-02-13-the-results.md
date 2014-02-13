@@ -38,7 +38,7 @@ custom_url_share_count: true
 # custom_blog_post_style: ""
 ---
 
-Thanks to everyone who participated on Tuesday. Together we demonstrated that activists, organizations, and companies can work in unison to fight mass spying, and laid a foundation for escalation over months to come.
+Thanks to everyone who participated on Tuesday. Together we demonstrated that activists, organizations, and companies can work in unison to fight mass surveillance, and laid a foundation for escalation over months to come.
 
 Below are some numbers that quantiy how we did* on Tuesday.  
 <p style="font-size: 16px; margin-top:15px">* The figures below represent a lower bound  - many people took action independently and on other sites that we aren't able to count.</p>
@@ -157,9 +157,9 @@ Below are some numbers that quantiy how we did* on Tuesday.
 <div style="clear: both;"></div>
 #### This is just the beginning
 
-We called Tuesday "The Day We Fight Back" but of course the fight doesn't end here. To push back against surveillance we need to keep driving actions to educate and push our representatives to take action.
+We called Tuesday "The Day We Fight Back" but of course the fight doesn't end here. To push back against surveillance we need to keep acting to educate and push our representatives to take action.
 
-We'll continue to push for reform, and we hope you'll join us.
+We've laid a strong foundation, but there's much more yet to come.
 
 <div id="social">
 
