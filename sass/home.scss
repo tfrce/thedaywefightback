@@ -968,7 +968,7 @@ ul.stack {
 	margin-top: 2em;
 	strong {
 		@include italic;
-		letter-spacing: 0.25em;
+		letter-spacing: 0.05em;
 		color: $highlight;
 	}
 	&:hover {
