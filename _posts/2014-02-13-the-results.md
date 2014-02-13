@@ -55,7 +55,7 @@ Thanks citizens who participated yesterday in raising awareness and letting cong
 	<li>
 		<h3><span id="result-emails">0</span></h3>
 		<h4>Emails</h4>
-		185,000 people registered to send an email to their electore which will be forwarded onto their three representatives.
+		185,000 people registered to send an email to their electorate which will be forwarded onto their three representatives.
 	</li>
 	
 	<br class="clear" />
