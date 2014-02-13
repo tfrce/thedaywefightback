@@ -3,7 +3,6 @@ layout: results
 excerpt: ""
 permalink: the-results
 # photo: "/img/social-fb-scorecard.jpg"
-draft: true
 
 # Goes in <title> tag:
 title: The Day We Fought Back By The Numbers
@@ -39,7 +38,7 @@ custom_url_share_count: true
 # custom_blog_post_style: ""
 ---
 
-Thanks to everyone who participated on Tuesday. Together we raised awareness and let our legislators know that we stand united against overreaching surveillance.
+Thanks to everyone who participated on Tuesday. Together we demonstrated that activists, organizations, and companies can work in unison to fight mass spying, and laid a foundation for escalation over months to come.
 
 Below are some numbers that quantiy how we did* on Tuesday.  
 <p style="font-size: 16px; margin-top:15px">* The figures below represent a lower bound  - many people took action independently and on other sites that we aren't able to count.</p>
@@ -62,7 +61,7 @@ Below are some numbers that quantiy how we did* on Tuesday.
 
 	<li>
 		<h3><span id="result-calls">0</span></h3>
-		<h4>Calls attempted</h4>
+		<h4>Calls completed</h4>
 		
 		The total number of completed calls reached 89,000 and another 7,000 calls went uncompleted because  some legislators turned off their voicemail inboxes.
 	</li>
