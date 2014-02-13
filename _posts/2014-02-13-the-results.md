@@ -62,31 +62,36 @@ Thanks citizens who participated yesterday in raising awareness and letting cong
 	
 	<li>
 		<h3><span id="result-petitions">0</span></h3>
-		<h4>The international community signed for the <a href="https://necessaryandproportionate.org">necessaryandproportionate.org</a> petition, to demand privacy as a human right.</h4>
+		<h4>Signatures</h4>
+		The international community signed for the <a href="https://necessaryandproportionate.org">necessaryandproportionate.org</a> petition, to demand privacy as a human right.
 	</li>
 	
 	<li>
 		<h3><span id="result-website">0</span></h3>
-		<h4>The banner, social media and our many partners drove over 1 million unique website visitors.</h4>
+		<h4>Homepage visitors</h4>
+		The banner, social media and our many partners drove over 1 million unique website visitors.
 	</li>
 	
 	<br class="clear" />
 	
 	<li>
 		<h3><span id="result-banner">0</span></h3>
-		<h4>Their were two versions of the banner, one for international which was shown 13 million times and the US version was shown 24 million times.</h4>
+		<h4>People saw the banner</h4>
+		Their were two versions of the banner, one for international which was shown 13 million times and the US version was shown 24 million times.
 	</li>
 	
 	<li>
 		<h3><span id="result-twitter">80, 000 +</span></h3>
-		<h4>This is just the number of times the thedaywefightback.org was shared on Twitter. There were many other tens of thousands of tweets floating around. #Stopspying was trending on Twitter during the afternoon.</h4>
+		<h4>Tweets</h4>
+		This is just the number of times the thedaywefightback.org was shared on Twitter. There were many other tens of thousands of tweets floating around. #Stopspying was trending on Twitter during the afternoon.
 	</li>
 	
 	<br class="clear" />
 	
 	<li>
 		<h3><span id="result-facebook">410, 000</span></h3>
-		<h4>Viral memes and discussion threads were being shared all through the day.</h4>
+		<h4>Facebook interactions</h4>
+		Viral memes and discussion threads were being shared all through the day.
 	</li>
 	<br class="clear" />
 
