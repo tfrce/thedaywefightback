@@ -41,7 +41,7 @@ custom_url_share_count: true
 Thanks to everyone who participated on Tuesday. Together we demonstrated that activists, organizations, and companies can work in unison to fight mass surveillance, and laid a foundation for escalation over months to come.
 
 Below are some numbers that quantiy how we did* on Tuesday.  
-<p style="font-size: 16px; margin-top:15px">* The figures below represent a lower bound  - many people took action independently and on other sites that we aren't able to count.</p>
+<p style="font-size: 16px; margin-top:15px">* The figures below represent a lower bound  - at least tens of thousands of people took action independently and using tools on other sites.  The statistics below do not account for that activity</p>
 
 <ul>
 
