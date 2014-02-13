@@ -349,8 +349,8 @@ $(document).on('ready', function () {
     new countUp("result-calls", 0, 89000, 0, 5).start();
     new countUp("result-emails", 0, 555000, 0, 5).start();
     new countUp("result-petitions", 0, 301000, 0, 5).start();
-    new countUp("result-website", 0, 1000000, 0, 6.5).start();
-    new countUp("result-banner", 0, 37000000, 0, 7).start();
+    new countUp("result-website", 0, 1000000, 0, 5).start();
+    new countUp("result-banner", 0, 37000000, 0, 5).start();
     new countUp("result-twitter", 0, 84000, 0, 5).start();
-    new countUp("result-facebook", 0, 410000 + 10000, 0, 6).start();
+    new countUp("result-facebook", 0, 410000 + 10000, 0, 5).start();
 })
