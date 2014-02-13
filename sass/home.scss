@@ -945,6 +945,7 @@ ul.stack {
 }
 
 @media screen and (max-width: 767px) {
+	
 	body {
 		font-size: 14px;
 	}
@@ -1041,6 +1042,10 @@ ul.stack {
 	}
 
 	#toggle:checked + nav #menu { display: block; opacity: 1;}
-
+	.post article ul li {
+			@include column(12);
+			font-size: 0.8em;
+			line-height: 1.5em;
+	}
 }
 
