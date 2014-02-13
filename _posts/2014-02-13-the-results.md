@@ -38,7 +38,7 @@ custom_url_share_count: true
 # custom_blog_post_style: ""
 ---
 
-Thanks to everyone who participated on Tuesday. Together we demonstrated that activists, organizations, and companies can work in unison to fight mass surveillance, and laid a foundation for escalation over months to come.
+Thanks to everyone who participated on Tuesday. Together we demonstrated that activists, organizations, and companies can [work in unison](http://www.flickr.com/photos/117264256@N06/sets/72157640854489604/) to fight mass surveillance, and laid a foundation for escalation over months to come.
 
 Below are some numbers that quantiy how we did* on Tuesday.  
 <p style="font-size: 16px; margin-top:15px">* The figures below represent a lower bound  - at least tens of thousands of people took action independently and using tools on other sites.  The statistics below do not account for that activity</p>
