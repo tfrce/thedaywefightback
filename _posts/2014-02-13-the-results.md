@@ -138,6 +138,7 @@ The banner, social media and at least 6,000 websites drove over 1 million unique
 
 <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>I&#39;m working to rein in <a href="https://twitter.com/search?q=%23NSA&amp;src=hash">#NSA</a> <a href="https://twitter.com/search?q=%23Surveillance&amp;src=hash">#Surveillance</a> &amp; mass collection of American&#39;s private <a href="https://twitter.com/search?q=%23data&amp;src=hash">#data</a> <a href="http://t.co/vT2Rtr2Sen">http://t.co/vT2Rtr2Sen</a> <a href="http://t.co/lNAzcl4yMO">pic.twitter.com/lNAzcl4yMO</a></p>&mdash; Rep. Zoe Lofgren (@RepZoeLofgren) <a href="https://twitter.com/RepZoeLofgren/statuses/433108321411678208">February 11, 2014</a></blockquote>
 </div>
+
 <div class="span-6">
 <h3>Companies & Individuals</h3>
 <blockquote class="twitter-tweet" lang="en"><p>Today I took a stand against mass surveillance. Will you join me? <a href="https://t.co/ZrOMRolOKq">https://t.co/ZrOMRolOKq</a> <a href="https://twitter.com/search?q=%23stopspying&amp;src=hash">#stopspying</a></p>&mdash; Tim Berners-Lee (@timberners_lee) <a href="https://twitter.com/timberners_lee/statuses/433229865202900992">February 11, 2014</a></blockquote>

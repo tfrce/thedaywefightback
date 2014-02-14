@@ -733,8 +733,7 @@ aside {
 	}
 	
 	.span-6 {
-		width:48%;
-		float: left;
+		@include column(6);
 		h3 {
 			font-size: 21px;
 		}
