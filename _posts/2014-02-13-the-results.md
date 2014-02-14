@@ -189,7 +189,7 @@ We've laid a strong foundation, but there's much more yet to come.
 <a count="0" href="{{ page.google_share_link }}" data-network="googleplus" target="_blank" class="social-count google-button gpluslinkthis">
 <div class="sicon" id="sgplus"></div>
 </a>
-<a href="http://www.tumblr.com/reblog/76297516785/RnSfIgVu" target="_blank" class="social-count tumblr-button">
+<a href="http://www.tumblr.com/reblog/76590405464/Pekg1Zmt" target="_blank" class="social-count tumblr-button">
 <div class="sicon" id="stumblr"></div>
 </a>
 </div>
