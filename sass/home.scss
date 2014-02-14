@@ -1106,7 +1106,7 @@ ul.stack {
 			font-size: 0.8em;
 			line-height: 1.5em;
 	}
-	div.span-6, div.row {
+	.post div.span-6, .post div.row {
 		@include column(12);
 	}
 }
