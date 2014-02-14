@@ -177,8 +177,6 @@ The banner, social media and at least 6,000 websites drove over 1 million unique
 We called Tuesday "The Day We Fight Back", but of course the fight doesn't end here. To push back against surveillance, we need to keep acting to educate and urge our representatives to take action.
 
 We've laid a strong foundation, but there's much more yet to come.
-</article>
-</div>
 
 <div id="social">
 
@@ -194,5 +192,10 @@ We've laid a strong foundation, but there's much more yet to come.
 <a href="http://www.tumblr.com/reblog/76297516785/RnSfIgVu" target="_blank" class="social-count tumblr-button">
 <div class="sicon" id="stumblr"></div>
 </a>
+</div>
+</article>
+
+
+
 </div>
 </section>
