@@ -674,19 +674,28 @@ aside {
 		font-size: 30px;
 	}
 }
-.post article {
+.post
+ {
+ 	h2 {
+ 		margin-bottom: 1.5em;
+ 	}
+ 	article {
 	font-size: 1.6em;
 	line-height: 1.5em;
 	@include column(12);
 	@include clearfix;
+	p {
+		margin-left: 10px;
+	}
+	}
 	.span-6 h3 {
-		text-align: center;
+		margin-left: 10px;
 	}
 	blockquote {
-		background: #222;
+		border-top: 2px solid #333;
 		margin: 0;
 		padding: 1.5em;
-		font-size: 0.6em;
+		font-size: 0.8em;
 		line-height: 1.5em;
 		@include column(12);
 		margin-bottom: 10px;
