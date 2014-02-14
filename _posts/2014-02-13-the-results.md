@@ -43,21 +43,21 @@ custom_url_share_count: true
 <h2><span>The Day We Fought Back: by the numbers</span></h2>
 
 <article>
-Thanks to everyone who participated on Tuesday. Together we demonstrated that activists, organizations, and companies can [work in unison](http://www.flickr.com/photos/117264256@N06/sets/72157640854489604/) to fight mass surveillance, and laid a foundation for escalation over months to come.
+<p>Thanks to everyone who participated on Tuesday. Together we demonstrated that activists, organizations, and companies can [work in unison](http://www.flickr.com/photos/117264256@N06/sets/72157640854489604/) to fight mass surveillance, and laid a foundation for escalation over months to come.</p>
 
-Below are some numbers that quantify how we did* on Tuesday.  
-<p style="font-size: 16px; margin-top:15px">* The figures below represent a lower bound  - at least tens of thousands of people took action independently and using tools on other sites.  The statistics below do not account for that activity.</p>
+<p>Below are some numbers that quantify how we did* on Tuesday.</p> 
+<p style="font-size: 16px; margin-top:15px; line-height: 1.5em;">* The figures below represent a lower bound  - at least tens of thousands of people took action independently and using tools on other sites.  The statistics below do not account for that activity.</p>
 
 <ul>
 
 <li>
-<h3><span id="result-banner">0</span></h3>
+<h3><span id="result-banner">37,000,000</span></h3>
 <h4>People saw the banner</h4>
 Over 24 million Americans and 13 million non-Americans saw The Day We Fight Back banner on Tuesday.
 </li>
 
 <li>
-<h3><span id="result-emails">0</span></h3>
+<h3><span id="result-emails">555,000</span></h3>
 <h4>Emails sent</h4>
 185,000 Americans registered to send over 555,000 emails, two each to their two Senators and one to their Representative.
 </li>
@@ -65,14 +65,14 @@ Over 24 million Americans and 13 million non-Americans saw The Day We Fight Back
 <br class="clear" />
 
 <li>
-<h3><span id="result-calls">0</span></h3>
+<h3><span id="result-calls">89,000</span></h3>
 <h4>Calls completed</h4>
 
 The total number of completed calls reached 89,000 and another 7,000 calls went uncompleted because  some legislators turned off their voicemail inboxes.
 </li>
 
 <li>
-<h3><span id="result-petitions">0</span></h3>
+<h3><span id="result-petitions">301,000</span></h3>
 <h4>Signatures</h4>
 245,000 people internationally signed the <a href="https://necessaryandproportionate.org">necessaryandproportionate.org</a> petition to demand privacy as a human right. Another 56,000 joined petitions on causes.com and change.org.
 </li>
@@ -80,23 +80,23 @@ The total number of completed calls reached 89,000 and another 7,000 calls went 
 <br class="clear" />
 
 <li>
-<h3><span id="result-website">0</span>+</h3>
-<h4>Homepage visitors</h4>
-The banner, social media and at least 6,000 websites drove over 1 million unique visitors to the homepage.
-</li>
-
-<li>
-<h3><span id="result-facebook">410,000</span></h3>
+<h3><span id="result-facebook">420,000</span>+</h3>
 <h4>Facebook shares</h4>
 This just the number of times the website itself was shared on Facebook.
 </li>
 
-<br class="clear" />
-
 <li>
-<h3><span id="result-twitter">80, 000 +</span></h3>
+<h3><span id="result-twitter">84,000</span>+</h3>
 <h4>Tweets</h4>
 This is just the number of times the thedaywefightback.org was shared on Twitter. #StopSpying and #StopTheNSA were trending on Twitter during the afternoon.
+</li>
+
+<br class="clear" />
+
+<li class="wide">
+<h3><span id="result-website">1,000,000</span>+</h3>
+<h4>Homepage visitors</h4>
+The banner, social media and at least 6,000 websites drove over 1 million unique visitors to the homepage.
 </li>
 <br class="clear" />
 

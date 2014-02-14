@@ -685,9 +685,6 @@ aside {
 	display: block;
 	@include column(12);
 	@include clearfix;
-	p {
-		margin-left: 10px;
-	}
 	}
 	.span-6 h3 {
 		margin-left: 10px;
@@ -717,7 +714,9 @@ aside {
 		li {
 			@include column(6);
 			padding-bottom: 2em;
-			
+			&.wide {
+				@include column(12);
+			}
 		}
 		h3 {
 			border-top: 3px solid #DDD;
