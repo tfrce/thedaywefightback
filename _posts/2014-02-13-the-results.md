@@ -23,7 +23,7 @@ twitter_card_description: "On Tuesday thousands of websites rose up in protest a
 # twitter_card_image: https://thedaywefightback.org/img/social-lettertowikipedia.jpg
 
 #### Share links and text. These are used wherever there's a share button on the page.
-twitter_share_link: "https://twitter.com/intent/tweet?status=February%2011th%2C%20The%20Day%20We%20Fought%20Back%2C%20by%20the%20numbers%20-%3E%20https%3A%2F%2Fthedaywefightback.org%2Fthe-results%2F%20&related=daywefightback,sinak,neutralthoughts,stopwatchingus,eff"
+twitter_share_link: "https://twitter.com/intent/tweet?status=February%2011th%2C%20The%20Day%20We%20Fought%20Back%2C%20by%20the%20numbers%20-%3E%20https%3A%2F%2Fthedaywefightback.org%2Fthe-results%2F%20&related=daywefightback,eff,sinak,neutralthoughts,stopwatchingus"
 facebook_share_link: "https://www.facebook.com/sharer/sharer.php?app_id=709021229138321&u=https%3A%2F%2Fthedaywefightback.org%2Fthe-results%2F&display=popup"
 google_share_link: "https://plus.google.com/share?url=https://thedaywefightback.org/the-results/"
 
@@ -46,7 +46,7 @@ custom_url_share_count: true
 Thanks to everyone who participated on Tuesday. Together we demonstrated that activists, organizations, and companies can [work in unison](http://www.flickr.com/photos/117264256@N06/sets/72157640854489604/) to fight mass surveillance, and laid a foundation for escalation over months to come.
 
 Below are some numbers that quantify how we did* on Tuesday.  
-<p style="font-size: 16px; margin-top:15px">* The figures below represent a lower bound  - at least tens of thousands of people took action independently and using tools on other sites.  The statistics below do not account for that activity</p>
+<p style="font-size: 16px; margin-top:15px">* The figures below represent a lower bound  - at least tens of thousands of people took action independently and using tools on other sites.  The statistics below do not account for that activity.</p>
 
 <ul>
 
