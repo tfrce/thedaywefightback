@@ -169,8 +169,9 @@ The banner, social media and at least 6,000 websites drove over 1 million unique
 
 <section class="post">
 <div class="container">
-<article>
 ## <span>This is just the beginning</span>
+
+<article>
 
 We called Tuesday "The Day We Fight Back", but of course the fight doesn't end here. To push back against surveillance, we need to keep acting to educate and urge our representatives to take action.
 
