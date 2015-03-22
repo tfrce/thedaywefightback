@@ -212,7 +212,7 @@ $( ".gpluslinkthis" ).click(function() {
     return false;
 })
 var shareUrl =  'https://thedaywefightback.org';
-$.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=' + shareUrl, {
+$.ajax('https://socialbuttonsserver.herokuapp.com/?networks=facebook,twitter,googleplus&url=' + shareUrl, {
     success: function(res, err) {
         $.each(res, function(network, value) {
             var count = value;
